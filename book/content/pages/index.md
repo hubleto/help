@@ -2,6 +2,8 @@
 
 *Hello world*
 
+page: {{ data.page }}
+
 ## Heading 2
 
 This is a sample paragraph.

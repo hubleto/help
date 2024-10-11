@@ -2,5 +2,5 @@ vendor
 composer.lock
 node_modules
 package-lock.json
-assets/book.css
+assets/css/book.css
 env.php

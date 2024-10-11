@@ -1,6 +1,7 @@
 <?php
 
 require('vendor/autoload.php');
+require('book/content/scripts/pageData.php');
 
 $route = $_GET['route'] ?? '';
 $env = [
@@ -18,15 +19,10 @@ $env = [
   ],
 ];
 
-$pageData = [
-  'randVar' => rand(1000, 9999),
-  'today' => date('Y-m-d'),
-];
-
 try {
-  $renderer = new \WaiBlue\GuideVis\Loader($route, $env, $pageData);
+  $renderer = new \WaiBlue\GuideVis\Loader($route, $env);
   $renderer->init();
-  echo $renderer->render();
+  echo $renderer->render(getPageData($renderer));
 } catch (\Exception $e) {
   echo $e->getMessage();
 }
