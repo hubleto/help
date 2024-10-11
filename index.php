@@ -1,29 +1,28 @@
 <?php
 
-require('env.php');
 require('vendor/autoload.php');
 
-spl_autoload_register(function($className) {
-  if (str_starts_with($className, 'DocsRenderer')) {
-    $className = str_replace('\\', '/', $className);
-    $className = str_replace('DocsRenderer', '', $className);
-    $className = trim($className, '/');
-
-    require_once(DOCS_RENDERER_FOLDER . '/src/' . $className . '.php');
-    
-  }
-});
-
 $route = $_GET['route'] ?? '';
-$options = [
+$env = [
   'bookRootFolder' => __DIR__ . '/book',
   'bookRootUrl' => '/ceremonycrm/help/book',
+  'guideRootUrl' => '/ceremonycrm/help',
+  'defaultPageConfig' => [
+    'elementTemplates' => [
+      'header' => 'header',
+      'sidebar' => 'sidebar',
+      'footer' => 'footer',
+    ],
+  ],
 ];
 
-$pageData = ['randVar' => rand(1000, 9999)];
+$pageData = [
+  'randVar' => rand(1000, 9999),
+  'today' => date('Y-m-d'),
+];
 
 try {
-  $renderer = new \DocsRenderer\Loader($route, $options, $pageData);
+  $renderer = new \WaiBlue\GuideVis\Loader($route, $env, $pageData);
   $renderer->init();
   echo $renderer->render();
 } catch (\Exception $e) {

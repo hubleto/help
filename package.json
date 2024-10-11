@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build-help-css": "npx tailwindcss -i ./book/css/theme.css -o ./book/css/dist.css"
+    "build-css": "npx tailwindcss -i ./assets/css/main.twcss -o ./assets/book.css"
   },
   "dependencies": {
     "tailwind": "^4.0.0"

@@ -1,0 +1,4 @@
+index:
+  pageTemplate: basic
+sample-without-sidebar:
+  pageTemplate: without-sidebar

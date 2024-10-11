@@ -1,3 +1,5 @@
+{# see WaiBlue\GuideVis\Loader->getPageVars() for the list of available variables #}
+
 <html class="template-basic">
 <head>
   <meta charset="utf-8">
@@ -7,14 +9,14 @@
   <meta name="author" content="">
   <link rel='shortcut icon' href='{{ rootUrl }}/images/icon.png'>
   <title>Help @ CeremonyCRM</title>
-  <link rel="stylesheet" type="text/css" href="{{ rootUrl }}/css/dist.css">
+  <link rel="stylesheet" type="text/css" href="{{ guideRootUrl }}/assets/book.css">
 </head>
 <body>
-  <div class="header">{{ header }}</div>
+  <div class="header">{{ elements.header|raw }}</div>
   <div class="content-wrapper">
-    <div class="sidebar">{{ sidebar|raw }}</div>
+    <div class="sidebar">{{ elements.sidebar|raw }}</div>
     <div class="content">{{ content|raw }}</div>
   </div>
-  <div class="footer">{{ footer|raw }} {{ randVar }}</div>
+  <div class="footer">{{ elements.footer|raw }} {{ randVar }}</div>
 </body>
 </html>
