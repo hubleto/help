@@ -1,8 +1,9 @@
 {
   "scripts": {
-    "build-css": "npx tailwindcss -i ./assets/css/main.twcss -o ./assets/book.css"
+    "build-css": "npx tailwindcss -i ./assets/css/main.twcss -o ./assets/css/book.css"
   },
   "dependencies": {
+    "preline": "^2.5.0",
     "tailwind": "^4.0.0"
   }
 }

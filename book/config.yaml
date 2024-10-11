@@ -1,4 +1,4 @@
 index:
-  pageTemplate: basic
+  pageTemplate: preline-admin/main
 sample-without-sidebar:
   pageTemplate: without-sidebar

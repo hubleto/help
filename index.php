@@ -8,10 +8,12 @@ $env = [
   'bookRootUrl' => '/ceremonycrm/help/book',
   'guideRootUrl' => '/ceremonycrm/help',
   'defaultPageConfig' => [
+    'pageTemplate' => 'preline-admin/main',
     'elementTemplates' => [
-      'header' => 'header',
-      'sidebar' => 'sidebar',
-      'footer' => 'footer',
+      'header' => 'preline-admin/header',
+      'breadcrumbs' => 'preline-admin/breadcrumbs',
+      'sidebar' => 'preline-admin/sidebar',
+      'footer' => 'preline-admin/footer',
     ],
   ],
 ];

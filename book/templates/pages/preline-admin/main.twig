@@ -1,0 +1,29 @@
+{# see WaiBlue\GuideVis\Loader->getPageVars() for the list of available variables #}
+
+<html class="template-basic">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel='shortcut icon' href='{{ rootUrl }}/images/icon.png'>
+  <title>Help @ CeremonyCRM</title>
+  <link rel="stylesheet" type="text/css" href="{{ guideRootUrl }}/assets/css/book.css">
+  <link rel="stylesheet" type="text/css" href="{{ guideRootUrl }}/assets/css/fontawesome-6.6.css">
+</head>
+<body>
+  {{ elements.header|raw }}
+  {{ elements.breadcrumbs|raw }}
+  {{ elements.sidebar|raw }}
+  <!-- Content -->
+  <div class="w-full lg:ps-64">
+    <div class="p-4 sm:p-6 space-y-4 sm:space-y-6">
+      {{ content|raw }}
+    </div>
+  </div>
+  {{ elements.footer|raw }}
+
+  <script src="{{ guideRootUrl }}/node_modules/preline/dist/preline.js"></script>
+</body>
+</html>

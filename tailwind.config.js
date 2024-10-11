@@ -2,6 +2,7 @@
 module.exports = {
   content: [
     "./book/**/*.{html,js,twig,tsx}",
+    'node_modules/preline/dist/*.js',
   ],
   // safelist: [
   //   'adios-lookup__indicator',
@@ -45,6 +46,8 @@ module.exports = {
       }
     }
   },
-  plugins: [],
+  plugins: [
+    // require('preline/plugin'),
+  ],
 }
 
