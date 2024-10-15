@@ -14,13 +14,10 @@
 </head>
 <body>
   {{ elements.header|raw }}
-  {{ elements.breadcrumbs|raw }}
   {{ elements.sidebar|raw }}
   <!-- Content -->
-  <div class="border-r border-gray-300" style="max-width:800px;margin-left:280px;margin-bottom:20px;">
-    <div class="p-4 sm:p-6 space-y-4 sm:space-y-6">
-      {{ content|raw }}
-    </div>
+  <div class="p-8 flex-1 max-w-3xl mb-4 ml-72 mr-4 lg:mr-60 space-y-1">
+    {{ content|raw }}
   </div>
   {{ elements.onThisPage|raw }}
   {{ elements.footer|raw }}

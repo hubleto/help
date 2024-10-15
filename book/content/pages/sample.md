@@ -1,12 +1,16 @@
-# Heading 1
+# Sample page
 
-This is a sample page and this is sample paragraph.
+Learn how to create content by examples.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel sodales ex. Mauris a diam at leo dictum blandit. Sed fringilla enim at dui blandit, a maximus ante varius. Nam consectetur auctor dolor, quis finibus eros venenatis at. Fusce molestie vel odio aliquam hendrerit. Curabitur blandit a purus at porttitor. Nunc et erat eu odio tempor rhoncus fringilla id nulla. Fusce venenatis justo ac vehicula ornare. Quisque varius tellus id est dictum accumsan. Aenean in pulvinar neque, in luctus leo. Mauris ut ornare leo. Sed vitae ligula cursus, pulvinar eros a, sollicitudin ex.
 
 ## Text options
 
+### Typography
+
 Various font types: *italic*, **bold**.
 
-Use VSCode plugin `Markdown` by **Yu Zhang** and `Ctrl+Shift+V` shortcut to easily preview.
+Use VSCode plugin `Markdown` by **Yu Zhang** and `Ctrl+Shift+V` shortcut to easily preview page content.
 
 ### Simple list
 
@@ -30,13 +34,47 @@ For more examples (e.g. links), see this [markdown documentation](https://www.ma
 
 ## Images
 
-{% include 'components/image.twig' with {'image': 'Lenna(testimage).png', 'caption': 'This is a sample image.'} %}
+### Including images
 
 To include your image, follow these steps:
 
   1. upload .png or .jpg file to book/content/images
     * filename of the image **MUST NOT** contain underscores (_)
-  2. use this code in your page to add image: `{% include 'components/image.twig' with {'image': 'Lenna(testimage).png', 'caption': 'This is a sample image.'} %}`
+  2. use this TWIG code in your page to add image:
+
+<pre>
+include 'components/image.twig'
+with {'image': 'Lenna(testimage).png', 'caption': 'This is a sample image.'}
+</pre>
+
+### Sample image
+
+{% include 'components/image.twig' with {'image': 'Lenna(testimage).png', 'caption': 'This is a sample image.'} %}
+
+## Step-by-step wizard
+
+### Simple example
+
+{% include 'components/step-by-step.twig' with {'steps': {
+  '1': {
+    'title': 'Step 1',
+    'content': '
+This is **step** 1
+
+sdf
+    ',
+    'example': 'You should do this.',
+  },
+  '2': {
+    'title': 'Step 2',
+    'content': '
+This is **step** 2
+
+sdf
+    ',
+    'example': 'You should do this.',
+  }
+}} %}
 
 ## Tables
 

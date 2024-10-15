@@ -34,9 +34,9 @@
 
 {# https://preline.co/templates/admin/index.html #}
 
-<!-- Sidebar -->
-<aside class="on-this-page bg-slate-100 fixed top-0 right-0 h-full w-72 mt-20">
-  <div class="text-sm p-4 bg-slate-200 flex items-center"><div>On this page</div></div>
+<!-- On this page -->
+<aside class="fixed top-0 right-0 h-full w-60 bg-white z-20 hidden lg:block">
+  <div class="text-sm p-4 flex items-center"><div>On this page</div></div>
   <div class="p-4">
     {% for h2, h3list in onThisPage %}
       <div class="pt-4"><a href="#{{ h2 }}">{{ h2 }}</a></div>
