@@ -53,7 +53,7 @@ with {'image': 'Lenna(testimage).png', 'caption': 'This is a sample image.'}
 
 ## Step-by-step wizard
 
-### Simple example
+### Example
 
 {% include 'components/step-by-step.twig' with {'steps': {
 
@@ -81,5 +81,5 @@ You can use `markdown` syntax in step description.
 
 ## Tables
 
-### bla
+### Example
 ... to be done ...

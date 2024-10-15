@@ -2,5 +2,5 @@
 
 <div class="image">
   <img src="{{ bookRootUrl }}/content/images/{{ image }}" />
-  <p>{{ caption }}
+  {% if caption %} <p>{{ caption }}</p> {% endif %}
 </div>

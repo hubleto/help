@@ -15,7 +15,7 @@
   pre { @apply bg-slate-900 text-white p-4 rounded-lg text-sm overflow-x-auto; }
 
   .image { @apply flex flex-col; width: 70%; margin: auto; }
-  .image img { @apply border border-slate-500 p-2; }
+  .image img { @apply bg-white border border-slate-500 p-2; }
   .image p { @apply text-slate-500 text-sm; }
 
 
