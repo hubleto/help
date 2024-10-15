@@ -17,6 +17,7 @@ $env = [
       'breadcrumbs' => 'preline-admin/breadcrumbs',
       'sidebar' => 'preline-admin/sidebar',
       'footer' => 'preline-admin/footer',
+      'onThisPage' => 'preline-admin/on-this-page',
     ],
   ],
 ];

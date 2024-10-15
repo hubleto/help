@@ -8,19 +8,23 @@ Various font types: *italic*, **bold**.
 
 Use VSCode plugin `Markdown` by **Yu Zhang** and `Ctrl+Shift+V` shortcut to easily preview.
 
-Simple list:
+### Simple list
 
   * item 1
   * item 2
   * item 3
 
-Numbered list:
+### Numbered list
 
   1. item 1
   2. item 2
   3. item 3
 
+### Internal link
+
 [This is a link to an internal page of the book](sample)
+
+### More examples
 
 For more examples (e.g. links), see this [markdown documentation](https://www.markdownguide.org/). Be aware, that the library for parsing Markdown used in this guide might not support all Markdown features.
 
