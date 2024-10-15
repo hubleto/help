@@ -1,41 +1,32 @@
 {% macro renderSidebar(items, env, breadcrumbs, itemIdPrefix) %}
   {% set itemCounter = 0 %}
   {% for item in items %}
-    <li class="hs-accordion" id="{{ itemIdPrefix }}_{{ itemCounter }}">
+    <li id="{{ itemIdPrefix }}_{{ itemCounter }}">
       {% if item.children is iterable %}
         <a href="{{ env.guideRootUrl }}/{{ item.page ?? '' }}"
-          class="hs-accordion-toggle"
-          aria-expanded="true"
-          aria-controls="{{ itemIdPrefix }}_{{ itemCounter }}_{{ page }}"
+          class="btn {% if breadcrumbs|last == item.page %} btn-primary {% else %} btn-transparent {% endif %} w-full"
         >
-          {% if item.icon %} <i class="{{ item.icon }}"></i> {% endif %}
-          {{ item.title }}
+          {% if item.icon %} <span class="icon"><i class="{{ item.icon }}"></i></span> {% endif %}
+          <span class="text grow">{{ item.title }}</span>
 
-          {# <svg class="hs-accordion-active:block ms-auto hidden size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="m18 15-6-6-6 6" />
-          </svg>
-
-          <svg class="hs-accordion-active:hidden ms-auto block size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="m6 9 6 6 6-6" /> #}
-          </svg>
+          {% if item.page in breadcrumbs %} 
+          {% else %} <span class="icon"><i class="fas fa-chevron-down"></i></span> {% endif %}
         </a>
         <div
           id="{{ itemIdPrefix }}_{{ itemCounter }}_{{ page }}"
-          class="hs-accordion-content {% if item.page in breadcrumbs %} block {% endif %}"
-          role="region"
-          aria-labelledby="{{ itemIdPrefix }}_{{ itemCounter }}"
+          class="{% if item.page in breadcrumbs %} block {% else %} hidden {% endif %}"
         >
-          <ul class="hs-accordion-group" data-hs-accordion-always-open>
+          <ul class="ps-4 pt-0.5 space-y-0.5">
             {{ _self.renderSidebar(item.children, env, breadcrumbs, itemIdPrefix ~ "_" ~ itemCounter) }}
           </ul>
         </div>
       {% else %}
         <a
           href="{{ env.guideRootUrl }}/{{ item.page }}"
-          class="{% if breadcrumbs|last == item.page %} active {% endif %}"
+          class="btn {% if breadcrumbs|last == item.page %} btn-primary {% else %} btn-transparent {% endif %} w-full"
         >
-          {% if item.icon %} <i class="{{ item.icon }}"></i> {% endif %}
-          {{ item.title }}
+          {% if item.icon %} <span class="icon"><i class="{{ item.icon }}"></i></span> {% endif %}
+          <span class="text">{{ item.title }}</span>
         </a>
       {% endif %}
     </li>
@@ -70,7 +61,7 @@
     <div class="h-full overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-neutral-700 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500">
 
       <nav class="hs-accordion-group p-3 w-full flex flex-col flex-wrap" data-hs-accordion-always-open>
-        <ul class="flex flex-col space-y-1">
+        <ul class="flex flex-col space-y-0.5">
           {{ _self.renderSidebar(bookConfig.tableOfContents, env, breadcrumbs, '') }}
 
         </ul>
