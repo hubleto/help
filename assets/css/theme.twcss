@@ -20,7 +20,7 @@
 
 
   .step-by-step { @apply p-0; }
-  .step-by-step .step { @apply flex gap-2 mb-2 p-1 items-start; }
+  .step-by-step .step { @apply flex gap-4 mb-2 p-1 items-start; }
   .step-by-step .step-counter { @apply text-sm rounded-sm bg-slate-100 border border-slate-200 font-bold p-0.5 w-8 text-center; }
   .step-by-step .step-content { @apply flex-1; }
   .step-by-step .step-content .step-title { @apply font-semibold; }

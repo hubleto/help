@@ -56,26 +56,30 @@ with {'image': 'Lenna(testimage).png', 'caption': 'This is a sample image.'}
 ### Simple example
 
 {% include 'components/step-by-step.twig' with {'steps': {
+
   '1': {
     'title': 'Step 1',
-    'content': '
+    'description': '
 This is **step** 1
 
-sdf
+You can use `markdown` syntax in step description.
     ',
     'example': 'You should do this.',
   },
+
   '2': {
     'title': 'Step 2',
-    'content': '
+    'description': '
 This is **step** 2
 
-sdf
+You can use `markdown` syntax in step description.
     ',
     'example': 'You should do this.',
   }
-}} %}
+
+}} %} {# step-by-step #}
 
 ## Tables
 
+### bla
 ... to be done ...

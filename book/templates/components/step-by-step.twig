@@ -6,9 +6,9 @@
       <div class="step-counter">{{ stepCnt }}</div>
       <div class="step-content">
         <div class="step-title">{{ step.title|raw }}</div>
-        <div class="step-description">{{ markdown(step.content)|raw }}</div>
+        <div class="step-description">{{ markdown(step.description)|raw }}</div>
       </div>
-      {% if step.example %} <div class="step-example"><pre>{{ step.example|raw }}</pre></div> {% endif %}
+      {% if step.example %} <span class="step-example"><pre>{{ step.example|raw }}</pre></span> {% endif %}
     </div>
   {% endfor %}
 </div>
