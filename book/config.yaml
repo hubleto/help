@@ -18,6 +18,7 @@ tableOfContents:
       - page: create-new-account
         icon: fas fa-bla
   - page: contact
+  - page: sample
 pages:
   # sample-page:
   #   pageTemplate: preline-admin/main      # optional, if not provided env.defaultPageConfig.pageTemplate will be used
@@ -36,3 +37,5 @@ pages:
     title: Step 2
   contact:
     title: Contact us
+  sample:
+    title: Sample page

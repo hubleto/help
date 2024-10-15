@@ -5,6 +5,9 @@
   a { @apply text-primary; }
   a:hover { @apply underline; }
 
+  ul { @apply pl-2 list-inside list-disc; }
+  ol { @apply pl-2 list-inside list-decimal; }
+
   .image { @apply flex flex-col; width: 80%; margin: auto; }
   .image img { @apply border border-gray-500 p-2; }
   .image p { @apply text-gray-500 text-sm; }
@@ -27,25 +30,8 @@
   .btn-list-item .text { @apply border-none flex-1; }
   .btn-list-item .icon { @apply self-stretch flex items-center; }
 
+  nav ul { @apply list-none; }
+
   nav li > ul { @apply p-1; }
 
-  /* #hs-application-sidebar nav ul a {
-    @apply flex items-center gap-x-3.5 py-1.5 px-1.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-200
-  }
-  #hs-application-sidebar nav ul a.active {
-    @apply bg-gray-100
-  }
-  #hs-application-sidebar nav ul a:hover { @apply no-underline; } */
-
-  .hs-accordion-toggle {
-    @apply w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:text-neutral-200
-  }
-
-  .hs-accordion-content {
-    @apply w-full overflow-hidden transition-[height] hidden;
-  }
-
-  .hs-accordion-group {
-    @apply ps-8 pt-1 space-y-1;
-  }
 }

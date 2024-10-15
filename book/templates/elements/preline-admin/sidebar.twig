@@ -1,31 +1,28 @@
-{% macro renderSidebar(items, bookConfig, env, breadcrumbs, itemIdPrefix) %}
+{% macro renderSidebar(items, bookConfig, env, breadcrumbs, itemIdPrefix, level) %}
   {% set itemCounter = 0 %}
   {% for item in items %}
     <li id="{{ itemIdPrefix }}_{{ itemCounter }}">
       {% if item.children is iterable %}
         <a href="{{ env.guideRootUrl }}/{{ item.page ?? '' }}"
-          class="btn {% if breadcrumbs|last == item.page %} btn-primary {% else %} btn-transparent {% endif %} w-full"
+          class="{% if level == 0 %} btn {% else %} btn {% endif %} {% if breadcrumbs|last == item.page %} btn-primary {% else %} btn-transparent {% endif %} w-full"
         >
-          {% if item.icon %} <span class="icon"><i class="{{ item.icon }}"></i></span> {% endif %}
+          {% if level == 0 %} <span class="icon"><i class="{{ item.icon }}"></i></span> {% endif %}
           <span class="text grow">{{ bookConfig.pages[item.page].title }}</span>
-
-          {% if item.page in breadcrumbs %} 
-          {% else %} <span class="icon"><i class="fas fa-chevron-down"></i></span> {% endif %}
         </a>
         <div
           id="{{ itemIdPrefix }}_{{ itemCounter }}_{{ page }}"
-          class="{% if item.page in breadcrumbs %} block {% else %} hidden {% endif %}"
+          class=""
         >
           <ul class="ps-4 pt-0.5 space-y-0.5">
-            {{ _self.renderSidebar(item.children, bookConfig, env, breadcrumbs, itemIdPrefix ~ "_" ~ itemCounter) }}
+            {{ _self.renderSidebar(item.children, bookConfig, env, breadcrumbs, itemIdPrefix ~ "_" ~ itemCounter, level + 1) }}
           </ul>
         </div>
       {% else %}
         <a
           href="{{ env.guideRootUrl }}/{{ item.page }}"
-          class="btn {% if breadcrumbs|last == item.page %} btn-primary {% else %} btn-transparent {% endif %} w-full"
+          class="{% if level == 0 %} btn {% else %} btn {% endif %} {% if breadcrumbs|last == item.page %} btn-primary {% else %} btn-transparent {% endif %} w-full"
         >
-          {% if item.icon %} <span class="icon"><i class="{{ item.icon }}"></i></span> {% endif %}
+          {% if level == 0 %} <span class="icon"><i class="{{ item.icon }}"></i></span> {% endif %}
           <span class="text">{{ bookConfig.pages[item.page].title }}</span>
         </a>
       {% endif %}
@@ -62,7 +59,7 @@
 
       <nav class="hs-accordion-group p-3 w-full flex flex-col flex-wrap" data-hs-accordion-always-open>
         <ul class="flex flex-col space-y-0.5">
-          {{ _self.renderSidebar(bookConfig.tableOfContents, bookConfig, env, breadcrumbs, '') }}
+          {{ _self.renderSidebar(bookConfig.tableOfContents, bookConfig, env, breadcrumbs, '', 0) }}
 
         </ul>
       </nav>
