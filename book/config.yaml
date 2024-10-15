@@ -1,4 +1,21 @@
-index:
-  pageTemplate: preline-admin/main
-sample-without-sidebar:
-  pageTemplate: without-sidebar
+tableOfContents:
+  - home
+    - about
+    - getting-started
+    - create-new-account
+  - customers
+    - blabla1
+    - blabla2
+  - contact
+pages:
+  home:
+    title: "Welcome to CeremonyCRM"
+    pageTemplate: preline-admin/main
+  about:
+    title: "About the software"
+    pageTemplate: preline-admin/main
+  getting-started:
+    title: "Getting started"
+    pageTemplate: preline-admin/main
+  sample-without-sidebar:
+    pageTemplate: without-sidebar

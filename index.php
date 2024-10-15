@@ -8,6 +8,7 @@ $env = [
   'bookRootFolder' => __DIR__ . '/book',
   'bookRootUrl' => '/ceremonycrm/help/book',
   'guideRootUrl' => '/ceremonycrm/help',
+  'defaultHomePage' => 'home',
   'defaultPageConfig' => [
     'pageTemplate' => 'preline-admin/main',
     'elementTemplates' => [

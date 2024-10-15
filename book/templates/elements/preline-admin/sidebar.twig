@@ -25,6 +25,14 @@ page: {{ data.page }}
 
       <nav class="hs-accordion-group p-3 w-full flex flex-col flex-wrap" data-hs-accordion-always-open>
         <ul class="flex flex-col space-y-1">
+          {% for item in config.tableOfContents %}
+            <li>
+              <a href="{{ bookRootUrl }}/{{ item }}">
+                <i class="fas fa-home"></i>
+                {{ config.pages[item] }}
+              </a>
+            </li>
+          {% endfor %}
           <li>
             <a href="#">
               <i class="fas fa-home"></i>
