@@ -15,7 +15,23 @@
   .step-by-step .step-counter { @apply text-sm border border-primary p-0.5; }
   .step-by-step .step-content { @apply text-right; }
 
-  #hs-application-sidebar nav > ul > li > a {
-    @apply flex items-center gap-x-3.5 py-2 px-2.5 bg-gray-100 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:bg-neutral-700 dark:text-white
+  #hs-application-sidebar nav ul a {
+    @apply flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:bg-neutral-800 dark:text-neutral-200
+  }
+  #hs-application-sidebar nav ul a.active {
+    @apply bg-gray-100
+  }
+  #hs-application-sidebar nav ul a:hover { @apply no-underline; }
+
+  .hs-accordion-toggle {
+    @apply w-full text-start flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-none focus:bg-gray-100 dark:bg-neutral-800 dark:hover:bg-neutral-700 dark:text-neutral-200
+  }
+
+  .hs-accordion-content {
+    @apply w-full overflow-hidden transition-[height] hidden;
+  }
+
+  .hs-accordion-group {
+    @apply ps-8 pt-1 space-y-1;
   }
 }
