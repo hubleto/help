@@ -1,4 +1,4 @@
-{% macro renderSidebar(items, env, breadcrumbs, itemIdPrefix) %}
+{% macro renderSidebar(items, bookConfig, env, breadcrumbs, itemIdPrefix) %}
   {% set itemCounter = 0 %}
   {% for item in items %}
     <li id="{{ itemIdPrefix }}_{{ itemCounter }}">
@@ -7,7 +7,7 @@
           class="btn {% if breadcrumbs|last == item.page %} btn-primary {% else %} btn-transparent {% endif %} w-full"
         >
           {% if item.icon %} <span class="icon"><i class="{{ item.icon }}"></i></span> {% endif %}
-          <span class="text grow">{{ item.title }}</span>
+          <span class="text grow">{{ bookConfig.pages[item.page].title }}</span>
 
           {% if item.page in breadcrumbs %} 
           {% else %} <span class="icon"><i class="fas fa-chevron-down"></i></span> {% endif %}
@@ -17,7 +17,7 @@
           class="{% if item.page in breadcrumbs %} block {% else %} hidden {% endif %}"
         >
           <ul class="ps-4 pt-0.5 space-y-0.5">
-            {{ _self.renderSidebar(item.children, env, breadcrumbs, itemIdPrefix ~ "_" ~ itemCounter) }}
+            {{ _self.renderSidebar(item.children, bookConfig, env, breadcrumbs, itemIdPrefix ~ "_" ~ itemCounter) }}
           </ul>
         </div>
       {% else %}
@@ -26,7 +26,7 @@
           class="btn {% if breadcrumbs|last == item.page %} btn-primary {% else %} btn-transparent {% endif %} w-full"
         >
           {% if item.icon %} <span class="icon"><i class="{{ item.icon }}"></i></span> {% endif %}
-          <span class="text">{{ item.title }}</span>
+          <span class="text">{{ bookConfig.pages[item.page].title }}</span>
         </a>
       {% endif %}
     </li>
@@ -62,7 +62,7 @@
 
       <nav class="hs-accordion-group p-3 w-full flex flex-col flex-wrap" data-hs-accordion-always-open>
         <ul class="flex flex-col space-y-0.5">
-          {{ _self.renderSidebar(bookConfig.tableOfContents, env, breadcrumbs, '') }}
+          {{ _self.renderSidebar(bookConfig.tableOfContents, bookConfig, env, breadcrumbs, '') }}
 
         </ul>
       </nav>

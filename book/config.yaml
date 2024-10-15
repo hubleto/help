@@ -4,33 +4,35 @@ redirects:
     code: 301
 tableOfContents:
   - page: home
-    title: Welcome
     icon: fas fa-home
     children:
       - page: about
-        title: About
         icon: fas fa-question
       - page: getting-started
-        title: Getting started
         icon: fas fa-bolt
         children:
           - page: getting-started/step-1
-            title: Step 1
             icon: fas fa-home
           - page: getting-started/step-2
-            title: Step 2
             icon: fas fa-home
       - page: create-new-account
-        title: Create new account
         icon: fas fa-bla
   - page: contact
-    title: Contact us
 pages:
   # sample-page:
   #   pageTemplate: preline-admin/main      # optional, if not provided env.defaultPageConfig.pageTemplate will be used
   home:
+    title: Welcome
   about:
+    title: About
   getting-started:
+    title: Getting started
+  create-new-account:
+    title: Create new account
   sample-without-sidebar:
   getting-started/step-1:
+    title: Step 1
   getting-started/step-2:
+    title: Step 2
+  contact:
+    title: Contact us
