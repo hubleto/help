@@ -32,7 +32,7 @@
   .btn .text { @apply block px-2 py-1 text-sm; }
   .btn .text > small { @apply block text-xs text-slate-600; }
 
-  .btn.btn-transparent { @apply text-slate-800 bg-transparent border border-slate-100 hover:border-slate-200; }
+  .btn.btn-transparent { @apply text-slate-800 dark:text-white bg-transparent border border-slate-100 hover:border-slate-200; }
   .btn.btn-transparent:hover .icon { @apply bg-slate-100; }
 
   .btn-list-item { @apply flex rounded-none border-none shadow-none; }
