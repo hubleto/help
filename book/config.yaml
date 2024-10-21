@@ -6,36 +6,49 @@ tableOfContents:
   - page: home
     icon: fas fa-home
     children:
-      - page: about
-        icon: fas fa-question
       - page: getting-started
-        icon: fas fa-bolt
+        icon: 
         children:
-          - page: getting-started/step-1
-            icon: fas fa-home
-          - page: getting-started/step-2
-            icon: fas fa-home
-      - page: create-new-account
-        icon: fas fa-bla
-  - page: contact
-  - page: sample
+          - page: getting-started/about
+          - page: getting-started/account-and-setup
+      - page: customer-data-management
+        icon:
+        children:
+          - page: customer-data-management/customers
+      - page: sales-pipeline-management
+        icon: fas fa-chart-line
+        children:
+          - page: sales-pipeline-management/sales 
+      - page: task-and-activity-tracking
+        icon: 
+        children:
+          - page: task-and-activity-tracking/activities
+          - page: task-and-activity-tracking/calendar
+           
 pages:
-  # sample-page:
-  #   pageTemplate: preline-admin/main      # optional, if not provided env.defaultPageConfig.pageTemplate will be used
   home:
     title: Welcome
   about:
     title: About
   getting-started:
     title: Getting started
-  create-new-account:
-    title: Create new account
-  sample-without-sidebar:
-  getting-started/step-1:
-    title: Step 1
-  getting-started/step-2:
-    title: Step 2
-  contact:
-    title: Contact us
-  sample:
-    title: Sample page
+  getting-started/about:
+    title: About
+  getting-started/account-and-setup:
+    title: Account and setup
+  customer-data-management:
+    title: Customer Data Management
+  customer-data-management/customers:
+    title: Customers
+  sales-pipeline-management:
+    title: Sales Pipeline Management
+  sales-pipeline-management/sales:
+    title: Sales
+  task-and-activity-tracking:
+    title: Task and Activity Tracking
+  task-and-activity-tracking/activities:
+    title: Activities
+  task-and-activity-tracking/calendar:
+    title: Calendar
+
+
