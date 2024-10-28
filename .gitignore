@@ -2,6 +2,6 @@ vendor
 composer.lock
 node_modules
 package-lock.json
-assets/css/book.css
+template/assets/css/book.css
 env.php
 .htaccess

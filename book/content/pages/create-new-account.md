@@ -8,7 +8,10 @@ It takes only few minutes to start enjoying Ceremony.
   '1': {
     'title': 'Open registration page',
     'description': 'Go to [registration page](https://www.ceremonycrm.com/create-account)',
-    'example': include('components/image.twig', {'image': 'Lenna(testimage).png'}),
+    'example': markdown('
+![Lenna test image](assets/images/Lenna(testimage).png)
+*Lenna test image*
+',
   },
 
   '2': {

@@ -2,30 +2,32 @@
 
 require('vendor/autoload.php');
 require('env.php');
-require('book/content/scripts/pageData.php');
 
-$route = $_GET['route'] ?? '';
-$config = [
-  'bookRootUrl' => $env['bookRootUrl'],
-  'guideRootUrl' => $env['guideRootUrl'],
-  'bookRootFolder' => __DIR__ . '/book',
-  'homePage' => 'home',
-  'notFoundPage' => 'not-found',
-  'defaultPageConfig' => [
-    'pageTemplate' => 'preline-admin/main',
+$page = $_GET['page'] ?? '';
+$templateConfig = [
+  'notFoundPage' => [
+    'pageTemplate' => 'not-found',
     'elementTemplates' => [
-      'header' => 'preline-admin/header',
-      'sidebar' => 'preline-admin/sidebar',
-      'footer' => 'preline-admin/footer',
-      'onThisPage' => 'preline-admin/on-this-page',
+      'header' => 'header',
+      'sidebar' => 'sidebar',
+      'footer' => 'footer',
+    ],
+  ],
+  'defaultPageConfig' => [
+    'pageTemplate' => 'main',
+    'elementTemplates' => [
+      'header' => 'header',
+      'sidebar' => 'sidebar',
+      'footer' => 'footer',
+      'onThisPage' => 'on-this-page',
     ],
   ],
 ];
 
 try {
-  $renderer = new \WaiBlue\GuideVis\Loader($route, $config);
+  $renderer = new \WaiBlue\GuideVis\Loader($page, $env, $templateConfig);
   $renderer->init();
-  echo $renderer->render(getPageData($renderer));
+  echo $renderer->render();
 } catch (\Exception $e) {
   echo $e->getMessage();
 }

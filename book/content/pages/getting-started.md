@@ -22,4 +22,5 @@ A Customer Relationship Management (CRM) system is a tool that helps businesses 
 
 Start building meaningful relationships today with Ceremony CRM!
 
-{% include 'components/image.twig' with {'image': 'ceremony_logo.png', 'caption': 'Lenna test image'} %}
+![Lenna test image](assets/images/Lenna(testimage).png)
+*Lenna test image*

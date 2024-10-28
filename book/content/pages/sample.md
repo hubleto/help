@@ -43,13 +43,14 @@ To include your image, follow these steps:
   2. use this TWIG code in your page to add image:
 
 <pre>
-include 'components/image.twig'
-with {'image': 'Lenna(testimage).png', 'caption': 'This is a sample image.'}
+![Lenna test image](assets/images/Lenna(testimage).png)
+*Lenna test image*
 </pre>
 
 ### Sample image
 
-{% include 'components/image.twig' with {'image': 'Lenna(testimage).png', 'caption': 'This is a sample image.'} %}
+![Lenna test image](assets/images/Lenna(testimage).png)
+*Lenna test image*
 
 ## Step-by-step wizard
 

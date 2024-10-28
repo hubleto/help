@@ -1,3 +1,4 @@
+homePage: home
 redirects:
   some-old-page:
     newPage: some-new-page

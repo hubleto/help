@@ -14,17 +14,5 @@ RAND: {{ data.randVar }}
 
 {{ bookRootUrl }}
 
-{% include 'components/image.twig' with {'image': 'Lenna(testimage).png', 'caption': 'Lenna test image'} %}
-{% include 'components/step-by-step.twig' with {'steps': {'1': 'step 1', '2': 'step 2'}} %}
-{% include 'components/image.twig' with {'image': 'Lenna(testimage).png', 'caption': 'Lenna test image'} %}
-{% include 'components/step-by-step.twig' with {'steps': {'1': 'step 1', '2': 'step 2'}} %}
-{% include 'components/image.twig' with {'image': 'Lenna(testimage).png', 'caption': 'Lenna test image'} %}
-{% include 'components/step-by-step.twig' with {'steps': {'1': 'step 1', '2': 'step 2'}} %}
-{% include 'components/image.twig' with {'image': 'Lenna(testimage).png', 'caption': 'Lenna test image'} %}
-{% include 'components/step-by-step.twig' with {'steps': {'1': 'step 1', '2': 'step 2'}} %}
-{% include 'components/image.twig' with {'image': 'Lenna(testimage).png', 'caption': 'Lenna test image'} %}
-{% include 'components/step-by-step.twig' with {'steps': {'1': 'step 1', '2': 'step 2'}} %}
-{% include 'components/image.twig' with {'image': 'Lenna(testimage).png', 'caption': 'Lenna test image'} %}
-{% include 'components/step-by-step.twig' with {'steps': {'1': 'step 1', '2': 'step 2'}} %}
-{% include 'components/image.twig' with {'image': 'Lenna(testimage).png', 'caption': 'Lenna test image'} %}
-{% include 'components/step-by-step.twig' with {'steps': {'1': 'step 1', '2': 'step 2'}} %}
+![Lenna test image](assets/images/Lenna(testimage).png)
+*Lenna test image*

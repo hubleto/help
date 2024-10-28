@@ -2,7 +2,7 @@
 module.exports = {
   content: [
     "./book/**/*.{html,js,twig,tsx}",
-    'node_modules/preline/dist/*.js',
+    "./template/**/*.{html,js,twig,tsx}",
   ],
   // safelist: [
   //   'adios-lookup__indicator',
