@@ -14,5 +14,5 @@ RAND: {{ data.randVar }}
 
 {{ bookRootUrl }}
 
-![Lenna test image](assets/images/Lenna(testimage).png)
+![Lenna test image](./assets/images/Lenna(testimage).png)
 *Lenna test image*

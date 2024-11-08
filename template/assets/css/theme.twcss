@@ -1,29 +1,36 @@
 @layer base {
 
+  * { @apply scrollbar-thin scrollbar-thumb-slate-700 scrollbar-track-slate-300; }
+
+  html { @apply bg-slate-50; }
+  html body { @apply bg-gradient-to-tr from-white to-slate-50; }
+
   h1 { @apply text-3xl text-slate-800; }
-  h2 { @apply text-sm font-semibold text-primary pt-20 pb-0 first-of-type:pt-4; }
-  h3 { @apply text-xl font-bold text-slate-800 pt-4 pb-2; }
+  h2 { @apply text-xl font-bold text-slate-800 pt-20 pb-2; }
+  h3 { @apply text-sm font-semibold text-primary pt-4 pb-0 first-of-type:pt-4; }
   a { @apply text-primary; }
   a:hover { @apply underline; }
   h2+a+h3 { @apply pt-0; }
-  h1+p { @apply text-lg text-slate-600 pb-4; }
+  h1+p { @apply text-lg text-slate-500 pb-4; }
   p { @apply text-slate-800 pt-2 leading-6; }
   nav ul { @apply list-none; }
   nav li > ul { @apply p-1; }
   ul { @apply pt-2 pl-4 list-inside list-disc; }
   ol { @apply pl-2 list-inside list-decimal; }
   code { @apply text-xs; }
-  code { @apply font-semibold bg-slate-100 p-1 border border-slate-200 rounded; }
+  code { @apply font-semibold bg-slate-50 p-1 border border-slate-200 rounded; }
+
   pre { @apply bg-slate-900 text-white p-4 rounded-lg text-sm overflow-x-auto; }
   pre code { @apply bg-transparent border-none font-normal; }
-
+  
   img { @apply mt-4 border border-slate-200 max-w-xl p-2 bg-slate-100 text-xs; }
   img + em { @apply text-slate-400 mb-4 text-xs; }
 
+
   table { @apply border border-slate-200 !mt-4; }
   table tr { @apply odd:bg-slate-100; }
-  table td { @apply p-2 border-b border-slate-200 text-sm; }
-  table thead th { @apply font-bold text-left p-2 bg-white text-sm; }
+  table td { @apply p-1.5 text-sm; }
+  table thead th { @apply border-b border-slate-200 font-bold text-left p-2 bg-white text-sm; }
   table + p { @apply text-slate-400 mb-4 text-xs pt-0 pb-4; }
 
   blockquote { @apply !m-8 p-4 bg-slate-100 max-w-xl border border-slate-200 rounded; }
@@ -68,5 +75,30 @@
   .step-by-step .step-content .step-title { @apply font-semibold pt-2 pb-4; }
   .step-by-step .step-content .step-description { @apply text-sm pb-2 }
   .step-by-step .step-example { @apply flex-1 overflow-x-auto overflow-y-hidden; }
+
+  .sidebar { @apply w-72 h-full hidden fixed inset-y-0 start-0 z-[60] bg-white border-e border-gray-200 md:block lg:translate-x-0 lg:end-auto lg:bottom-0 dark:bg-neutral-800 dark:border-neutral-700; }
+  .sidebar .sidebar-content { @apply h-full overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-neutral-700 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500; }
+
+  .sidebar ul.level-0 { @apply ps-0 pt-0.5 space-y-0; }
+  .sidebar ul.level-1 { @apply pt-0 ps-6; }
+
+  .sidebar .btn.level-1 { @apply border-none p-0 before:content-['❖'] before:text-xs before:text-primary before:pl-2; }
+  .sidebar .btn.level-1.btn-primary { @apply border-none before:text-white; }
+  .sidebar .btn.level-1:not(.btn-primary) { @apply hover:bg-slate-100 hover:text-gray-800; }
+  .sidebar .btn.level-1 .text { @apply text-sm; }
+
+  .sidebar .btn.level-2.btn-primary { @apply p-0 border-none; }
+  .sidebar .btn.level-2 { @apply border-none hover:bg-slate-100 hover:text-gray-800; }
+  .sidebar .btn.level-2 .text { @apply text-xs; }
+
+  .sidebar .btn.level-3.btn-primary { @apply p-0 border-none; }
+  .sidebar .btn.level-3 { @apply border-none hover:bg-slate-100 hover:text-gray-800; }
+  .sidebar .btn.level-3 .text { @apply text-xs; }
+
+  aside.on-this-page { @apply fixed top-0 right-0 h-full w-60 break-all bg-white z-20 hidden lg:block; }
+  aside.on-this-page > div:nth-child(1) { @apply text-sm p-2.5 flex items-center font-semibold border-b border-slate-200; }
+  aside.on-this-page > div:nth-child(2) { @apply p-2; }
+  aside.on-this-page > div:nth-child(2) .heading-level-1 { @apply pt-4 pb-2 text-sm font-semibold; }
+  aside.on-this-page > div:nth-child(2) .heading-level-2 a { @apply text-xs ml-4 p-1 text-gray-800; }
 
 }

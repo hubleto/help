@@ -57,28 +57,20 @@ To include your image, follow these steps:
 ### Example
 
 {% include 'components/step-by-step.twig' with {'steps': {
-
   '1': {
-    'title': 'Step 1',
-    'description': '
-This is **step** 1
-
-You can use `markdown` syntax in step description.
-    ',
-    'example': 'You should do this.',
+    'title': 'Go to the Login Page',
+    'description': 'Visit the [login page](https://www.ceremonycrm.com/login).',
+    'example': 'this is example',
   },
-
   '2': {
-    'title': 'Step 2',
-    'description': '
-This is **step** 2
-
-You can use `markdown` syntax in step description.
-    ',
-    'example': 'You should do this.',
+    'title': 'Enter your username and password',
+    'description': '',
+    'example': markdown('
+![Ceremony CRM Login zoomed](../assets/images/Login_zoomed.png)
+*Ceremony CRM Login zoomed*
+    ')
   }
-
-}} %} {# step-by-step #}
+}} %}
 
 ## Tables
 

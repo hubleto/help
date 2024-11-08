@@ -4,24 +4,24 @@ redirects:
     newPage: some-new-page
     code: 301
 tableOfContents:
-  - page: home
+  - page: getting-started
     icon: fas fa-home
     children:
-      - page: getting-started
-        icon: 
+      - page: getting-started/about
+      - page: getting-started/account-and-setup
+      - page: getting-started/blabla
         children:
-          - page: getting-started/about
-          - page: getting-started/account-and-setup
-      - page: customer-data-management
-        icon:
-        children:
-          - page: customer-data-management/customers
-      - page: sales-pipeline-management
-        icon: fas fa-chart-line
-        children:
-          - page: sales-pipeline-management/sales 
-      - page: task-and-activity-tracking
-        icon: 
-        children:
-          - page: task-and-activity-tracking/activities
-          - page: task-and-activity-tracking/calendar
+          - page: getting-started/blabla2
+  - page: customer-data-management
+    icon:
+    children:
+      - page: customer-data-management/customers
+  - page: sales-pipeline-management
+    icon: fas fa-chart-line
+    children:
+      - page: sales-pipeline-management/sales 
+  - page: task-and-activity-tracking
+    icon: 
+    children:
+      - page: task-and-activity-tracking/activities
+      - page: task-and-activity-tracking/calendar

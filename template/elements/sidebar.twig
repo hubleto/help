@@ -1,59 +1,59 @@
 {% macro renderSidebar(items, bookConfig, env, breadcrumbs, itemIdPrefix, level) %}
-  {% set itemCounter = 0 %}
-  {% for item in items %}
-    <li id="{{ itemIdPrefix }}_{{ itemCounter }}">
-      {% if item.children is iterable %}
-        <a href="{{ env.guideRootUrl }}/{{ item.page ?? '' }}"
-          class="{% if level == 0 %} btn {% else %} btn {% endif %} {% if breadcrumbs|last == item.page %} btn-primary {% else %} btn-transparent {% endif %} w-full"
-        >
-          {% if level == 0 %} <span class="icon"><i class="{{ item.icon }}"></i></span> {% endif %}
-          <span class="text grow">{{ bookConfig.pages[item.page].title }}</span>
-        </a>
-        <div
-          id="{{ itemIdPrefix }}_{{ itemCounter }}_{{ page }}"
-          class=""
-        >
-          <ul class="ps-4 pt-0.5 space-y-0.5">
-            {{ _self.renderSidebar(item.children, bookConfig, env, breadcrumbs, itemIdPrefix ~ "_" ~ itemCounter, level + 1) }}
-          </ul>
-        </div>
-      {% else %}
-        <a
-          href="{{ env.guideRootUrl }}/{{ item.page }}"
-          class="{% if level == 0 %} btn {% else %} btn {% endif %} {% if breadcrumbs|last == item.page %} btn-primary {% else %} btn-transparent {% endif %} w-full"
-        >
-          {% if level == 0 %} <span class="icon"><i class="{{ item.icon }}"></i></span> {% endif %}
-          <span class="text">{{ bookConfig.pages[item.page].title }}</span>
-        </a>
-      {% endif %}
-    </li>
+  {% if level <= 2 %}
+    {% set itemCounter = 0 %}
+    {% for item in items %}
+      <li id="{{ itemIdPrefix }}_{{ itemCounter }}" class="level-{{ level }}">
+        {% if item.children is iterable %}
+          <a href="{{ env.guideRootUrl }}/{{ item.page ?? '' }}"
+            class="{% if level == 0 %} btn {% else %} btn btn-small {% endif %} {% if breadcrumbs|last == item.page %} btn-primary {% else %} btn-transparent {% endif %} w-full level-{{ level }}"
+          >
+            {% if level == 0 %} <span class="icon"><i class="{{ item.icon }}"></i></span> {% endif %}
+            <span class="text grow {% if level == 0 %} font-bold {% endif %}">
+              {% if bookConfig.pages[item.page].title %} {{ bookConfig.pages[item.page].title }} {% else %} <span class="text-slate-400">{{ item.page }}</span> {% endif %}
+            </span>
+          </a>
+          <div
+            id="{{ itemIdPrefix }}_{{ itemCounter }}_{{ page }}"
+            class=""
+          >
+            <ul class="level-{{ level }}">
+              {{ _self.renderSidebar(item.children, bookConfig, env, breadcrumbs, itemIdPrefix ~ "_" ~ itemCounter, level + 1) }}
+            </ul>
+          </div>
+        {% else %}
+          <a
+            href="{{ env.guideRootUrl }}/{{ item.page }}"
+            class="{% if level == 0 %} btn {% else %} btn btn-small {% endif %} {% if breadcrumbs|last == item.page %} btn-primary {% else %} btn-transparent {% endif %} w-full level-{{ level }}"
+          >
+            {% if level == 0 %} <span class="icon"><i class="{{ item.icon }}"></i></span> {% endif %}
+            <span class="text {% if level == 0 %} font-bold {% endif %}">
+              {% if bookConfig.pages[item.page].title %} {{ bookConfig.pages[item.page].title }} {% else %} <span class="text-slate-400">{{ item.page }}</span> {% endif %}
+            </span>
+          </a>
+        {% endif %}
+      </li>
 
-    {% set itemCounter = itemCounter + 1 %}
-  {% endfor %}
+      {% set itemCounter = itemCounter + 1 %}
+    {% endfor %}
+  {% endif %}
 {% endmacro %}
 
 {# https://preline.co/templates/admin/index.html #}
 
 <!-- Sidebar -->
-<div class="
-  w-72 h-full
-  hidden
-  fixed inset-y-0 start-0 z-[60]
-  bg-white border-e border-gray-200
-  md:block lg:translate-x-0 lg:end-auto lg:bottom-0
-  dark:bg-neutral-800 dark:border-neutral-700
-" role="dialog" tabindex="-1" aria-label="Sidebar">
+<div class="sidebar" role="dialog" tabindex="-1" aria-label="Sidebar">
 
-  <div class="relative flex flex-col h-full max-h-full">
+  <div class="relative flex flex-col h-full max-h-full pb-10">
     <div class="px-6 pt-4 pb-4">
-      <!-- Logo -->
-      <a class="flex-none rounded-xl text-xl inline-block font-semibold focus:outline-none focus:opacity-80" href="#" aria-label="Preline">
-        CeremonyCRM user guide
-      </a>
-      <!-- End Logo -->
+      <div>
+        <a class="flex-none rounded-xl text-xl inline-block font-semibold focus:outline-none focus:opacity-80" href="{{ env.guideRootUrl }}">
+          Ceremony<br/>
+        </a>
+      </div>
+      <small>User guide</small>
     </div>
 
-    <div class="hidden md:block">
+    {# <div class="hidden md:block">
       <!-- Search Input -->
       <div class="relative">
         <div class="absolute inset-y-0 start-0 flex items-center pointer-events-none z-20 ps-3.5">
@@ -87,13 +87,13 @@
         </div>
       </div>
       <!-- End Search Input -->
-    </div>
+    </div> #}
 
     <!-- Sidebar content -->
-    <div class="h-full overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-neutral-700 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500">
+    <div class="sidebar-content">
 
-      <nav class="hs-accordion-group p-3 w-full flex flex-col flex-wrap" data-hs-accordion-always-open>
-        <ul class="flex flex-col space-y-0.5">
+      <nav class="hs-accordion-group px-3 w-full flex flex-col flex-wrap" data-hs-accordion-always-open>
+        <ul class="flex flex-col space-y-0.5 p-0">
           {{ _self.renderSidebar(bookConfig.tableOfContents, bookConfig, env, breadcrumbs, '', 0) }}
 
         </ul>
