@@ -52,6 +52,9 @@ To include your image, follow these steps:
 ![Lenna test image](assets/images/Lenna(testimage).png)
 *Lenna test image*
 
+![Lenna test image](assets/images/Lenna-small.png)
+*Lenna small test image*
+
 ## Step-by-step wizard
 
 ### Example
