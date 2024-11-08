@@ -10,11 +10,21 @@ tableOfContents:
       - page: account-and-setup
       - page: first-steps
       - page: import-customers
-      - page: customizing-dashboard
   - page: features
     icon: fas fa-percent
     children:
+      - page: home
+        children:
+        - page: home/dashboard
+        - page: home/adding-new-reports
+        - page: home/editing-existing-reports
+        - page: home/rearranging-reports
+        - page: home/data-fitering
       - page: customers
+        children:
+        - page: customers/companies
+        - page: customers/contact-persons
+      - page: calendar
       - page: services
       - page: settings
         children:
