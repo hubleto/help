@@ -16,6 +16,7 @@ tableOfContents:
     icon:
     children:
       - page: customer-data-management/customers
+      - page: customer-data-management/contact-persons
   - page: sales-pipeline-management
     icon: fas fa-chart-line
     children:
@@ -25,3 +26,20 @@ tableOfContents:
     children:
       - page: task-and-activity-tracking/activities
       - page: task-and-activity-tracking/calendar
+  - page: services
+    icon: 
+  - page: settings
+    icon: 
+    children:
+      - page: settings/users
+      - page: settings/profiles
+      - page: settings/settings
+      - page: settings/tags
+      - page: settings/activity-types
+      - page: settings/countries
+      - page: settings/currencies
+      - page: settings/labels
+      - page: settings/lead-statuses
+      - page: settings/pipelines
+  - page: support
+    icon: 
