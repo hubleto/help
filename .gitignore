@@ -5,3 +5,5 @@ package-lock.json
 template/assets/css/book.css
 env.php
 .htaccess
+composer-dev.lock
+composer-dev.json
