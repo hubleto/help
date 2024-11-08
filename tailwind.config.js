@@ -31,6 +31,7 @@ module.exports = {
     fontFamily: {
       sans: ['Graphik', 'sans-serif'],
       serif: ['Merriweather', 'serif'],
+      logo: ['Fredoka-Regular', 'sans-serif'],
     },
     extend: {
       colors: {
