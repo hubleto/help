@@ -6,7 +6,7 @@ The Customer Data Management module in Ceremony CRM helps you organize and maint
 
 ### Companies
 
-The **Companies** section allows you to store details about each customer organization. Key fields include:
+The [Companies](features/companies) section allows you to store details about each customer organization. Key fields include:
 
 - **Company Name:** The official name of the organization.
 - **Address:** Includes Street, Region, City, Country, and Postal Code, providing a full address for easy reference.
