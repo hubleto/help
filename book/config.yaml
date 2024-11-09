@@ -26,6 +26,24 @@ tableOfContents:
         - page: customers/contact-persons
       - page: calendar
       - page: services
+      - page: sales
+        children:
+          - page: sales/leads
+            children: 
+            - page: sales/leads/lead-overview
+            - page: sales/leads/adding-new-leads
+            - page: sales/leads/updating-lead-info
+            - page: sales/leads/lead-status-tracking
+            - page: sales/leads/filtering-and-sorting
+            - page: sales/leads/lead-conversion
+          - page: sales/deals
+            children: 
+            - page: sales/deals/deal-overview
+            - page: sales/deals/adding-new-deals
+            - page: sales/deals/updating-deal-info
+            - page: sales/deals/deal-status-tracking
+            - page: sales/deals/filtering-and-sorting
+            - page: sales/deals/deal-closure
       - page: settings
         children:
           - page: settings/users
