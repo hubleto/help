@@ -1,35 +1,28 @@
 # Account and Setup
 
-This section guides you through setting up your account and logging into Ceremony CRM. Here, you'll find instructions on how to access the login page, enter your credentials, and keep yourself signed in for future sessions.
+**Ready to dive in?** This quick guide will walk you through setting up your Ceremony CRM account and logging in.
+
+**What you'll find here:**
+
+* How to find the login page (it's just a click away!)
+* How to log in with your username and password
+* How to stay signed in for future visits (no more remembering passwords!)
 
 ![Ceremony CRM Login](./assets/images/Login.png)
-*Ceremony CRM Login*
 
-## Logging into Ceremony CRM
+## Logging In
 
-To access Ceremony CRM, follow these steps to log in and get started.
+**1. Find the Login Page:** Simply click this link and you're there: [login page](https://www.ceremonycrm.com/login).
 
-{% include 'components/step-by-step.twig' with {'steps': {
-  '1': {
-    'title': 'Go to the Login Page',
-    'description': 'Visit the [login page](https://www.ceremonycrm.com/login).',
-    'example': 'this is example',
-  },
-  '2': {
-    'title': 'Enter your username and password',
-    'description': '',
-    'example': markdown('
+**2. Enter Your Credentials:** Type in your username and password (don't worry, it's super secure!).
+
 ![Ceremony CRM Login zoomed](./assets/images/Login_zoomed.png)
-*Ceremony CRM Login zoomed*
-    ')
-  }
-}} %}
 
-## Keep Signed In
+## Stay Signed In
 
-To stay logged in for future sessions, check the box labeled "Keep signed in." This will remember your login credentials until you manually log out.
+Want to skip the login step next time? No problem! Just check the "Stay signed in" box before logging in. Ceremony CRM will remember you until you decide to log out.
 
 ![Ceremony CRM Login keep signed in](./assets/images/Login_zoomed_edited.png)
-*Ceremony CRM Login keep signed in*
 
-**After logging in, you will be directed to your dashboard, where you can access your account and start managing leads, deals, contacts, and other activities.**
+*Ceremony CRM Login keep signed in*
+**That's it!** Once you're in, you'll be taken to your personal dashboard. From here, you can start managing leads, deals, and more.
