@@ -1,0 +1,11 @@
+homePage: home
+redirects:
+  some-old-page:
+    newPage: some-new-page
+    code: 301
+tableOfContents:
+  - page: sk/uvod
+    icon: fas fa-home
+  - page: sk/zakaznici
+    children:
+    - page: sk/zakaznici/vytvorenie-noveho-kontaktu
