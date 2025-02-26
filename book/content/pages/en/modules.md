@@ -1,4 +1,4 @@
-# Features
+# Modules
 
 ## Ceremony CRM: Your All-in-One Business Solution
 

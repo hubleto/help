@@ -7,70 +7,50 @@ tableOfContents:
   - page: en/getting-started
     icon: fas fa-home
     children:
-      - page: en/account-and-setup
-      - page: en/first-steps
-      - page: en/import-customers
-  - page: en/features
-    icon: fas fa-percent
+      - page: en/getting-started/account-and-setup
+      - page: en/getting-started/first-steps
+  - page: en/modules
+    icon: fas fa-folder-open
     children:
-      - page: en/home
+      - page: en/modules/contacts
+      - page: en/modules/customers
+      - page: en/modules/calendar
+      - page: en/modules/documents
+      - page: en/modules/pipeline
+      - page: en/modules/services
+      - page: en/modules/leads
         children:
-        - page: en/home/dashboard
-        - page: en/home/adding-new-reports
-        - page: en/home/editing-existing-reports
-        - page: en/home/rearranging-reports
-        - page: en/home/data-fitering
-      - page: en/customers
+          - page: en/modules/leads/lead-overview
+          - page: en/modules/leads/adding-new-leads
+          - page: en/modules/leads/updating-lead-info
+          - page: en/modules/leads/lead-status-tracking
+          - page: en/modules/leads/filtering-and-sorting
+          - page: en/modules/leads/lead-conversion
+      - page: en/modules/deals
         children:
-        - page: en/customers/companies
-        - page: en/customers/contact-persons
-      - page: en/calendar
-      - page: en/services
-      - page: en/sales
-        children:
-          - page: en/sales/leads
-            children: 
-            - page: en/sales/leads/lead-overview
-            - page: en/sales/leads/adding-new-leads
-            - page: en/sales/leads/updating-lead-info
-            - page: en/sales/leads/lead-status-tracking
-            - page: en/sales/leads/filtering-and-sorting
-            - page: en/sales/leads/lead-conversion
-          - page: en/sales/deals
-            children: 
-            - page: en/sales/deals/deal-overview
-            - page: en/sales/deals/adding-new-deals
-            - page: en/sales/deals/updating-deal-info
-            - page: en/sales/deals/deal-status-tracking
-            - page: en/sales/deals/filtering-and-sorting
-            - page: en/sales/deals/deal-closure
-      - page: en/settings
-        children:
-          - page: en/settings/users
-          - page: en/settings/profiles
-          - page: en/settings/settings
-          - page: en/settings/tags
-          - page: en/settings/activity-types
-          - page: en/settings/countries
-          - page: en/settings/currencies
-          - page: en/settings/labels
-          - page: en/settings/lead-statuses
-          - page: en/settings/pipelines
-      - page: en/support
-        icon: 
-  - page: en/tips-and-tricks
+            - page: en/modules/deals/deal-overview
+            - page: en/modules/deals/adding-new-deals
+            - page: en/modules/deals/updating-deal-info
+            - page: en/modules/deals/deal-status-tracking
+            - page: en/modules/deals/filtering-and-sorting
+            - page: en/modules/deals/deal-closure
+      - page: en/modules/reports
+  - page: en/more
+    icon: fa-plus 
     children:
-      - page: en/customer-data-management
-        icon:
+      - page: en/more/help
+      - page: en/more/upgrade
+      - page: en/more/settings
         children:
-          - page: en/customer-data-management/customers
-          - page: en/customer-data-management/contact-persons
-      - page: en/sales-pipeline-management
-        icon: fas fa-chart-line
-        children:
-          - page: en/sales-pipeline-management/sales 
-      - page: en/task-and-activity-tracking
-        icon: 
-        children:
-          - page: en/task-and-activity-tracking/activities
-          - page: en/task-and-activity-tracking/calendar
+          - page: en/more/settings/users
+          - page: en/more/settings/profiles
+          - page: en/more/settings/settings
+          - page: en/more/settings/tags
+          - page: en/more/settings/activity-types
+          - page: en/more/settings/countries
+          - page: en/more/settings/currencies
+          - page: en/more/settings/labels
+          - page: en/more/settings/lead-statuses
+          - page: en/more/settings/pipelines
+      
+
