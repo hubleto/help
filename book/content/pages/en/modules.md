@@ -1,6 +1,6 @@
 # Modules
 
-**Hubleto: Your All-in-One Business Solution**
+***Hubleto: Your All-in-One Business Solution***
 
 In this section, we will explore each module in detail, breaking down their features and how they contribute to making your business operations more efficient
 
