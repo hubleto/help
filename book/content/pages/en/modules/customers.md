@@ -1,16 +1,26 @@
 # Customers
 
-Customers in the application represent **companies or businesses** that you manage. Each customer record contains essential details such as company name, address, tax information, and other relevant data. Additionally, you can assign contacts to each customer.
+In the application, **Customers** represent companies or businesses that you manage. Each customer record contains key details such as the company name, address, tax information, and assigned contacts.
 
-> 💡 Before creating a contact, you must first have a customer created. Contacts are linked to customers, and adding them through the Customers module ensures proper association.
+> 💡 Before adding a contact, you must first create a customer. Contacts are always linked to customers for proper association.
 
-## Features
+---
+
+## Customer Management
+
+|                                               | Description                                                                 |
+| --------------------------------------------- | --------------------------------------------------------------------------- |
+| **[Add Customer](customers/add-customer)**   | Allows you to create a new customer and store company details.              |
+| **[Edit Customer](customers/edit-customer)** | Lets you modify customer information.                                      |
+| **[Delete Customer](customers/delete-customer)** | Enables you to permanently remove a customer from the system.              |
+
+---
+
+## Customer attributes
 
 Below are the attributes used in Customers, which are essential for managing business
 
 ![Customer-example]({{ bookRootUrl }}/book/content/assets/images/customers/customers-new-new.jpg)
-
-### Customer attributes
 
 | Attribute         | Description | Example |
 |------------------|-------------|---------|
@@ -72,39 +82,13 @@ Below are the attributes used in Customers, which are essential for managing bus
 
 ## Managing Contacts within Customers
 
-Each customer can have assigned contacts, which can be created directly from the Customers app. If you want to learn how to manage contacts outside of the Customers module, please refer to **[Contacts Guide](/book/content/pages/en/modules/contacts.md).**.
+Each customer can have assigned contacts, which can be created directly from the Customers app. If you want to learn how to manage contacts outside of the Customers module, please refer to **[Contacts Guide](contacts).**.
 
 > 💡 Customers should not be confused with Contacts.  
 > ✔️ **Customer** refers to a company or business.  
 > ✔️ **Contact** is an individual associated with that company, such as a representative or employee.
 
-### Contact attributes
-
-Below are the attributes used in Contacts.
-
-![Customer-contact]({{ bookRootUrl }}/book/content/assets/images/customers/customers-contact.jpg)
-
-#### **Personal information**
-
-| Attribute         | Description | Example |
-|------------------|-------------|---------|
-| **First Name** (Required) | First name of the contact person associated with the customer | *John* |
-| **Last Name** | Last name of the contact person associated with the customer | *Smith* |
-| **Customer** | Auto-filled (linked to the selected customer) | *X* |
-| **Tags** | Labels for categorizing contacts. Default options: *Important*, *Partner*, *Needs Review*. Additional tags can be added in [Tags - settings]({{ bookRootUrl }}/en/more/settings/tags) | *Important* |
-| **Main Contact** | Enable if this is the primary contact person | *Enabled* |
-
-#### **Contacts**
-
-| Attribute         | Description | Example |
-|------------------|-------------|---------|
-| **Type** (Required) | Specifies the type of contact. Default options: *Email, Phone Number, Other* | *Email* |
-| **Value** (Required) | The actual contact information | *<john.doe@email.com>* |
-| **Category** (Required) | Specifies where the contact belongs. Default options: *Work, Home, Other*. Additional categories can be added in [Category - settings]({{ bookRootUrl }}/en/more/settings/category) | *Home* |
-
----
-
-### Add a Contact to a Customer
+## Add a Contact to a Customer
 
 1. Open the **Customers** module and select an existing customer.
 2. In the customer detail view, go to the **Personal Information** section.
@@ -113,7 +97,7 @@ Below are the attributes used in Contacts.
 
 ![Customer-Personal-Information-Section]({{ bookRootUrl }}/book/content/assets/images/customers/customers-contact-personal-information.jpg)
 
-### Add Contact details
+## Add Contact details
 
 1. Within the **Customers** module, open the details of a customer.
 2. Navigate to the **Contacts** section.

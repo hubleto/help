@@ -13,6 +13,10 @@ tableOfContents:
     icon: fas fa-folder-open
     children:
       - page: en/modules/contacts
+        children:
+          - page: en/modules/contacts/add-contact
+          - page: en/modules/contacts/edit-contact
+          - page: en/modules/contacts/delete-contact
       - page: en/modules/customers
       - page: en/modules/calendar
       - page: en/modules/documents
