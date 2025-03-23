@@ -1,10 +1,5 @@
 # How to Add a Contact to Customer
 
-1. Open the **Customers** module and select an existing customer.
-2. In the customer detail view, go to the **Personal Information** section.
-3. Click **Add Contact** and fill in the necessary details.
-4. Click **Save** to add the contact.
-
 {% include 'components/step-by-step.twig' with {'steps': {
   '1': {
     'title': 'Find the Customer',
