@@ -20,7 +20,7 @@ In the application, **Customers** represent companies or businesses that you man
 
 Below are the attributes used in Customers, which are essential for managing business
 
-![Customer-example]({{ bookRootUrl }}/book/content/assets/images/customers/customers-new-new.jpg)
+![Customer-example]({{ bookRootUrl }}/book/content/assets/images/customers/customers-example.png)
 
 | Attribute         | Description | Example |
 |------------------|-------------|---------|
@@ -42,44 +42,6 @@ Below are the attributes used in Customers, which are essential for managing bus
 
 ---
 
-### Add Customer
-
-1. Click on the **Add Customer** button, located in the top left corner.
-2. Fill in the required details in the form that appears. (See the **Customer Attributes** section for details.)
-3. Click **Add** to store the new customer.
-
-![Customer-add]({{ bookRootUrl }}/book/content/assets/images/customers/customers-new-added.jpg)
-
----
-
-### Edit Customer
-
-1. Locate the desired customer in the list.
-2. Click on the customer record to open it.
-3. In the form that opens, click **Edit** in the top left corner.
-4. Modify the necessary details.
-5. Click **Save** to apply changes.
-
----
-
-### Delete Customer
-
-1. Locate the desired customer in the list.
-2. Click the **Delete** icon (🗑️) at the end of the record, next to the active status.
-3. Confirm the deletion.
-
-![Customer-delete]({{ bookRootUrl }}/book/content/assets/images/customers/customers-delete.jpg)
-
-### Delete Customer in edit form
-
-1. Locate the desired customer in the list.
-2. Click on the customer record to open it.
-3. In the form that opens, click **Edit** in the top left corner.
-4. The **Delete** button will appear In the top right corner. Click on it and then confirm by clicking **Confirm delete**.
-5. Confirm the deletion.
-
----
-
 ## Managing Contacts within Customers
 
 Each customer can have assigned contacts, which can be created directly from the Customers app. If you want to learn how to manage contacts outside of the Customers module, please refer to **[Contacts Guide](contacts).**.
@@ -87,23 +49,3 @@ Each customer can have assigned contacts, which can be created directly from the
 > 💡 Customers should not be confused with Contacts.  
 > ✔️ **Customer** refers to a company or business.  
 > ✔️ **Contact** is an individual associated with that company, such as a representative or employee.
-
-## Add a Contact to a Customer
-
-1. Open the **Customers** module and select an existing customer.
-2. In the customer detail view, go to the **Personal Information** section.
-3. Click **Add Contact** and fill in the necessary details.
-4. Click **Save** to add the contact.
-
-![Customer-Personal-Information-Section]({{ bookRootUrl }}/book/content/assets/images/customers/customers-contact-personal-information.jpg)
-
-## Add Contact details
-
-1. Within the **Customers** module, open the details of a customer.
-2. Navigate to the **Contacts** section.
-3. Click **Add Contact** and enter the required information.
-4. Click **Save**.
-
-![Customer-Contact-Section]({{ bookRootUrl }}/book/content/assets/images/customers/customers-contact-contact.jpg)
-
----

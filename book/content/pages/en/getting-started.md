@@ -2,7 +2,7 @@
 
 An open-source platform for ERP and CRM that helps your business grow
 
-![Hubleto]({{ bookRootUrl }}/book/content/assets/images/logo-hubleto-s-textom.png)
+![Hubleto]({{ bookRootUrl }}/book/content/assets/images/logo/logo-hubleto-with-text.png)
 
 ## What are CRM and ERP?
 

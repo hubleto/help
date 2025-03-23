@@ -9,36 +9,41 @@ tableOfContents:
     children:
       - page: en/getting-started/account-and-setup
       - page: en/getting-started/first-steps
-  - page: en/modules
+  - page: en/apps
     icon: fas fa-folder-open
     children:
-      - page: en/modules/contacts
+      - page: en/apps/contacts
         children:
-          - page: en/modules/contacts/add-contact
-          - page: en/modules/contacts/edit-contact
-          - page: en/modules/contacts/delete-contact
-      - page: en/modules/customers
-      - page: en/modules/calendar
-      - page: en/modules/documents
-      - page: en/modules/pipeline
-      - page: en/modules/services
-      - page: en/modules/leads
+          - page: en/apps/contacts/add-contact
+          - page: en/apps/contacts/edit-contact
+          - page: en/apps/contacts/delete-contact
+      - page: en/apps/customers
         children:
-          - page: en/modules/leads/lead-overview
-          - page: en/modules/leads/adding-new-leads
-          - page: en/modules/leads/updating-lead-info
-          - page: en/modules/leads/lead-status-tracking
-          - page: en/modules/leads/filtering-and-sorting
-          - page: en/modules/leads/lead-conversion
-      - page: en/modules/deals
+          - page: en/apps/customers/add-customer
+          - page: en/apps/customers/edit-customer
+          - page: en/apps/customers/delete-customer
+          - page: en/apps/customers/add-contact-to-customer
+      - page: en/apps/calendar
+      - page: en/apps/documents
+      - page: en/apps/pipeline
+      - page: en/apps/services
+      - page: en/apps/leads
         children:
-            - page: en/modules/deals/deal-overview
-            - page: en/modules/deals/adding-new-deals
-            - page: en/modules/deals/updating-deal-info
-            - page: en/modules/deals/deal-status-tracking
-            - page: en/modules/deals/filtering-and-sorting
-            - page: en/modules/deals/deal-closure
-      - page: en/modules/reports
+          - page: en/apps/leads/lead-overview
+          - page: en/apps/leads/adding-new-leads
+          - page: en/apps/leads/updating-lead-info
+          - page: en/apps/leads/lead-status-tracking
+          - page: en/apps/leads/filtering-and-sorting
+          - page: en/apps/leads/lead-conversion
+      - page: en/apps/deals
+        children:
+            - page: en/apps/deals/deal-overview
+            - page: en/apps/deals/adding-new-deals
+            - page: en/apps/deals/updating-deal-info
+            - page: en/apps/deals/deal-status-tracking
+            - page: en/apps/deals/filtering-and-sorting
+            - page: en/apps/deals/deal-closure
+      - page: en/apps/reports
   - page: en/more
     icon: fa-plus 
     children:

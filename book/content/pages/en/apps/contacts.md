@@ -16,7 +16,7 @@ In the application, Contacts represent **individuals** linked to a customer. The
 
 Below are the key attributes used in Contacts to manage individuals linked to a customer.
 
-![Contact-example]({{ bookRootUrl }}/book/content/assets/images/contacts/contacts-example.jpg)
+![Contact-example]({{ bookRootUrl }}/book/content/assets/images/contacts/contacts-example.png)
 
 ---
 
