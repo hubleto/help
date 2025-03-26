@@ -24,6 +24,9 @@ tableOfContents:
           - page: en/apps/customers/delete-customer
           - page: en/apps/customers/add-contact-to-customer
       - page: en/apps/calendar
+        children:
+          - page: en/apps/calendar/add-activity
+          - page: en/apps/calendar/delete-activity
       - page: en/apps/documents
       - page: en/apps/pipeline
       - page: en/apps/services

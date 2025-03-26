@@ -2,7 +2,7 @@
 
 ***Hubleto: Your All-in-One Business Solution***
 
-In this section, we will explore each module in detail, breaking down their features and how they contribute to making your business operations more efficient
+In this section, we will explore each App in detail, breaking down their features and how they contribute to making your business operations more efficient
 
 ## Key Apps
 
@@ -17,5 +17,3 @@ In this section, we will explore each module in detail, breaking down their feat
 | **[Leads](apps/leads)**         | Keep an eye on potential customers.                 |
 | **[Deals](apps/deals)**         | Track and close your business opportunities.        |
 | **[Reports](apps/reports)**     | Get insights to make smarter decisions.             |
-
-Hubleto makes running your business easier—everything you need, all in one place.
