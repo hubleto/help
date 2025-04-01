@@ -1,33 +1,32 @@
-# How to delete Customer
+# How to Delete a Customer
 
 Managing your customers effectively includes the ability to remove outdated or unnecessary records. Below are two methods for deleting a customer:
 
-- Quick Deletion – Delete a customer directly from the list.
-- Deletion via Edit Form – Remove a customer while editing its details.
+- **Quick Deletion** – Delete a customer directly from the list.
+- **Deletion via Edit Form** – Remove a customer while editing its details.
 
 ## Delete Customer
 
-Use this method for quick removal of a Customer from the list.
+Use this method for quick removal of a customer from the list.
 
 {% include 'components/step-by-step.twig' with {'steps': {
   '1': {
     'title': 'Find the Customer',
-    'description': 'Locate the desired customer in the list.',
+    'description': 'Start by locating the desired customer in the list. You can search for the customer or scroll through the list to find them.',
     'example': markdown('![Customer-delete](' ~ bookRootUrl ~ '/book/content/assets/images/customers/customers-click-on-record.png)'),
   },
 
   '2': {
     'title': 'Click Delete Icon',
-    'description': 'Click the **Delete icon** `🗑️` next to the customer.',
+    'description': 'Once you’ve found the customer, click the **Delete icon** `🗑️` next to their name. This will initiate the deletion process.',
     'example': markdown('![Customer-delete](' ~ bookRootUrl ~ '/book/content/assets/images/buttons/delete-button.png)'),
   },
 
   '3': {
     'title': 'Confirm Deletion',
-    'description': 'Confirm the deletion to permanently remove the contact.',
+    'description': 'A confirmation popup will appear. Click **Confirm** to permanently remove the customer from the system.',
     'example': markdown('![Customer-delete](' ~ bookRootUrl ~ '/book/content/assets/images/popup/confirm-delete.png)'),
   }
-
 }} %}
 
 > 💡 Rows selected for deletion will appear in red!  
@@ -35,44 +34,44 @@ Use this method for quick removal of a Customer from the list.
 
 ---
 
-### Delete Customer in edit form
+### Delete Customer in Edit Form
 
-If you need to review a customers’s details before deletion, you can remove it from the edit form.
+If you need to review a customer’s details before deletion, you can remove it from the edit form.
 
 {% include 'components/step-by-step.twig' with {'steps': {
   '1': {
     'title': 'Find the Customer',
-    'description': 'Locate the desired customer in the list.',
+    'description': 'Locate the customer you want to delete in the list and click to open their record.',
     'example': markdown('![Delete-customer](' ~ bookRootUrl ~ '/book/content/assets/images/customers/customers-click-on-record.png)'),
   },
 
   '2': {
     'title': 'Open the Customer Record',
-    'description': 'Click on the Customer to open its details.',
+    'description': 'Click on the customer’s name to open their profile and view the details.',
     'example': markdown('![Delete-customer](' ~ bookRootUrl ~ '/book/content/assets/images/customers/edit/customers-edit-form.png)'),
   },
 
   '3': {
     'title': 'Click Edit',
-    'description': 'Click `Edit` in the top left corner.',
+    'description': 'In the customer’s profile, click the **Edit** button in the top left corner to make changes to the customer’s details.',
     'example': markdown('![Delete-contact](' ~ bookRootUrl ~ '/book/content/assets/images/buttons/edit-button.png)'),
   },
 
   '4': {
     'title': 'Click Delete',
-    'description': 'Click the `Delete` button in the top right corner.',
+    'description': 'While in the edit form, click the **Delete** button located in the top right corner of the page to begin the deletion process.',
     'example': markdown('![Delete-contact](' ~ bookRootUrl ~ '/book/content/assets/images/buttons/delete-button.png)'),
   },
 
   '5': {
     'title': 'Confirm Deletion',
-    'description': 'Click `Confirm` to remove the Customer.',
+    'description': 'Click **Confirm** to remove the customer from the system.',
     'example': markdown('![Delete-contact](' ~ bookRootUrl ~ '/book/content/assets/images/buttons/confirm-delete-button.png)'),
   },
 
   '6': {
     'title': 'Final Confirmation',
-    'description': 'Confirm the deletion to remove the Contact permanently.',
+    'description': 'Finally, confirm the deletion to permanently remove the customer from the system.',
     'example': markdown('![Delete-contact](' ~ bookRootUrl ~ '/book/content/assets/images/popup/confirm-delete.png)'),
   }
-}} %}
+}} %}  

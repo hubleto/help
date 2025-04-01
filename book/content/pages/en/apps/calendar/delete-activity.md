@@ -4,8 +4,6 @@ The **Customers, Leads, and Deals** apps allow users to delete activities that a
 
 ![Activity-Calendar]({{ bookRootUrl }}/book/content/assets/images/calendar/calendar-month-view.png)  
 
-> 📅 **Deleting an activity does not affect the associated Customer, Lead, or Deal.** Only the selected activity will be removed.  
-
 ## How to Delete an Activity  
 
 To delete an activity from a **Customer, Lead, or Deal**, follow these steps:  
@@ -41,3 +39,5 @@ To delete an activity from a **Customer, Lead, or Deal**, follow these steps:
     'example': markdown('![Activity-confirm](' ~ bookRootUrl ~ '/book/content/assets/images/buttons/confirm-delete-button.png)'),
   }
 }} %}  
+
+> 📅 **Deleting an activity does not affect the associated Customer, Lead, or Deal.** Only the selected activity will be removed.  

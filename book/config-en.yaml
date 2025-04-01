@@ -27,24 +27,20 @@ tableOfContents:
         children:
           - page: en/apps/calendar/add-activity
           - page: en/apps/calendar/delete-activity
+          - page: en/apps/calendar/edit-activity
+          - page: en/apps/calendar/navigate-views
       - page: en/apps/documents
       - page: en/apps/pipeline
       - page: en/apps/services
       - page: en/apps/leads
         children:
-          - page: en/apps/leads/lead-overview
           - page: en/apps/leads/adding-new-leads
           - page: en/apps/leads/updating-lead-info
-          - page: en/apps/leads/lead-status-tracking
-          - page: en/apps/leads/filtering-and-sorting
           - page: en/apps/leads/lead-conversion
       - page: en/apps/deals
         children:
-            - page: en/apps/deals/deal-overview
             - page: en/apps/deals/adding-new-deals
             - page: en/apps/deals/updating-deal-info
-            - page: en/apps/deals/deal-status-tracking
-            - page: en/apps/deals/filtering-and-sorting
             - page: en/apps/deals/deal-closure
       - page: en/apps/reports
   - page: en/more
