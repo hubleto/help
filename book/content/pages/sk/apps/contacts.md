@@ -18,7 +18,7 @@ Správa kontaktov je kľúčová pre udržiavanie obchodných vzťahov. Nasleduj
 
 Nižšie sú uvedené kľúčové atribúty používané na správu jednotlivcov spojených so zákazníkom:
 
-![Príklad kontaktu]({{ bookRootUrl }}/book/content/assets/images/contacts/contacts-example.png)
+![Príklad kontaktu]({{ bookRootUrl }}/content/assets/images/contacts/contacts-example.png)
 
 ### Osobné informácie
 
@@ -47,4 +47,4 @@ Kontakty je možné spravovať priamo v **module Zákazníci**, čím sa zabezpe
 > - **Zákazník** 🏢 → Spoločnosť alebo obchodná entita.
 > - **Kontakt** 👤 → Jednotlivec spojený so spoločnosťou.
 >
-> ![Kontakt nie je zákazník]({{ bookRootUrl }}/book/content/assets/images/contacts/contacts-no-customers.png)
+> ![Kontakt nie je zákazník]({{ bookRootUrl }}/content/assets/images/contacts/contacts-no-customers.png)

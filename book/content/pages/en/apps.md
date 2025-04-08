@@ -23,7 +23,7 @@ There are following types of apps in Hubleto:
   {% for app in apps %}
     <a class="btn btn-large btn-transparent" href="apps/{{ app.url }}" >
       <span class="icon"><i class="{{ app.icon }}"></i></span>
-      <span class="text"> {{ app.name }} <small class="block text-xs text-gray-500">Packages: {{ app.packages|join(', ') }}</small> </span>
+      <span class="text"> {{ app.name }} <small class="block text-xs text-gray-500">{{ app.highlight }}<br/>Packages: {{ app.packages|join(', ') }}</small> </span>
     </a>
   {% endfor %}
 </div>

@@ -2,7 +2,7 @@
 
 Open-source platforma pre ERP a CRM, ktorá pomáha vášmu podnikaniu rásť.
 
-![Hubleto]({{ bookRootUrl }}/book/content/assets/images/logo/logo-hubleto-with-text.png)
+![Hubleto]({{ bookRootUrl }}/content/assets/images/logo/logo-hubleto-with-text.png)
 
 ## Čo sú CRM a ERP?
 
@@ -14,7 +14,7 @@ Spravovať vaše podnikanie môže byť niekedy náročné. A práve tu prichád
 
 Spoločne CRM a ERP poskytujú kompletný prehľad o vašom podnikaní, čo vám umožňuje robiť múdrejšie rozhodnutia a šetriť čas na dôležitých veciach.
 
-![ERP/CRM]({{ bookRootUrl }}/book/content/assets/images/general/erp-crm.png)
+![ERP/CRM]({{ bookRootUrl }}/content/assets/images/general/erp-crm.png)
 
 ## Prečo Hubleto?
 
@@ -26,7 +26,7 @@ Hubleto nie je len ďalšia platforma pre CRM/ERP. Je open-source, čo znamená,
 
 * **Množstvo vstavaných funkcií:** Od správy zákazníkov po sledovanie predaja, Hubleto obsahuje všetko, čo potrebujete na plynulý chod vášho podnikania.
 
-![Hubleto-example]({{ bookRootUrl }}/book/content/assets/images/general/hubleto-random-picture.png)
+![Hubleto-example]({{ bookRootUrl }}/content/assets/images/general/hubleto-random-picture.png)
 
 **Pripravení posunúť vaše podnikanie na vyššiu úroveň?**
 

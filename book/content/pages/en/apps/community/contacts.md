@@ -10,15 +10,16 @@ Managing contacts is a key part of maintaining business relationships. The follo
 
 | Action | Description |
 |---------------------------------|----------------------------------------------------------------------------------|
-| **[Add Contact](contacts/add-contact)** | Create a new contact and link it to an existing customer. |
-| **[Edit Contact](contacts/edit-contact)** | Modify the details of an existing contact. |
-| **[Delete Contact](contacts/delete-contact)** | Permanently remove a contact from the system. |
+| **[Add Contact](../contacts/add-contact)** | Create a new contact and link it to an existing customer. |
+| **[Edit Contact](../contacts/edit-contact)** | Modify the details of an existing contact. |
+| **[Delete Contact](../contacts/delete-contact)** | Permanently remove a contact from the system. |
 
 ## Contact Attributes
 
 Below are the key attributes used to manage individuals linked to a customer:
 
-![Contact-example]({{ bookRootUrl }}/book/content/assets/images/contacts/contacts-example.png)
+![Contact-example]({{ bookRootUrl }}/content/assets/images/contacts/contacts-example.png)
+*Example view of contact*
 
 ### Personal Information
 
@@ -40,11 +41,11 @@ Below are the key attributes used to manage individuals linked to a customer:
 
 ## Managing Contacts within Customers
 
-Contacts can be managed directly within the **Customers** module, ensuring they are properly linked to their respective companies. See **[Customers Guide](customers)** for details.
+Contacts can be managed directly within the **Customers** module, ensuring they are properly linked to their respective companies. See **[Customers Guide](../customers)** for details.
 
 > 💡 **Key Difference:** Contacts and Customers are distinct entities.
 >
 > - **Customer** 🏢 → A company or business entity.
 > - **Contact** 👤 → An individual associated with a company.
 >
-> ![Contact-is-not-Customer]({{ bookRootUrl }}/book/content/assets/images/contacts/contacts-no-customers.png)
+> ![Contact-is-not-Customer]({{ bookRootUrl }}/content/assets/images/contacts/contacts-no-customers.png)

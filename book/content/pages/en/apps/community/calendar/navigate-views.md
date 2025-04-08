@@ -6,7 +6,7 @@ Navigating your calendar and adjusting views is key to staying organized. The **
 
 Easily move through different timeframes using built-in controls. This feature allows you to navigate between days, weeks, months, and even years with ease:
 
-![Calendar-navigation]({{ bookRootUrl }}/book/content/assets/images/calendar/calendar-arrows.png)
+![Calendar-navigation]({{ bookRootUrl }}/content/assets/images/calendar/calendar-arrows.png)
 
 ### Arrow Buttons
 
@@ -25,28 +25,28 @@ Quickly return to the current day with a single click. This provides an immediat
 
 The calendar offers multiple views to display activities in the most suitable format. These different views cater to specific user preferences and needs for better task management.
 
-![Calendar-views]({{ bookRootUrl }}/book/content/assets/images/calendar/calendar-views.png)
+![Calendar-views]({{ bookRootUrl }}/content/assets/images/calendar/calendar-views.png)
 
 ### Day View  
 <a name="day-view"></a>
 This view focuses on the activities scheduled for a single day. It allows you to zoom in on your immediate priorities and track all your meetings, calls, and tasks for that day.
 
-![Calendar-day-view]({{ bookRootUrl }}/book/content/assets/images/calendar/calendar-day-view.png)
+![Calendar-day-view]({{ bookRootUrl }}/content/assets/images/calendar/calendar-day-view.png)
 
 ### Week View  
 <a name="week-view"></a>
 Shows all activities scheduled for the current week. This view helps you get a broader perspective on the week's workload, so you can prepare accordingly for upcoming tasks and meetings.
 
-![Calendar-week-view]({{ bookRootUrl }}/book/content/assets/images/calendar/calendar-week-view.png)
+![Calendar-week-view]({{ bookRootUrl }}/content/assets/images/calendar/calendar-week-view.png)
 
 ### Month View  
 <a name="month-view"></a>
 Provides an overview of all scheduled activities for the entire month. This view is excellent for long-term planning, helping you see and manage all activities at once.
 
-![Calendar-month-view]({{ bookRootUrl }}/book/content/assets/images/calendar/calendar-month-view.png)
+![Calendar-month-view]({{ bookRootUrl }}/content/assets/images/calendar/calendar-month-view.png)
 
 ### List View  
 <a name="list-view"></a>
 Displays activities in a chronological list, with upcoming and past events ordered by date. This view is ideal for those who prefer a simple and detailed timeline, making it easy to follow your schedule and track deadlines.
 
-![Calendar-list-view]({{ bookRootUrl }}/book/content/assets/images/calendar/calendar-list-view.png)
+![Calendar-list-view]({{ bookRootUrl }}/content/assets/images/calendar/calendar-list-view.png)

@@ -2,7 +2,7 @@
 
 An open-source platform for ERP and CRM that helps your business grow
 
-![Hubleto]({{ bookRootUrl }}/book/content/assets/images/logo/logo-hubleto-with-text.png)
+![Hubleto]({{ bookRootUrl }}/content/assets/images/logo/logo-hubleto-with-text.png)
 
 ## What are CRM and ERP?
 
@@ -14,7 +14,7 @@ Managing your business can feel overwhelming at times. That’s where **CRM** an
 
 Together, a CRM and ERP give you a complete overview of your business, allowing you to make smarter decisions and save time on the things that matter most.
 
-![ERP/CRM]({{ bookRootUrl }}/book/content/assets/images/general/erp-crm.png)
+![ERP/CRM]({{ bookRootUrl }}/content/assets/images/general/erp-crm.png)
 
 ## Why Hubleto?
 
@@ -26,7 +26,7 @@ Hubleto is not just another CRM/ERP platform. It’s open-source, meaning it’s
   
 * **Loads of built-in features:** From managing customers to tracking sales, Hubleto comes packed with everything you need to make your business run smoothly.
 
-![Hubleto-example]({{ bookRootUrl }}/book/content/assets/images/general/hubleto-random-picture.png)
+![Hubleto-example]({{ bookRootUrl }}/content/assets/images/general/hubleto-random-picture.png)
 
 **Ready to take your business to the next level?**
 

@@ -6,11 +6,11 @@ The **Deals** app allows users to track active business opportunities. Deals rep
 
 | Deals Feature                                                | Description                                             |
 | ------------------------------------------------------------ | ------------------------------------------------------- |
-| **[Deal Overview](deals/deal-overview)**                     | Overview of deal stages and progress tracking.          |
-| **[Adding New Deals](deals/adding-new-deals)**               | How to add and assign new deals.                        |
-| **[Updating Deal Information](deals/updating-deal-info)**    | Editing deal details like value and expected close date.|
-| **[Deal Status Tracking](deals/deal-status-tracking)**       | Updating deal status to reflect progress.               |
-| **[Deal Closure](deals/deal-closure)**                      | Steps to close a deal and mark it as won or lost.       |
+| **[Deal Overview](../deals/deal-overview)**                     | Overview of deal stages and progress tracking.          |
+| **[Adding New Deals](../deals/adding-new-deals)**               | How to add and assign new deals.                        |
+| **[Updating Deal Information](../deals/updating-deal-info)**    | Editing deal details like value and expected close date.|
+| **[Deal Status Tracking](../deals/deal-status-tracking)**       | Updating deal status to reflect progress.               |
+| **[Deal Closure](../deals/deal-closure)**                      | Steps to close a deal and mark it as won or lost.       |
 
 ## Deal Attributes
 

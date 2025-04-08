@@ -13,25 +13,25 @@ Použite túto metódu na rýchle odstránenie kontaktu zo zoznamu:
   '1': {
     'title': 'Vyhľadajte kontakt',
     'description': 'Nájdite kontakt, ktorý chcete odstrániť, v zozname kontaktov.',
-    'example': markdown('![Contact-delete](' ~ bookRootUrl ~ '/book/content/assets/images/contacts/contacts-click-on-record.png)'),
+    'example': markdown('![Contact-delete](' ~ bookRootUrl ~ '/content/assets/images/contacts/contacts-click-on-record.png)'),
   },
 
   '2': {
     'title': 'Kliknite na ikonu odstránenia',
     'description': 'Po vyhľadaní kontaktu kliknite na **ikonu koša** (`🗑️`) vedľa mena kontaktu. Spustí sa tým proces odstránenia.',
-    'example': markdown('![Contact-delete](' ~ bookRootUrl ~ '/book/content/assets/images/buttons/delete-can.png)'),
+    'example': markdown('![Contact-delete](' ~ bookRootUrl ~ '/content/assets/images/buttons/delete-can.png)'),
   },
 
   '3': {
     'title': 'Potvrďte odstránenie',
     'description': 'Zobrazí sa výzva na potvrdenie. Kliknite na `Potvrdiť`, aby ste natrvalo odstránili kontakt zo systému. Táto akcia je nevratná.',
-    'example': markdown('![Contact-delete](' ~ bookRootUrl ~ '/book/content/assets/images/contacts/delete/contacts-confirm-delete.png)'),
+    'example': markdown('![Contact-delete](' ~ bookRootUrl ~ '/content/assets/images/contacts/delete/contacts-confirm-delete.png)'),
   }
 
 }} %}
 
 > 💡 Riadky označené na odstránenie budú zvýraznené červenou farbou!  
-> ![Contact-red]({{ bookRootUrl }}/book/content/assets/images/contacts/delete/contacts-delete-row.png)
+> ![Contact-red]({{ bookRootUrl }}/content/assets/images/contacts/delete/contacts-delete-row.png)
 
 ---
 
@@ -43,36 +43,36 @@ Ak potrebujete pred odstránením kontaktu skontrolovať jeho údaje, môžete h
   '1': {
     'title': 'Vyhľadajte kontakt',
     'description': 'Nájdite kontakt, ktorý chcete odstrániť, v zozname kontaktov.',
-    'example': markdown('![Delete-contact](' ~ bookRootUrl ~ '/book/content/assets/images/contacts/contacts-click-on-record.png)'),
+    'example': markdown('![Delete-contact](' ~ bookRootUrl ~ '/content/assets/images/contacts/contacts-click-on-record.png)'),
   },
 
   '2': {
     'title': 'Otvorte záznam kontaktu',
     'description': 'Kliknite na kontakt, aby sa otvorila jeho detailná stránka, kde môžete upravovať a spravovať jeho informácie.',
-    'example': markdown('![Delete-contact](' ~ bookRootUrl ~ '/book/content/assets/images/contacts/edit/contacts-edit-form.png)'),
+    'example': markdown('![Delete-contact](' ~ bookRootUrl ~ '/content/assets/images/contacts/edit/contacts-edit-form.png)'),
   },
 
   '3': {
     'title': 'Kliknite na "Upraviť"',
     'description': 'V ľavom hornom rohu stránky kontaktu kliknite na tlačidlo `Upraviť`, aby ste vstúpili do režimu úprav. Odtiaľto môžete vykonávať zmeny alebo kontakt odstrániť.',
-    'example': markdown('![Delete-contact](' ~ bookRootUrl ~ '/book/content/assets/images/buttons/edit-button.png)'),
+    'example': markdown('![Delete-contact](' ~ bookRootUrl ~ '/content/assets/images/buttons/edit-button.png)'),
   },
 
   '4': {
     'title': 'Kliknite na "Odstrániť"',
     'description': 'V pravom hornom rohu editačného formulára kliknite na tlačidlo `Odstrániť`, aby ste iniciovali proces vymazania.',
-    'example': markdown('![Delete-contact](' ~ bookRootUrl ~ '/book/content/assets/images/buttons/delete-button.png)'),
+    'example': markdown('![Delete-contact](' ~ bookRootUrl ~ '/content/assets/images/buttons/delete-button.png)'),
   },
 
   '5': {
     'title': 'Potvrďte odstránenie',
     'description': 'Zobrazí sa dialógové okno na potvrdenie. Kliknite na `Potvrdiť`, aby ste pokračovali v odstránení kontaktu zo systému.',
-    'example': markdown('![Delete-contact](' ~ bookRootUrl ~ '/book/content/assets/images/buttons/confirm-delete-button.png)'),
+    'example': markdown('![Delete-contact](' ~ bookRootUrl ~ '/content/assets/images/buttons/confirm-delete-button.png)'),
   },
 
   '6': {
     'title': 'Konečné potvrdenie',
     'description': 'Nakoniec je potrebné vykonať posledné potvrdenie. Po potvrdení bude kontakt natrvalo odstránený zo systému.',
-    'example': markdown('![Delete-contact](' ~ bookRootUrl ~ '/book/content/assets/images/popup/confirm-delete.png)'),
+    'example': markdown('![Delete-contact](' ~ bookRootUrl ~ '/content/assets/images/popup/confirm-delete.png)'),
   }
 }} %}

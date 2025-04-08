@@ -18,7 +18,7 @@ Aby ste mali svoju databázu zákazníkov organizovanú a aktuálnu, sú k dispo
 
 Nižšie sú uvedené atribúty, ktoré definujú zákazníka a pomáhajú pri spracovaní obchodných operácií:
 
-![Príklad zákazníka]({{ bookRootUrl }}/book/content/assets/images/customers/customers-example.png)
+![Príklad zákazníka]({{ bookRootUrl }}/content/assets/images/customers/customers-example.png)
 
 | Atribút | Popis | Príklad |
 |------------------|-------------|---------|

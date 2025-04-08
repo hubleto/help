@@ -2,7 +2,7 @@
 
 Aplikácia **Kalendár** poskytuje intuitívny a štruktúrovaný spôsob správy aktivít, čo zaisťuje, že používatelia nezmeškajú dôležité úlohy, stretnutia a termíny. S viacerými pohľadmi a možnosťami navigácie pomáha zjednodušiť plánovanie a organizovanie.
 
-![Navigácia kalendára]({{ bookRootUrl }}/book/content/assets/images/calendar/calendar-empty.png)
+![Navigácia kalendára]({{ bookRootUrl }}/content/assets/images/calendar/calendar-empty.png)
 
 ## Správa kalendára
 

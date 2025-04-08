@@ -10,39 +10,42 @@ community/customers:
   packages: 
     - 'core'
 
-calendars:
-  url: 'community/calendars'
-  name: 'Calendars'
+calendar:
+  url: 'community/calendar'
+  name: 'Calendar'
+  highlight: Free calendar app.
+  tags:
+    - calendar
+    - event
   icon: 'fas fa-calendar'
   packages: 
     - 'core'
+
+documents:
+  url: 'community/documents'
+  name: 'Documents'
+  highlight: Free document management.
+  tags:
+    - calendar
+    - event
+  icon: 'fas fa-file'
+  packages: 
+    - 'core'
+
+leads:
+  url: 'community/leads'
+  name: 'Leads'
+  icon: 'fas fa-people-arrows'
+  highlight: Free leads management.
+  packages: 
+    - 'sales'
 
 pipeline:
   url: 'community/pipeline'
   type: 'community'
   name: 'Pipeline'
   icon: 'fas fa-timeline'
-  packages: 
-    - 'sales'
-
-services:
-  url: 'community/services'
-  name: 'Services'
-  icon: 'fas fa-network-wired'
-  packages: 
-    - 'sales'
-
-leads:
-  url: 'community/leads'
-  name: 'Leads'
-  icon: 'fas fa-people-arrows'
-  packages: 
-    - 'sales'
-
-goals:
-  url: 'community/goals'
-  name: 'Goals'
-  icon: 'fas fa-bullseye'
+  highlight: Free sales pipeline management.
   packages: 
     - 'sales'
 
@@ -50,6 +53,23 @@ deals:
   url: 'community/deals'
   name: 'Deals'
   icon: 'fas fa-handshake'
+  highlight: Free deals management.
+  packages: 
+    - 'sales'
+
+goals:
+  url: 'community/goals'
+  name: 'Goals'
+  icon: 'fas fa-bullseye'
+  highlight: Free sales goals management.
+  packages: 
+    - 'sales'
+
+services:
+  url: 'community/services'
+  name: 'Services'
+  icon: 'fas fa-network-wired'
+  highlight: Free management of your services.
   packages: 
     - 'sales'
 
@@ -57,6 +77,7 @@ reports:
   url: 'community/reports'
   name: 'Reports'
   icon: 'fas fa-square-poll-vertical'
+  highlight: Default report management.
   packages: 
     - 'core'
 
@@ -64,5 +85,6 @@ settings:
   url: 'community/settings'
   name: 'Settings'
   icon: 'fas fa-cog'
+  highlight: Default settings management.
   packages: 
     - 'core'

@@ -6,11 +6,11 @@ The **Leads** app allows users to create and manage potential business opportuni
 
 | Leads Feature                                                  | Description                                          |
 | -------------------------------------------------------------- | ---------------------------------------------------- |
-| **[Lead Overview](leads/lead-overview)**                       | Overview of lead stages in the pipeline.             |
-| **[Adding New Leads](leads/adding-new-leads)**                 | How to add and assign new leads.                     |
-| **[Updating Lead Information](leads/updating-lead-info)**      | Editing lead details like contact info and status.   |
-| **[Lead Status Tracking](leads/lead-status-tracking)**         | Updating lead status in the sales process.           |
-| **[Lead Conversion](leads/lead-conversion)**                   | Steps to convert a lead into a deal.                 |
+| **[Lead Overview](../leads/lead-overview)**                       | Overview of lead stages in the pipeline.             |
+| **[Adding New Leads](../leads/adding-new-leads)**                 | How to add and assign new leads.                     |
+| **[Updating Lead Information](../leads/updating-lead-info)**      | Editing lead details like contact info and status.   |
+| **[Lead Status Tracking](../leads/lead-status-tracking)**         | Updating lead status in the sales process.           |
+| **[Lead Conversion](../leads/lead-conversion)**                   | Steps to convert a lead into a deal.                 |
 
 ## Lead Attributes
 

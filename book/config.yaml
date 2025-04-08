@@ -17,6 +17,14 @@ tableOfContents:
       - page: en/apps/community
         children:
           - page: en/apps/community/customers
+            children:
+              - page: en/apps/community/customers/add-customer
+              - page: en/apps/community/customers/edit-customer
+              - page: en/apps/community/customers/delete-customer
+          - page: en/apps/community/contacts
+          - page: en/apps/community/calendar
+          - page: en/apps/community/leads
+          - page: en/apps/community/deals
       - page: en/apps/enterprise
   # - page: en/features
   #   icon: fas fa-percent
