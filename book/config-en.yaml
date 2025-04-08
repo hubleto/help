@@ -1,0 +1,64 @@
+homePage: home
+redirects:
+  some-old-page:
+    newPage: some-new-page
+    code: 301
+tableOfContents:
+  - page: en/getting-started
+    icon: fas fa-home
+    children:
+      - page: en/getting-started/account-and-setup
+      - page: en/getting-started/first-steps
+  - page: en/apps
+    icon: fas fa-folder-open
+    children:
+      - page: en/apps/contacts
+        children:
+          - page: en/apps/contacts/add-contact
+          - page: en/apps/contacts/edit-contact
+          - page: en/apps/contacts/delete-contact
+      - page: en/apps/customers
+        children:
+          - page: en/apps/customers/add-customer
+          - page: en/apps/customers/edit-customer
+          - page: en/apps/customers/delete-customer
+          - page: en/apps/customers/add-contact-to-customer
+      - page: en/apps/calendar
+        children:
+          - page: en/apps/calendar/add-activity
+          - page: en/apps/calendar/delete-activity
+          - page: en/apps/calendar/edit-activity
+          - page: en/apps/calendar/navigate-views
+      - page: en/apps/documents
+      - page: en/apps/pipeline
+      - page: en/apps/services
+      - page: en/apps/leads
+        children:
+          - page: en/apps/leads/adding-new-leads
+          - page: en/apps/leads/updating-lead-info
+          - page: en/apps/leads/lead-conversion
+      - page: en/apps/deals
+        children:
+            - page: en/apps/deals/adding-new-deals
+            - page: en/apps/deals/updating-deal-info
+            - page: en/apps/deals/deal-closure
+      - page: en/apps/reports
+  - page: en/more
+    icon: fa-plus 
+    children:
+      - page: en/more/help
+      - page: en/more/upgrade
+      - page: en/more/settings
+        children:
+          - page: en/more/settings/users
+          - page: en/more/settings/profiles
+          - page: en/more/settings/settings
+          - page: en/more/settings/tags
+          - page: en/more/settings/activity-types
+          - page: en/more/settings/countries
+          - page: en/more/settings/currencies
+          - page: en/more/settings/labels
+          - page: en/more/settings/lead-statuses
+          - page: en/more/settings/pipelines
+      
+

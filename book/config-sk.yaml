@@ -4,8 +4,60 @@ redirects:
     newPage: some-new-page
     code: 301
 tableOfContents:
-  - page: sk/uvod
+  - page: sk/getting-started
     icon: fas fa-home
-  - page: sk/zakaznici
     children:
-    - page: sk/zakaznici/vytvorenie-noveho-kontaktu
+      - page: sk/getting-started/account-and-setup
+      - page: sk/getting-started/first-steps
+  - page: sk/apps
+    icon: fas fa-folder-open
+    children:
+      - page: sk/apps/contacts
+        children:
+          - page: sk/apps/contacts/add-contact
+          - page: sk/apps/contacts/edit-contact
+          - page: sk/apps/contacts/delete-contact
+      - page: sk/apps/customers
+        children:
+          - page: sk/apps/customers/add-customer
+          - page: sk/apps/customers/edit-customer
+          - page: sk/apps/customers/delete-customer
+          - page: sk/apps/customers/add-contact-to-customer
+      - page: sk/apps/calendar
+        children:
+          - page: sk/apps/calendar/add-activity
+          - page: sk/apps/calendar/delete-activity
+          - page: sk/apps/calendar/edit-activity
+          - page: sk/apps/calendar/navigate-views
+      - page: sk/apps/documents
+      - page: sk/apps/pipeline
+      - page: sk/apps/services
+      - page: sk/apps/leads
+        children:
+          - page: sk/apps/leads/adding-new-leads
+          - page: sk/apps/leads/updating-lead-info
+          - page: sk/apps/leads/lead-conversion
+      - page: sk/apps/deals
+        children:
+            - page: sk/apps/deals/adding-new-deals
+            - page: sk/apps/deals/updating-deal-info
+            - page: sk/apps/deals/deal-closure
+      - page: sk/apps/reports
+  - page: sk/more
+    icon: fa-plus 
+    children:
+      - page: sk/more/help
+      - page: sk/more/upgrade
+      - page: sk/more/settings
+        children:
+          - page: sk/more/settings/users
+          - page: sk/more/settings/profiles
+          - page: sk/more/settings/settings
+          - page: sk/more/settings/tags
+          - page: sk/more/settings/activity-types
+          - page: sk/more/settings/countries
+          - page: sk/more/settings/currencies
+          - page: sk/more/settings/labels
+          - page: sk/more/settings/lead-statuses
+          - page: sk/more/settings/pipelines
+      

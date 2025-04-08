@@ -1,6 +1,6 @@
 # Apps
 
-Use left sidebar to navigate through documentation of existing apps.
+Explore each app in detail, breaking down their features and how they contribute to making your business operations more efficient
 
 There are following types of apps in Hubleto:
 
