@@ -4,10 +4,6 @@ require('vendor/autoload.php');
 require('env.php');
 
 $page = $_GET['page'] ?? '';
-$language = substr($page, 0, 2);
-
-if (!in_array($language, ['en', 'sk', 'cz', 'fr', 'it', 'es', 'pl', 'de'])) exit;
-
 $templateConfig = [
   'notFoundPage' => [
     'pageTemplate' => 'not-found',
@@ -31,17 +27,38 @@ $templateConfig = [
 ];
 
 class MyGuideVis extends \WaiBlue\GuideVis\Loader {
-
-  public function __construct(string $language, string $page, array $env, array $templateConfig)
+  public function getPageVars(array $pageData = []): array
   {
-    parent::__construct($page, $env, $templateConfig);
-    $this->bookConfigFile = $this->env['bookRootFolder'] . '/config-' . $language . '.yaml';
+    $pageVars = parent::getPageVars($pageData);
+    $pageVars['bookIndex'] = $this->buildBookIndex();
+    $pageVars['apps'] = $this->getApps();
+    $pageVars['guide'] = $this;
+    return $pageVars;
   }
 
+  public function getApps(): array
+  {
+    return \Symfony\Component\Yaml\Yaml::parse(file_get_contents(__DIR__ . '/book/apps.yaml'));
+  }
+
+  public function getAppInfo(string $app): array
+  {
+    $apps = $this->getApps();
+    return $apps[$app] ?? [];
+  }
+
+  public function getOnThisPage(string $mdContent): array
+  {
+    $onThisPage = parent::getOnThisPage($mdContent);
+    foreach ($onThisPage as $key => $value) {
+      if (empty($key)) unset($onThisPage[$key]);
+    }
+    return $onThisPage;
+  }
 }
 
 try {
-  $renderer = new MyGuideVis($language, $page, $env, $templateConfig);
+  $renderer = new MyGuideVis($page, $env, $templateConfig);
   $renderer->init();
   echo $renderer->render();
 } catch (\Exception $e) {

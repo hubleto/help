@@ -1,29 +1,36 @@
-# Home
+# Welcome
 
-**Think of the Home page as your personal dashboard within Ceremony CRM.** It's like the cockpit of a plane, giving you a clear view of everything important happening in your business.
+**An open-source platform for ERP and CRM that helps your business grow**
 
-**What can you find here?**
+![Hubleto]({{ bookRootUrl }}/book/content/assets/images/logo-hubleto-s-textom.png)
 
-* **A quick overview:** Instantly see how your business is performing.
-* **Customization:** Tailor the page to display the exact information you need.
-* **Ease of use:** Everything is clearly organized for quick understanding.
+## What are CRM and ERP?
 
-**What the Home page offers:**
+Managing your business can feel overwhelming at times. That’s where **CRM** and **ERP** systems come in to help.
 
-* **Monitor Progress:** Track your team's performance and identify areas for improvement.
-* **Measure Success:** Gain insights into key metrics to gauge your business's health.
-* **Discover Insights:** Uncover valuable information to make better business decisions.
+* **CRM** (Customer Relationship Management) is all about keeping track of your customers, conversations, and sales processes. It helps you build better relationships with your customers and close more deals.
 
-**Want to learn more?**
+* **ERP** (Enterprise Resource Planning) does the same for your entire business. It connects everything from inventory and finance to employee management and project tracking. 
 
-Let's dive into the specific features:
+Together, a CRM and ERP give you a complete overview of your business, allowing you to make smarter decisions and save time on the things that matter most.
 
-| Dashboard Feature | Description |
-|---|---|
-| **[Dashboard](home/dashboard)** | Overview of the dashboard layout and its components. |
-| **[Adding New Reports](home/adding-new-reports)** | Learn how to add various types of reports to your dashboard for deeper insights. |
-| **[Editing Existing Reports](home/editing-existing-reports)** | Understand how to customize and refine your existing reports. |
-| **[Rearranging Reports](home/rearranging-reports)** | Learn how to organize your dashboard for optimal efficiency and clarity. |
-| **[Data Filtering](home/data-filtering)** | Discover how to filter your data to focus on specific time periods or metrics. |
+## Why Hubleto?
 
-**The Home page is your most valuable tool in Ceremony CRM. Make the most of it and take your business to new heights!**
+Hubleto is not just another CRM/ERP platform. It’s open-source, meaning it’s built for flexibility and tailored to your needs. You can easily customize it to fit the way your business works—without the headache of complicated setups or expensive licenses.
+
+* **Super easy to use:** You don’t need to be a tech genius to make Hubleto work for you. Its user-friendly interface lets you hit the ground running.
+  
+* **Totally flexible:** Whether you’re a small business or growing fast, Hubleto can scale with you. And since it’s open-source, you have the freedom to tweak and modify it however you need.
+  
+* **Loads of built-in features:** From managing customers to tracking sales, Hubleto comes packed with everything you need to make your business run smoothly.
+
+**Ready to take your business to the next level?**
+
+## Useful Links
+
+Here are some helpful resources to get you started with Hubleto:
+
+- [Hubleto GitHub Repository](https://github.com/wai-blue/hubleto)
+- [Hubleto Developer Documentation](https://developer.hubleto.com/about)
+- [Official Hubleto Website](https://www.hubleto.com/en/)
+

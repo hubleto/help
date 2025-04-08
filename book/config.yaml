@@ -1,0 +1,84 @@
+homePage: en/home
+redirects:
+  some-old-page:
+    newPage: some-new-page
+    code: 301
+router:
+tableOfContents:
+  - page: en/home
+    icon: fas fa-home
+    children:
+      - page: en/account-and-setup
+      - page: en/first-steps
+      - page: en/import-customers
+  - page: en/apps
+    icon: fas fa-puzzle-piece
+    children:
+      - page: en/apps/community
+        children:
+          - page: en/apps/community/customers
+      - page: en/apps/enterprise
+  # - page: en/features
+  #   icon: fas fa-percent
+  #   children:
+  #     - page: en/home
+  #       children:
+  #       - page: en/home/dashboard
+  #       - page: en/home/adding-new-reports
+  #       - page: en/home/editing-existing-reports
+  #       - page: en/home/rearranging-reports
+  #       - page: en/home/data-fitering
+  #     - page: en/customers
+  #       children:
+  #       - page: en/customers/companies
+  #       - page: en/customers/contact-persons
+  #     - page: en/calendar
+  #     - page: en/services
+  #     - page: en/sales
+  #       children:
+  #         - page: en/sales/leads
+  #           children: 
+  #           - page: en/sales/leads/lead-overview
+  #           - page: en/sales/leads/adding-new-leads
+  #           - page: en/sales/leads/updating-lead-info
+  #           - page: en/sales/leads/lead-status-tracking
+  #           - page: en/sales/leads/filtering-and-sorting
+  #           - page: en/sales/leads/lead-conversion
+  #         - page: en/sales/deals
+  #           children: 
+  #           - page: en/sales/deals/deal-overview
+  #           - page: en/sales/deals/adding-new-deals
+  #           - page: en/sales/deals/updating-deal-info
+  #           - page: en/sales/deals/deal-status-tracking
+  #           - page: en/sales/deals/filtering-and-sorting
+  #           - page: en/sales/deals/deal-closure
+  #     - page: en/settings
+  #       children:
+  #         - page: en/settings/users
+  #         - page: en/settings/profiles
+  #         - page: en/settings/settings
+  #         - page: en/settings/tags
+  #         - page: en/settings/activity-types
+  #         - page: en/settings/countries
+  #         - page: en/settings/currencies
+  #         - page: en/settings/labels
+  #         - page: en/settings/lead-statuses
+  #         - page: en/settings/pipelines
+  #     - page: en/support
+  #       icon: 
+  # - page: en/tips-and-tricks
+  #   children:
+  #     - page: en/customer-data-management
+  #       icon:
+  #       children:
+  #         - page: en/customer-data-management/customers
+  #         - page: en/customer-data-management/contact-persons
+  #     - page: en/sales-pipeline-management
+  #       icon: fas fa-chart-line
+  #       children:
+  #         - page: en/sales-pipeline-management/sales 
+  #     - page: en/task-and-activity-tracking
+  #       icon: 
+  #       children:
+  #         - page: en/task-and-activity-tracking/activities
+  #         - page: en/task-and-activity-tracking/calendar

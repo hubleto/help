@@ -1,0 +1,68 @@
+community/customers:
+  url: 'community/customers'
+  name: 'Customers'
+  highlight: Free customer management and addressbook.
+  tags:
+    - customers
+    - persons
+    - contacts
+  icon: 'fas fa-address-card'
+  packages: 
+    - 'core'
+
+calendars:
+  url: 'community/calendars'
+  name: 'Calendars'
+  icon: 'fas fa-calendar'
+  packages: 
+    - 'core'
+
+pipeline:
+  url: 'community/pipeline'
+  type: 'community'
+  name: 'Pipeline'
+  icon: 'fas fa-timeline'
+  packages: 
+    - 'sales'
+
+services:
+  url: 'community/services'
+  name: 'Services'
+  icon: 'fas fa-network-wired'
+  packages: 
+    - 'sales'
+
+leads:
+  url: 'community/leads'
+  name: 'Leads'
+  icon: 'fas fa-people-arrows'
+  packages: 
+    - 'sales'
+
+goals:
+  url: 'community/goals'
+  name: 'Goals'
+  icon: 'fas fa-bullseye'
+  packages: 
+    - 'sales'
+
+deals:
+  url: 'community/deals'
+  name: 'Deals'
+  icon: 'fas fa-handshake'
+  packages: 
+    - 'sales'
+
+reports:
+  url: 'community/reports'
+  name: 'Reports'
+  icon: 'fas fa-square-poll-vertical'
+  packages: 
+    - 'core'
+
+settings:
+  url: 'community/settings'
+  name: 'Settings'
+  icon: 'fas fa-cog'
+  packages: 
+    - 'core'
