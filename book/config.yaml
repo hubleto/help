@@ -7,10 +7,10 @@ router:
 tableOfContents:
   - page: en/home
     icon: fas fa-home
-    children:
-      - page: en/account-and-setup
-      - page: en/first-steps
-      - page: en/import-customers
+    # children:
+    #   - page: en/account-and-setup
+    #   - page: en/first-steps
+    #   - page: en/import-customers
   - page: en/apps
     icon: fas fa-puzzle-piece
     children:
