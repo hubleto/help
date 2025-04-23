@@ -34,6 +34,6 @@ Hubleto nie je len ďalšia platforma pre CRM/ERP. Je open-source, čo znamená,
 
 Tu sú niektoré užitočné zdroje, ktoré vám pomôžu začať s Hubleto:
 
-> [Hubleto GitHub Repository](https://github.com/wai-blue/hubleto)  
+> [Hubleto GitHub Repository](https://github.com/hubleto/main)  
 > [Hubleto Developer Documentation](https://developer.hubleto.com/about)  
 > [Oficiálna webová stránka Hubleto](https://www.hubleto.com/en/)

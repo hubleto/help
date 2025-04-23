@@ -1,5 +1,5 @@
 @config "../../../tailwind.config.js";
-@layer base, utilities, components, theme;
+@layer theme, base, components, utilities, theme, components;
 
 @theme {
   --font-sans: system-ui, 'sans-serif';
@@ -16,6 +16,5 @@
 
 @import "tailwindcss";
 
-@import "./base.twcss";
-@import "./components.twcss";
 @import "./theme.twcss";
+@import "./components.twcss";
