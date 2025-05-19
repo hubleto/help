@@ -52,13 +52,13 @@ $conf['sneaky_index']= 0;                 //check for namespace read permission 
 $conf['hidepages']   = '';                //Regexp for pages to be skipped from RSS, Search and Recent Changes
 
 /* Authentication Settings */
-$conf['useacl']      = 0;                //Use Access Control Lists to restrict access?
+$conf['useacl']      = 1;                //Use Access Control Lists to restrict access?
 $conf['autopasswd']  = 1;                //autogenerate passwords and email them to user
 $conf['authtype']    = 'authplain';      //which authentication backend should be used
 $conf['passcrypt']   = 'bcrypt';           //Used crypt method (smd5,md5,sha1,ssha,crypt,mysql,my411,bcrypt)
 $conf['defaultgroup']= 'user';           //Default groups new Users are added to
-$conf['superuser']   = '!!not set!!';    //The admin can be user or @group or comma separated list user1,@group1,user2
-$conf['manager']     = '!!not set!!';    //The manager can be user or @group or comma separated list user1,@group1,user2
+$conf['superuser']   = 'admin';    //The admin can be user or @group or comma separated list user1,@group1,user2
+$conf['manager']     = 'admin';    //The manager can be user or @group or comma separated list user1,@group1,user2
 $conf['profileconfirm'] = 1;             //Require current password to confirm changes to user profile
 $conf['rememberme'] = 1;                 //Enable/disable remember me on login
 $conf['disableactions'] = '';            //comma separated list of actions to disable
