@@ -1,4 +1,5 @@
 # Calendar
+{{ renderTopBar(onThisPage)|raw }}
 
 The **Calendar** application provides an intuitive and structured way to manage activities, ensuring users stay on top of important tasks, meetings, and deadlines. With multiple views and navigation options, it helps streamline scheduling and organization.
 

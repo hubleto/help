@@ -25,7 +25,7 @@ tableOfContents:
           - page: en/apps/community/calendar
           - page: en/apps/community/leads
           - page: en/apps/community/deals
-      - page: en/apps/enterprise
+      - page: en/apps/premium
   # - page: en/features
   #   icon: fas fa-percent
   #   children:

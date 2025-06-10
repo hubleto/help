@@ -27,6 +27,22 @@ $templateConfig = [
 ];
 
 class MyGuideVis extends \WaiBlue\GuideVis\Loader {
+  public function init()
+  {
+    parent::init();
+
+    $this->twig->addFunction(new \Twig\TwigFunction('renderTopBar', function(array $items) {
+      $topbar = '<div class="mt-4 card card-body gap-2 grid grid-cols-4">';
+      foreach ($items as $key => $value) {
+        $topbar .= '<a href="#' . $key . '" class="btn btn-transparent btn-small border border-primary text-primary">
+          <span class="text text-center w-full block">' . $key . '</span>
+        </a>';
+      }
+      $topbar .= "</div>";
+      return $topbar;
+    }));
+  }
+
   public function getPageVars(array $pageData = []): array
   {
     $pageVars = parent::getPageVars($pageData);

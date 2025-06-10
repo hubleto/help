@@ -1,7 +1,7 @@
 {% set app = guide.getAppInfo('community/customers') %}
 
 # Customers
-Free customer management and addressbook.
+{{ renderTopBar(onThisPage)|raw }}
 
 **Customers** represent companies or businesses that your organization interacts with. Each customer record stores essential details such as the company name, address, tax-related information, and associated contacts, ensuring a structured approach to business management.
 
@@ -41,6 +41,7 @@ Below are the attributes that define a Customer, helping process business operat
 | **Tags**                     | Labels for categorizing customers (e.g., *Important*, *Partner*, *Needs Review*). Additional tags can be added in [Tags - settings]({{ bookRootUrl }}/en/more/settings/tags). | *Important*                        |
 | **Assigned User** (Required) | The user responsible for managing this customer account.                                                                                                                      | *<john.smith@example.com>*         |
 | **Notes**                    | Additional details or comments about the customer.                                                                                                                            | *Preferred client, frequent buyer* |
+*Table: List of attributes for each customer*
 
 ## Managing Contacts within Customers
 
@@ -51,3 +52,7 @@ For managing contacts separately from the Customers module, refer to **[Contacts
 > 💡 **Key Distinction:** Customers and Contacts serve different purposes.  
 > ✔️ **Customer** 🏢 → A company or business entity.  
 > ✔️ **Contact** 👤 → An individual associated with that company, such as a representative or employee.  
+
+## How to
+
+<a class="btn btn-primary-outline" href="customers/add-customer"><span class="text">Add new customer</span></a>

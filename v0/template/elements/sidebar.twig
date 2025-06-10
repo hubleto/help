@@ -2,7 +2,7 @@
   {% set itemCounter = 0 %}
   {% for item in items %}
     <li id="{{ itemIdPrefix }}_{{ itemCounter }}" class="level-{{ level }}">
-      {% if item.children is iterable %}
+      {% if level < 2 and item.children is iterable %}
         <a href="{{ env.guideRootUrl }}/{{ item.page ?? '' }}"
           class="
             btn
@@ -60,14 +60,7 @@
 
   <div class="relative flex flex-col h-full max-h-full pb-10">
     <div class="m-auto mt-2 mb-2">
-      <a href="{{ guideRootUrl }}"><img class="logo" src="{{ templateRootUrl }}/assets/logo-hubleto.svg"/></a>
-    </div>
-    <div class="m-auto px-6 pt-0 pb-4 text-center">
-      <a class="flex-none rounded-xl text-xl inline-block font-semibold focus:outline-none focus:opacity-80" href="{{ env.guideRootUrl }}">
-        <span class="logo-font" style="font-size:20pt">Hubleto</span>
-      </a>
-      <div class="logo-font text-xs text-gray-500 pb-2 pt-1">Business Application Hub</div>
-      <div class="my-2">User guide</div> <!-- text-green-500 pridané pre lepšiu viditeľnosť -S -->
+      <a href="{{ guideRootUrl }}"><img class="logo" src="{{ templateRootUrl }}/assets/images/logo-hubleto-text-vertical.png"/></a>
     </div>
 
     {# <div class="hidden md:block">
@@ -107,7 +100,7 @@
     </div> #}
 
     <!-- Sidebar content -->
-    <div class="sidebar-content">
+    <div class="sidebar-content mt-4">
 
       <nav class="hs-accordion-group px-3 w-full flex flex-col flex-wrap" data-hs-accordion-always-open>
         <ul class="flex flex-col space-y-0.5 p-0">
