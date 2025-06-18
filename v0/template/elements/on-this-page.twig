@@ -1,13 +1,9 @@
 {% if onThisPage|length > 0 %}
-  <!-- On this page -->
   <aside class="on-this-page">
-    <div>On this page</div>
+    <div><div>On this page</div></div>
     <div>
       {% for h2, h3list in onThisPage %}
-        <div class="heading-level-1"><a href="#{{ h2 }}">{{ h2 }}</a></div>
-        {% for h3 in h3list %}
-          <div class="heading-level-2"><a href="#{{ h3 }}">{{ h3 }}</a></div>
-        {% endfor %}
+        <a href="#{{ h2 }}" class="btn btn-transparent w-full mb-2"><span class="text">{{ h2 }}</span></a>
       {% endfor %}
     </div>
   </aside>

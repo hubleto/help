@@ -1,6 +1,6 @@
 # Welcome
 
-**An open-source platform for ERP and CRM that helps your business grow**
+An open-source platform for ERP and CRM that helps your business grow
 
 ## What is Hubleto?
 
