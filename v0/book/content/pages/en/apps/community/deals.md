@@ -1,4 +1,5 @@
 # Deals
+{% include 'components/demo-cta-button.twig' with { 'ctaUrl': 'deals' } %}
 {{ renderTopBar(onThisPage)|raw }}
 
 The **Deals** app allows users to track active business opportunities. Deals represent confirmed leads that have progressed further in the sales pipeline.

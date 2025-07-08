@@ -1,4 +1,5 @@
 # Contacts
+{% include 'components/demo-cta-button.twig' with { 'ctaUrl': 'contacts' } %}
 {{ renderTopBar(onThisPage)|raw }}
 
 Contacts in the application represent **individuals** associated with a customer. These could be employees, representatives, or any other relevant people connected to a business. Each contact entry stores essential details such as personal information, contact details, and classification categories.

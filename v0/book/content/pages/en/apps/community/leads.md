@@ -1,4 +1,5 @@
 # Leads
+{% include 'components/demo-cta-button.twig' with { 'ctaUrl': 'leads' } %}
 {{ renderTopBar(onThisPage)|raw }}
 
 The **Leads** app allows users to create and manage potential business opportunities. Leads help track initial customer interest before they turn into deals.

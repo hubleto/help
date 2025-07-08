@@ -43,23 +43,54 @@ class MyGuideVis extends \WaiBlue\GuideVis\Loader {
     }));
   }
 
+  public function loadBookConfig(): array
+  {
+    $bookConfig = parent::loadBookConfig();
+
+    list($packages, $apps) = $this->loadPackagesAndAppsInfo();
+    $communityApps = [];
+    foreach ($apps as $app) {
+      if (isset($app['urlHelp']['en'])) {
+        $tmpItem = [ "page" => 'en/apps/' . $app['urlHelp']['en'] ];
+        $communityApps[] = $tmpItem;
+      }
+    }
+    $bookConfig["tableOfContents"][1]["children"][0]["children"] = $communityApps;
+
+    return $bookConfig;
+  }
+
   public function getPageVars(array $pageData = []): array
   {
     $pageVars = parent::getPageVars($pageData);
     $pageVars['bookIndex'] = $this->buildBookIndex();
-    $pageVars['apps'] = $this->getApps();
+
+    list($packages, $apps) = $this->loadPackagesAndAppsInfo();
+    $pageVars["packages"] = $packages;
+    $pageVars["apps"] = $apps;
+
     $pageVars['guide'] = $this;
     return $pageVars;
   }
 
-  public function getApps(): array
+  public function loadPackagesAndAppsInfo(): array
   {
-    return \Symfony\Component\Yaml\Yaml::parse(file_get_contents(__DIR__ . '/book/apps.yaml'));
+    $packagesAndApps = \Symfony\Component\Yaml\Yaml::parse(file_get_contents(__DIR__ . '/book/packages-and-apps.yaml')) ?? [];
+    $packages = $packagesAndApps['packages'];
+
+    $apps = $packagesAndApps['apps'];
+    // foreach ($apps as $key => $app) {
+    //   if (!is_array($app['languages']) || !in_array($this->config['language'], $app['languages'])) {
+    //     unset($apps[$key]);
+    //   }
+    // }
+    
+    return [$packages, $apps];
   }
 
   public function getAppInfo(string $app): array
   {
-    $apps = $this->getApps();
+    list($packages, $apps) = $this->loadPackagesAndAppsInfo();
     return $apps[$app] ?? [];
   }
 

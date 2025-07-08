@@ -9,12 +9,13 @@ There are following types of apps in Hubleto:
 | **Community** | Apps freely available in the Github repository.                                                      |
 | **Premium**   | Hubleto team develops premium apps as the paid and more complex version of community apps.           |
 | **Custom**    | Use custom apps if you are developing a custom project and do not plan to re-use your app elsewhere. |
-| **External**  | External apps are developed by external companies and are planned to be re-used in many projects.    |
 Table: Types of Hubleto apps
 
-In this guide, only *Community* and *Premium* apps are documented.
+## Apps
 
-## Find app
+{% include 'components/list-apps.twig' with {'type': ''} %}
+
+{# ## Find app
 
 <div class="card p-2">
   <a class="btn btn-transparent btn-blue" href="#"><span class="text">All apps</span></a>
@@ -29,4 +30,4 @@ In this guide, only *Community* and *Premium* apps are documented.
       <span class="text"> {{ app.name }} </span>
     </a>
   {% endfor %}
-</div>
+</div> #}

@@ -1,0 +1,577 @@
+# This file shall be the same in @help/v0/book/packages-and-apps.yaml and
+# @www/data/packages-and-apps.yaml
+
+packages:
+  full:
+    title:
+      en: Full suite
+    description:
+      en: This package lists all apps ready to boost your business.
+    color: "#4780bf"
+    apps:
+      - community/desktop
+      - community/contacts
+      - community/customers
+      - community/calendar
+      - community/documents
+      - community/notifications
+      - community/dashboards
+      - community/settings
+      - community/reports
+
+      - community/leads
+      - community/campaigns
+      - community/mail
+
+      - community/events
+      - community/eventfeedback
+      - community/eventregistrations
+
+      - community/deals
+      - community/orders
+      - community/pipeline
+
+      - community/products
+      - community/suppliers
+      - community/warehouses
+      - community/inventory
+
+      - community/projects
+      - community/tasks
+      - community/worksheets
+
+
+      - community/cloud
+      - community/usage
+      - community/tools
+      - community/developer
+      - community/help
+      - community/support
+      - community/about
+
+  crm:
+    title:
+      en: CRM
+    description:
+      en: This is the most complex package and provides full CRM functionality covering most of business automation tasks.
+    color: "#7a23dc"
+    apps:
+      - community/desktop
+      - community/contacts
+      - community/customers
+      - community/calendar
+      - community/documents
+      - community/notifications
+      - community/dashboards
+      - community/settings
+      - community/reports
+
+      - community/leads
+      - community/products
+      - community/deals
+      - community/pipeline
+      - community/mail
+
+      - community/usage
+      - community/tools
+      - community/developer
+      - community/help
+      - community/support
+      - community/about
+
+  marketing:
+    title:
+      en: Marketing
+    description:
+      en: You need to streamline marketing activities like management of leads or tracking of activities with your customers.
+    color: "#c6aa39"
+    apps:
+      - community/desktop
+      - community/contacts
+      - community/customers
+      - community/calendar
+      - community/documents
+      - community/notifications
+      - community/dashboards
+      - community/settings
+      - community/reports
+
+      - community/leads
+      - community/mail
+
+      - community/usage
+      - community/tools
+      - community/developer
+      - community/help
+      - community/support
+      - community/about
+
+  sales:
+    title:
+      en: Sales
+    description:
+      en: With this package your sales team will collaborate more effectively, improving conversion from leads to real deals.
+    color: "#f50ab9"
+    apps:
+      - community/customers
+      - community/calendar
+      - community/documents
+      - community/products
+      - community/deals
+      - community/pipeline
+      - community/reports
+      - community/settings
+      - community/dashboards
+      - community/messages
+      - community/orders
+
+  supply-chain:
+    title:
+      en: Supply chain
+    description:
+      en: Management of your supply chain, including warehouses, inventory, products or suppliers has never been easier.
+    color: "#4bbd44"
+    apps:
+      - community/desktop
+      - community/contacts
+      - community/customers
+      - community/calendar
+      - community/documents
+      - community/notifications
+      - community/dashboards
+      - community/settings
+      - community/reports
+
+      - community/products
+      - community/suppliers
+      - community/warehouses
+      - community/inventory
+
+      - community/usage
+      - community/tools
+      - community/developer
+      - community/help
+      - community/support
+      - community/about
+
+
+apps:
+
+  # desktop
+  community/desktop:
+    type: community
+    languages:
+      - en
+    name:
+      en: Desktop
+      sk: Pracovná plocha
+    urlHelp:
+      en: community/desktop
+
+  # contacts
+  community/contacts:
+    type: community
+    languages:
+      - en
+    name:
+      en: Contacts
+      sk: Kontakty
+    urlHelp:
+      en: community/contacts
+
+  # customers
+  community/customers:
+    type: community
+    languages:
+      - en
+    name:
+      en: Customers
+      sk: Zákazníci
+    highlight:
+      en: Free customer management and addressbook.
+      sk: Bezplatný adresár firemných zákazníkov.
+    description:
+      en:
+        This application provides customer and addressbook functionality.
+        Free to use, available in community package but rich with features,
+        e.g. showing leads or deals linked to a specific customer.
+      sk: blabla sk/aplikacie/uctovanie
+    url:
+      en: en/apps/customers
+      sk: sk/aplikacie/zakaznici
+    urlHelp:
+      en: community/customers
+
+  # calendar
+  community/calendar:
+    type: community
+    languages:
+      - en
+      - sk
+    name:
+      en: Calendar
+      sk: Kalendár
+    highlight:
+      en: Calendar
+      sk: Kalendár
+    url: 
+      en: en/apps/calendar
+      sk: sk/aplikacie/kalendar
+    urlHelp:
+      en: community/calendar
+
+  # documents
+  community/documents:
+    type: community
+    languages:
+      - en
+    name:
+      en: Documents
+      sk: Dokumenty
+    highlight:
+      en: Free document management.
+      sk: Bezplatná správa dokumentov.
+    description:
+      en: asdf
+      sk: blabla sk/aplikacie/uctovanie
+    url:
+      en: en/apps/documents
+      sk: sk/aplikacie/dokumenty
+    urlHelp:
+      en: community/documents
+
+  # notifications
+  community/notifications:
+    type: community
+    languages:
+      - en
+    name:
+      en: Notifications
+      sk: Notifikácie
+    urlHelp:
+      en: community/notifications
+
+  # dashboards
+  community/dashboards:
+    type: community
+    languages:
+      - en
+    name:
+      en: Dashboards
+      sk: Dashboardy
+    urlHelp:
+      en: community/dashboards
+
+  # settings
+  community/settings:
+    type: community
+    languages:
+      - en
+    name:
+      en: Settings
+      sk: Nastavenia
+    urlHelp:
+      en: community/settings
+
+  # reports
+  community/reports:
+    type: community
+    languages:
+      - en
+    name:
+      en: Reports
+      sk: Reporty
+    urlHelp:
+      en: community/reports
+
+  # leads
+  community/leads:
+    type: community
+    languages:
+      - en
+    name:
+      en: Leads
+      sk: Leady
+    highlight:
+      en: Free lead management.
+      sk: Bezplatná správa leadov.
+    description:
+      en: The Leads app within Hubleto streamlines the process of capturing, organizing, and tracking sales leads, empowering teams to manage opportunities efficiently from initial contact through conversion.
+      sk: Aplikácia na správu predajných leadov v rámci frameworku Hubleto zjednodušuje zachytávanie, organizáciu a sledovanie obchodných príležitostí, čím umožňuje tímom efektívne riadiť celý proces od prvého kontaktu až po uzavretie obchodu. Využíva robustné možnosti správy dát a automatizácie pracovných postupov na centralizáciu informácií o leadov a zrýchlenie predajných procesov.
+    url:
+      en: en/apps/leads
+      sk: sk/aplikacie/leady
+    urlHelp:
+      en: community/leads
+
+  # campaigns
+  community/campaigns:
+    type: community
+    languages:
+      - en
+    name:
+      en: Campaigns
+      sk: Kampane
+    urlHelp:
+      en: community/campaigns
+
+  # mail
+  community/mail:
+    type: community
+    languages:
+      - en
+    name:
+      en: Mail
+      sk: Mail
+    urlHelp:
+      en: community/mail
+
+  # events
+  community/events:
+    type: community
+    languages:
+      - en
+    name:
+      en: Events
+      sk: Eventy
+    urlHelp:
+      en: community/events
+
+  # eventfeedback
+  community/eventfeedback:
+    type: community
+    languages:
+      - en
+    name:
+      en: Event feedback
+      sk: Spätná väzba
+
+  # eventregistrations
+  community/eventregistrations:
+    type: community
+    languages:
+      - en
+    name:
+      en: Event registrations
+      sk: Registrácie
+
+  # Deals
+  community/deals:
+    languages:
+      - en
+    name:
+      en: Deals
+      sk: Dealy
+    highlight:
+      en: Free deal management.
+      sk: Bezplatná správa dealov.
+    description:
+      en: asdf
+      sk: blabla sk/aplikacie/uctovanie
+    type: community
+    url:
+      en: en/apps/deals
+      sk: sk/aplikacie/dealy
+    urlHelp:
+      en: community/deals
+
+  # Orders
+  community/orders:
+    languages:
+      - en
+    name:
+      en: Orders
+      sk: Objednávky
+    highlight:
+      en: Free lead management.
+      sk: Bezplatná správa leadov.
+    url:
+      en: en/apps/orders
+      sk: sk/aplikacie/objednavky
+    urlHelp:
+      en: community/orders
+
+  # Pipeline
+  community/pipeline:
+    type: community
+    languages:
+      - en
+    name:
+      en: Pipeline
+      sk: Pipeline
+    url:
+      en: en/apps/pipeline
+      sk: sk/aplikacie/pipeline
+    urlHelp:
+      en: community/pipeline
+
+  # Billing
+  premium/billing:
+    type: community
+    languages:
+      - en
+      - sk
+    name:
+      en: Billing
+      sk: Účtovanie
+    highlight:
+      en: Management of multiple billing accounts.
+      sk: Správa rôznych účtov.
+    description:
+      en: blabla en/apps/billing
+      sk: blabla sk/aplikacie/uctovanie
+    url:
+      en: en/apps/billing
+      sk: sk/aplikacie/uctovanie
+    urlHelp:
+      en: community/billing
+
+  # Products
+  community/products:
+    languages:
+      - en
+    name:
+      en: Products
+      sk: Produkty
+    highlight:
+      en: Full-featured product management.
+      sk: Plnohodnotná správa produktov.
+    description:
+      en: asdf
+      sk: blabla sk/aplikacie/uctovanie
+    type: community
+    url:
+      en: en/apps/products
+      sk: sk/aplikacie/produkty
+    urlHelp:
+      en: community/products
+
+  # suppliers
+  community/suppliers:
+    type: community
+    languages:
+      - en
+    name:
+      en: Suppliers
+    urlHelp:
+      en: community/suppliers
+
+  # warehouses
+  community/warehouses:
+    type: community
+    languages:
+      - en
+    name:
+      en: Warehouses
+    urlHelp:
+      en: community/warehouses
+
+  # inventory
+  community/inventory:
+    type: community
+    languages:
+      - en
+    name:
+      en: Inventory
+    urlHelp:
+      en: community/inventory
+
+  # projects
+  community/projects:
+    type: community
+    languages:
+      - en
+    name:
+      en: Projects
+    urlHelp:
+      en: community/projects
+
+  # tasks
+  community/tasks:
+    type: community
+    languages:
+      - en
+    name:
+      en: Tasks
+    urlHelp:
+      en: community/tasks
+
+  # worksheets
+  community/worksheets:
+    type: community
+    languages:
+      - en
+    name:
+      en: Worksheets
+    urlHelp:
+      en: community/worksheets
+
+  # cloud
+  community/cloud:
+    type: community
+    languages:
+      - en
+    name:
+      en: Cloud
+    urlHelp:
+      en: community/cloud
+
+  # usage
+  community/usage:
+    type: community
+    languages:
+      - en
+    name:
+      en: Usage
+    urlHelp:
+      en: community/usage
+
+  # tools
+  community/tools:
+    type: community
+    languages:
+      - en
+    name:
+      en: Tools
+    urlHelp:
+      en: community/tools
+
+  # developer
+  community/developer:
+    type: community
+    languages:
+      - en
+    name:
+      en: Developer
+    urlHelp:
+      en: community/developer
+
+  # support
+  community/support:
+    type: community
+    languages:
+      - en
+    name:
+      en: Support
+    urlHelp:
+      en: community/support
+
+  # help
+  community/help:
+    type: community
+    languages:
+      - en
+    name:
+      en: Help
+    urlHelp:
+      en: community/help
+
+  # about
+  community/about:
+    type: community
+    languages:
+      - en
+    name:
+      en: About
+    urlHelp:
+      en: community/about

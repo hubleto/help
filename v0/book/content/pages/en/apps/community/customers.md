@@ -1,6 +1,5 @@
-{% set app = guide.getAppInfo('community/customers') %}
-
 # Customers
+{% include 'components/demo-cta-button.twig' with { 'ctaUrl': 'customers' } %}
 {{ renderTopBar(onThisPage)|raw }}
 
 **Customers** represent companies or businesses that your organization interacts with. Each customer record stores essential details such as the company name, address, tax-related information, and associated contacts, ensuring a structured approach to business management.
