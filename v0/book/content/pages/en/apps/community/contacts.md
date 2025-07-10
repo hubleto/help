@@ -27,6 +27,7 @@ Below are the key attributes used to manage individuals linked to a customer:
 
 | Attribute | Description | Example |
 |------------------|-------------|---------|
+| **Salutation** | Contact's salutation. | *Mr.*, *Mrs.* |
 | **First Name** (Required) | The first name of the contact. | *John* |
 | **Last Name** | The last name of the contact. | *Smith* |
 | **Customer** (Required) | The company associated with the contact. | *ABC Corp* |
