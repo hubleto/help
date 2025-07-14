@@ -27,6 +27,8 @@ $templateConfig = [
 ];
 
 class MyGuideVis extends \WaiBlue\GuideVis\Loader {
+  public array $pageContentsCache = [];
+
   public function init()
   {
     parent::init();
@@ -58,6 +60,56 @@ class MyGuideVis extends \WaiBlue\GuideVis\Loader {
     $bookConfig["tableOfContents"][1]["children"][0]["children"] = $communityApps;
 
     return $bookConfig;
+  }
+
+  public function loadUrl($url, $post = []) {
+
+    $this->loadUrlError = '';
+
+    if (is_callable('curl_init')) {
+      $ch = curl_init();
+
+      curl_setopt($ch, CURLOPT_URL, $url);
+      curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+      curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
+      curl_setopt($ch, CURLOPT_TIMEOUT, 5);
+      curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+      curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+      curl_setopt($ch, CURLOPT_BUFFERSIZE, 1024 * 1024 * 1024 * 10);
+      curl_setopt($ch, CURLOPT_SSLVERSION, CURL_SSLVERSION_MAX_TLSv1_3);
+      curl_setopt($ch, CURLOPT_TIMEOUT, 1000);
+
+      $html = curl_exec($ch);
+      $this->loadUrlError = curl_error($ch);
+
+      curl_close($ch);
+    } else {
+      $this->loadUrlError = 'CURL is not available';
+    }
+
+    return $this->loadUrlError == '' ? $html : false;
+  }
+
+  public function getPageContent(string $page): string
+  {
+    if (!empty($pageContentsCache[$page])) {
+      return $pageContentsCache[$page];
+    } else {
+      if ($page == $this->page && ($this->env['pageContentSource'] ?? '') == 'github-raw') {
+        $url = "https://raw.githubusercontent.com/hubleto/help/refs/heads/main/"
+          . "v0/book/content/pages/"
+          . $page . ".md";
+        $pageContent = $this->loadUrl($url);
+        if ($pageContent === false) $pageContent = $this->loadUrlError;
+        // $pageContent = $url . ":" . $pageContent;
+      } else {
+        $pageContent = parent::getPageContent($page);
+      }
+
+      $this->pageContentsCache[$page] = $pageContent;
+
+      return $pageContent;
+    }
   }
 
   public function getPageVars(array $pageData = []): array
