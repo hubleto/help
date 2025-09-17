@@ -20,7 +20,7 @@ Managing contacts is a key part of maintaining business relationships. The follo
 
 Below are the key attributes used to manage individuals linked to a customer:
 
-![Contact-example]({{ bookRootUrl }}/content/assets/images/contacts/contacts-example.png)
+![Contact-example](images/contacts/contacts-example.png)
 *Example view of contact*
 
 ### Personal Information

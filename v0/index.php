@@ -62,54 +62,63 @@ class MyGuideVis extends \WaiBlue\GuideVis\Loader {
     return $bookConfig;
   }
 
-  public function loadUrl($url, $post = []) {
+  // public function loadUrl($url, $post = []) {
 
-    $this->loadUrlError = '';
+  //   $this->loadUrlError = '';
 
-    if (is_callable('curl_init')) {
-      $ch = curl_init();
+  //   if (is_callable('curl_init')) {
+  //     $ch = curl_init();
 
-      curl_setopt($ch, CURLOPT_URL, $url);
-      curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-      curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
-      curl_setopt($ch, CURLOPT_TIMEOUT, 5);
-      curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-      curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
-      curl_setopt($ch, CURLOPT_BUFFERSIZE, 1024 * 1024 * 1024 * 10);
-      curl_setopt($ch, CURLOPT_SSLVERSION, CURL_SSLVERSION_MAX_TLSv1_3);
-      curl_setopt($ch, CURLOPT_TIMEOUT, 1000);
+  //     curl_setopt($ch, CURLOPT_URL, $url);
+  //     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+  //     curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
+  //     curl_setopt($ch, CURLOPT_TIMEOUT, 5);
+  //     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+  //     curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+  //     curl_setopt($ch, CURLOPT_BUFFERSIZE, 1024 * 1024 * 1024 * 10);
+  //     curl_setopt($ch, CURLOPT_SSLVERSION, CURL_SSLVERSION_MAX_TLSv1_3);
+  //     curl_setopt($ch, CURLOPT_TIMEOUT, 1000);
 
-      $html = curl_exec($ch);
-      $this->loadUrlError = curl_error($ch);
+  //     $html = curl_exec($ch);
+  //     $this->loadUrlError = curl_error($ch);
 
-      curl_close($ch);
-    } else {
-      $this->loadUrlError = 'CURL is not available';
-    }
+  //     curl_close($ch);
+  //   } else {
+  //     $this->loadUrlError = 'CURL is not available';
+  //   }
 
-    return $this->loadUrlError == '' ? $html : false;
-  }
+  //   return $this->loadUrlError == '' ? $html : false;
+  // }
+
+  // public function getPageContent(string $page): string
+  // {
+  //   if (!empty($pageContentsCache[$page])) {
+  //     return $pageContentsCache[$page];
+  //   } else {
+  //     if ($page == $this->page && ($this->env['pageContentSource'] ?? '') == 'github-raw') {
+  //       $url = "https://raw.githubusercontent.com/hubleto/help/refs/heads/main/"
+  //         . "v0/book/content/pages/"
+  //         . $page . ".md";
+  //       $pageContent = $this->loadUrl($url);
+  //       if ($pageContent === false) $pageContent = $this->loadUrlError;
+  //       // $pageContent = $url . ":" . $pageContent;
+  //     } else {
+  //       $pageContent = parent::getPageContent($page);
+  //     }
+
+  //     $this->pageContentsCache[$page] = $pageContent;
+
+  //     return $pageContent;
+  //   }
+  // }
 
   public function getPageContent(string $page): string
   {
-    if (!empty($pageContentsCache[$page])) {
-      return $pageContentsCache[$page];
-    } else {
-      if ($page == $this->page && ($this->env['pageContentSource'] ?? '') == 'github-raw') {
-        $url = "https://raw.githubusercontent.com/hubleto/help/refs/heads/main/"
-          . "v0/book/content/pages/"
-          . $page . ".md";
-        $pageContent = $this->loadUrl($url);
-        if ($pageContent === false) $pageContent = $this->loadUrlError;
-        // $pageContent = $url . ":" . $pageContent;
-      } else {
-        $pageContent = parent::getPageContent($page);
-      }
-
-      $this->pageContentsCache[$page] = $pageContent;
-
-      return $pageContent;
-    }
+    $content = parent::getPageContent($page);
+    // $content = str_replace('<img src="images', '<img src="/hubleto/public/help/v0/book/content/assets/images', $content);
+    // $content = str_replace('<img', '<a', $content);
+    $content = preg_replace('/\!\[(.*)?\]\(images/', '![$1](/hubleto/public/help/v0/book/content/assets/images', $content);
+    return $content;
   }
 
   public function getPageVars(array $pageData = []): array
