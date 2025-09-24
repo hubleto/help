@@ -1,6 +1,6 @@
 # Welcome
 
-Modular open-source ERP and CRM that helps your business grow.
+Modular opensource ERP and CRM that helps your business grow.
 
 ## What is Hubleto?
 
