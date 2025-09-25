@@ -26,6 +26,6 @@ Hubleto is not just another CRM/ERP platform. It’s open-source, meaning it’s
 Here are some helpful resources to get you started with Hubleto:
 
 - [Hubleto GitHub Repository](https://github.com/hubleto/erp)
-- [Hubleto Developer Documentation](https://developer.hubleto.com/about)
+- [Hubleto Developer Documentation](https://developer.hubleto.com/)
 - [Official Hubleto Website](https://www.hubleto.com/en/)
 
