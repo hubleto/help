@@ -30,9 +30,9 @@
   .btn.btn-danger { @apply text-red-600 bg-red-200 hover:bg-red-400 hover:text-white; }
   .btn.btn-success { @apply text-white bg-green-700 hover:bg-green-900 hover:text-white; }
   .btn.btn-success-outline { @apply text-green-700 bg-white border border-dotted border-green-700 hover:border-solid; }
-  .btn.btn-add { @apply text-white bg-secondary hover:bg-green-900 hover:text-white; }
-  .btn.btn-add-outline { @apply text-secondary bg-white border border-dotted border-secondary hover:border-solid; }
-  .btn.btn-save { @apply text-white bg-secondary hover:bg-green-900 hover:text-white; }
+  .btn.btn-add { @apply text-white bg-amber-600 hover:bg-amber-400 hover:text-white; }
+  .btn.btn-add-outline { @apply text-amber-600 bg-white border border-dotted border-amber-400 hover:border-solid; }
+  .btn.btn-save { @apply text-white bg-amber-600 hover:bg-amber-400 hover:text-white; }
   .btn.btn-save-outline { @apply text-secondary bg-white border border-dotted border-secondary hover:border-solid; }
   .btn.btn-delete { @apply text-red-800 bg-red-100 border border-red-100 hover:border-red-200; }
   .btn.btn-delete-outline { @apply text-red-800 bg-transparent border border-red-100 hover:border-red-200; }

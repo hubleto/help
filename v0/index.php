@@ -33,6 +33,15 @@ class MyGuideVis extends \WaiBlue\GuideVis\Loader {
   {
     parent::init();
 
+    $this->twig->addFunction(new \Twig\TwigFunction('btn', function($class, $icon, $text) {
+      return
+        "<button class='btn btn-{$class}'>"
+          . "<span class='icon'><i class='{$icon}'></i></span>"
+          . (empty($text) ? "" : "<span class='text'>{$text}</span>")
+        . "</button>"
+      ;
+    }));
+
     $this->twig->addFunction(new \Twig\TwigFunction('renderTopBar', function(array $items) {
       $topbar = '<div class="mt-4 card card-body gap-2 grid grid-cols-4">';
       foreach ($items as $key => $value) {
