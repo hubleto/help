@@ -1,6 +1,0 @@
-# 7 Supply chain
-
-{% include 'components/table-of-contents-from-pages-folder.twig' with {
-  'folder': 'en/supply-chain',
-  'maxLevel': 3,
-} %}

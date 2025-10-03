@@ -14,54 +14,12 @@ tableOfContents:
       - page: en/introduction/who-is-hubleto-for
       - page: en/introduction/how-to-use-this-guide
   - page: en/getting-started
-    icon: fas fa-home
+    icon: fas fa-play
     children:
       - page: en/getting-started/registration-and-login
       - page: en/getting-started/homepage-overview
       - page: en/getting-started/menu-navigation
-  - page: en/crm
-    icon: fas fa-user-tie
-    children:
-      - page: en/crm/customers
-      - page: en/crm/contacts
-      - page: en/crm/calendar
-      - page: en/crm/documents
-      - page: en/crm/workflow
-      - page: en/crm/mail
-      - page: en/crm/dashboards
-  - page: en/marketing
-    icon: fas fa-home
-    children:
-      - page: en/marketing/campaigns
-      - page: en/marketing/leads
-  - page: en/sales
-    icon: fas fa-home
-    children:
-      - page: en/sales/suppliers
-      - page: en/sales/deals
-      - page: en/sales/products
-      - page: en/sales/orders
-  - page: en/projects
-    icon: fas fa-home
-    children:
-      - page: en/projects/tasks
-      - page: en/projects/worksheets
-      - page: en/projects/projects
-      - page: en/projects/issues
-  - page: en/supply-chain
-    icon: fas fa-home
-    children:
-      - page: en/supply-chain/warehouses
-      - page: en/supply-chain/inventory
-  - page: en/finance
-    icon: fas fa-home
-    children:
-      - page: en/finance/invoices
-  - page: en/maintenance
-    icon: fas fa-home
-    children:
-      - page: en/maintenance/notifications
-      - page: en/maintenance/settings
-      - page: en/maintenance/tools
-
-
+  - page: en/user-guide
+    icon: fas fa-book
+  - page: en/how-to
+    icon: fas fa-question

@@ -107,7 +107,7 @@ class MyGuideVis extends \WaiBlue\GuideVis\Loader {
           $children = [];
 
           $title = $this->getPageTitle($folder . '/' . str_replace('.md', '', $page));
-          if ($level < $maxLevel && is_dir($f . '/' . $page)) {
+          if ($level < $maxLevel - 1 && is_dir($f . '/' . $page)) {
             $children =
               $this->getTableOfContentsFromFolder(
                 $folder . '/' . $page,

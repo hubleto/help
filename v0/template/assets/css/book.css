@@ -91,6 +91,7 @@
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
   --tracking-wider: 0.05em;
+  --leading-tight: 1.25;
   --radius-sm: 0.25rem;
   --default-font-family: var(--font-sans);
   --default-font-feature-settings: var(--font-sans--font-feature-settings);
@@ -1762,6 +1763,24 @@
   }
   .table-of-contents ul li {
     margin-left: calc(var(--spacing) * 4);
+  }
+  .table-of-contents > ul > li > a {
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
+  .table-of-contents > ul > li > ul > li > a {
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
+  }
+  .table-of-contents > ul > li > ul > li > ul > li {
+    --tw-leading: var(--leading-tight);
+    line-height: var(--leading-tight);
+  }
+  .table-of-contents > ul > li > ul > li > ul > li > a {
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
   }
   aside.on-this-page {
     position: fixed;
