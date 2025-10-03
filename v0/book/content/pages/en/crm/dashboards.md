@@ -1,6 +1,6 @@
-# Sales
+# Dashboards
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
-  'folder': 'en/sales',
+  'folder': 'en/crm/dashboards',
   'maxLevel': 3,
 } %}

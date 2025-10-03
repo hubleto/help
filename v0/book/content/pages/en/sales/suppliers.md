@@ -1,6 +1,6 @@
-# Sales
+# Suppliers
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
-  'folder': 'en/sales',
-  'maxLevel': 3,
+  'folder': 'en/sales/suppliers',
+  'maxLevel': 2,
 } %}

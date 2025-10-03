@@ -10,114 +10,58 @@ tableOfContents:
   - page: en/introduction
     icon: fas fa-home
     children:
-      - page: en/what-is-hubleto
-      - page: en/who-is-hubleto-for
-      - page: en/how-to-use-this-guide
+      - page: en/introduction/what-is-hubleto
+      - page: en/introduction/who-is-hubleto-for
+      - page: en/introduction/how-to-use-this-guide
   - page: en/getting-started
     icon: fas fa-home
     children:
-      - page: en/registration-and-login
-      - page: en/homepage-overview
-      - page: en/menu-navigation
+      - page: en/getting-started/registration-and-login
+      - page: en/getting-started/homepage-overview
+      - page: en/getting-started/menu-navigation
   - page: en/crm
     icon: fas fa-user-tie
     children:
-      - page: en/customers
-        children:
-          - page: en/customers/add-customer
-          - page: en/customers/edit-and-manage-data
-          - page: en/customers/filtering-and-search
-      - page: en/contacts
-        children:
-          - page: en/contacts/difference-between-customers-and-contacts
-          - page: en/contacts/add-and-manage-contacts
-          - page: en/contacts/tags-and-categorization
-      - page: en/calendar
-        children:
-          - page: en/calendar/create-event
-          - page: en/calendar/link-events-to-contacts-or-customers
-          - page: en/calendar/view-calendar-by-days-weeks-months
-      - page: en/documents
-        children:
-          - page: en/documents/upload-new-document
-          - page: en/documents/previews-and-downloads
-          - page: en/documents/organize-documents
-      - page: en/workflow
-        children:
-          - page: en/workflow/what-is-workflow-pipeline
-          - page: en/workflow/create-workflow
-          - page: en/workflow/manage-tasks-in-workflow
-      - page: en/mail
-        children:
-          - page: en/mail/link-your-email-account
-          - page: en/mail/send-emails-directly-from-hubleto
-          - page: en/mail/view-communication-history
-      - page: en/dashboards
-        children:
-          - page: en/dashboards/how-to-add-dashboard-step-by-step
-          - page: en/dashboards/edit-panels
-          - page: en/dashboards/share-dashboard
+      - page: en/crm/customers
+      - page: en/crm/contacts
+      - page: en/crm/calendar
+      - page: en/crm/documents
+      - page: en/crm/workflow
+      - page: en/crm/mail
+      - page: en/crm/dashboards
   - page: en/marketing
     icon: fas fa-home
     children:
-      - page: en/campaigns
-        children:
-          - page: en/campaigns/create-campaign
-          - page: en/campaigns/target-customers
-          - page: en/campaigns/track-results
-      - page: en/leads
-        children:
-          - page: en/leads/add-lead
-          - page: en/leads/manage-leads-and-convert-them-to-customers
+      - page: en/marketing/campaigns
+      - page: en/marketing/leads
   - page: en/sales
     icon: fas fa-home
     children:
-      - page: en/suppliers
-        children:
-          - page: en/suppliers/add-supplier
-          - page: en/suppliers/manage-supplier-data
-          - page: en/suppliers/link-to-products
-      - page: en/deals
-        children:
-          - page: en/suppliers/create-deal
-          - page: en/suppliers/deal-stages-pipeline
-          - page: en/suppliers/evaluate-success-rates
-      - page: en/products
-        children:
-          - page: en/products/add-product
-          - page: en/products/price-lists-and-categories
-          - page: en/products/manage-inventory
-      - page: en/orders
-        children:
-          - page: en/orders/create-order
-          - page: en/orders/link-to-customers-and-products
-          - page: en/orders/export-invoices
+      - page: en/sales/suppliers
+      - page: en/sales/deals
+      - page: en/sales/products
+      - page: en/sales/orders
   - page: en/projects
     icon: fas fa-home
     children:
-      - page: en/tasks
-      - page: en/worksheets
-      - page: en/projects
-      - page: en/issues
+      - page: en/projects/tasks
+      - page: en/projects/worksheets
+      - page: en/projects/projects
+      - page: en/projects/issues
   - page: en/supply-chain
     icon: fas fa-home
     children:
-      - page: en/warehouses
-      - page: en/inventory
+      - page: en/supply-chain/warehouses
+      - page: en/supply-chain/inventory
   - page: en/finance
     icon: fas fa-home
     children:
-      - page: en/invoices
+      - page: en/finance/invoices
   - page: en/maintenance
     icon: fas fa-home
     children:
-      - page: en/notifications
-      - page: en/settings
-      - page: en/tools
-  - page: en/help
-    icon: fas fa-home
-    children:
-      - page: en/about
-      - page: en/help
+      - page: en/maintenance/notifications
+      - page: en/maintenance/settings
+      - page: en/maintenance/tools
 
 

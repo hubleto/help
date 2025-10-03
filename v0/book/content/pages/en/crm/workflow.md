@@ -1,6 +1,6 @@
-# Sales
+# Workflow
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
-  'folder': 'en/sales',
+  'folder': 'en/crm/workflow',
   'maxLevel': 3,
 } %}

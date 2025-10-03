@@ -1,6 +1,6 @@
-# Sales
+# Contacts
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
-  'folder': 'en/sales',
+  'folder': 'en/crm/contacts',
   'maxLevel': 3,
 } %}

@@ -1,6 +1,6 @@
-# Sales
+# Calendar
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
-  'folder': 'en/sales',
+  'folder': 'en/crm/calendar',
   'maxLevel': 3,
 } %}

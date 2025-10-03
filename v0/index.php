@@ -55,6 +55,13 @@ class MyGuideVis extends \WaiBlue\GuideVis\Loader {
       ;
     }));
 
+    $this->twig->addFunction(new \Twig\TwigFunction(
+      'getTableOfContentsFromFolder',
+      function($folder, $maxLevel) {
+        return $this->getTableOfContentsFromFolder($folder, $maxLevel);
+      }
+    ));
+    
     $this->twig->addFunction(new \Twig\TwigFunction('renderTopBar', function(array $items) {
       $topbar = '<div class="mt-4 card card-body gap-2 grid grid-cols-4">';
       foreach ($items as $key => $value) {
@@ -84,61 +91,47 @@ class MyGuideVis extends \WaiBlue\GuideVis\Loader {
     return $bookConfig;
   }
 
-  // public function loadUrl($url, $post = []) {
+  public function getTableOfContentsFromFolder(string $folder, int $maxLevel = 2, $level = 0): array
+  {
+    $toc = [];
 
-  //   $this->loadUrlError = '';
+    $f = $this->env['bookRootFolder'] . '/content/pages/' . $folder;
+    if (is_dir($f)) {
+      $pages = scandir($f);
+      foreach ($pages as $page) {
+        if ($page == '.' || $page == '..') continue;
+        if (substr($page, -3) == '.md') {
+          $page = substr($page, 0, -3);
 
-  //   if (is_callable('curl_init')) {
-  //     $ch = curl_init();
+          $title = $page;
+          $children = [];
 
-  //     curl_setopt($ch, CURLOPT_URL, $url);
-  //     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-  //     curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
-  //     curl_setopt($ch, CURLOPT_TIMEOUT, 5);
-  //     curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-  //     curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
-  //     curl_setopt($ch, CURLOPT_BUFFERSIZE, 1024 * 1024 * 1024 * 10);
-  //     curl_setopt($ch, CURLOPT_SSLVERSION, CURL_SSLVERSION_MAX_TLSv1_3);
-  //     curl_setopt($ch, CURLOPT_TIMEOUT, 1000);
+          $title = $this->getPageTitle($folder . '/' . str_replace('.md', '', $page));
+          if ($level < $maxLevel && is_dir($f . '/' . $page)) {
+            $children =
+              $this->getTableOfContentsFromFolder(
+                $folder . '/' . $page,
+                $maxLevel,
+                $level + 1
+              );
+            ;
+          }
 
-  //     $html = curl_exec($ch);
-  //     $this->loadUrlError = curl_error($ch);
+          $toc[$folder . '/' . $page] = [
+            'title' => $title,
+            'children' => $children,
+          ];
 
-  //     curl_close($ch);
-  //   } else {
-  //     $this->loadUrlError = 'CURL is not available';
-  //   }
-
-  //   return $this->loadUrlError == '' ? $html : false;
-  // }
-
-  // public function getPageContent(string $page): string
-  // {
-  //   if (!empty($pageContentsCache[$page])) {
-  //     return $pageContentsCache[$page];
-  //   } else {
-  //     if ($page == $this->page && ($this->env['pageContentSource'] ?? '') == 'github-raw') {
-  //       $url = "https://raw.githubusercontent.com/hubleto/help/refs/heads/main/"
-  //         . "v0/book/content/pages/"
-  //         . $page . ".md";
-  //       $pageContent = $this->loadUrl($url);
-  //       if ($pageContent === false) $pageContent = $this->loadUrlError;
-  //       // $pageContent = $url . ":" . $pageContent;
-  //     } else {
-  //       $pageContent = parent::getPageContent($page);
-  //     }
-
-  //     $this->pageContentsCache[$page] = $pageContent;
-
-  //     return $pageContent;
-  //   }
-  // }
+        }
+      }
+    }
+    
+    return $toc;
+  }
 
   public function getPageContent(string $page): string
   {
     $content = parent::getPageContent($page);
-    // $content = str_replace('<img src="images', '<img src="/hubleto/public/help/v0/book/content/assets/images', $content);
-    // $content = str_replace('<img', '<a', $content);
     $content = preg_replace('/\!\[(.*)?\]\(images/', '![$1](/hubleto/public/help/v0/book/content/assets/images', $content);
     return $content;
   }
@@ -160,14 +153,7 @@ class MyGuideVis extends \WaiBlue\GuideVis\Loader {
   {
     $packagesAndApps = \Symfony\Component\Yaml\Yaml::parse(file_get_contents(__DIR__ . '/book/packages-and-apps.yaml')) ?? [];
     $packages = $packagesAndApps['packages'];
-
     $apps = $packagesAndApps['apps'];
-    // foreach ($apps as $key => $app) {
-    //   if (!is_array($app['languages']) || !in_array($this->config['language'], $app['languages'])) {
-    //     unset($apps[$key]);
-    //   }
-    // }
-    
     return [$packages, $apps];
   }
 

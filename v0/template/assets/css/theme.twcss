@@ -82,6 +82,10 @@
   .sidebar .collapsed + * { @apply hidden; }
   .sidebar .expanded + * { @apply block; }
 
+  .table-of-contents { @apply m-0 p-2 border border-primary/40; }
+  .table-of-contents ul { @apply list-none p-2; }
+  .table-of-contents ul li { @apply ml-4; }
+
   aside.on-this-page { @apply fixed top-0 right-0 h-full w-60 break-all bg-white z-20 p-4 hidden shadow-lg lg:block; }
   aside.on-this-page > div:nth-child(1) { @apply text-sm p-2.5 flex items-center font-semibold; }
   aside.on-this-page > div:nth-child(2) { @apply p-2; }

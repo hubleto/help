@@ -1,6 +1,6 @@
 # Supply chain
 
-{% include 'components/topics-list.twig' with {'topics': [
-  { 'title': 'Warehouses', 'page': 'en/warehouses' },
-  { 'title': 'Inventory', 'page': 'en/inventory' },
-]} %}
+{% include 'components/table-of-contents-from-pages-folder.twig' with {
+  'folder': 'en/supply-chain',
+  'maxLevel': 3,
+} %}

@@ -1,6 +1,6 @@
 # Marketing
 
-{% include 'components/topics-list.twig' with {'topics': [
-  { 'title': 'Campaigns', 'page': 'en/campaigns' },
-  { 'title': 'Leads', 'page': 'en/leads' },
-]} %}
+{% include 'components/table-of-contents-from-pages-folder.twig' with {
+  'folder': 'en/marketing',
+  'maxLevel': 3,
+} %}

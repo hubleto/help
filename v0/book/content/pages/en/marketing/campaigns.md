@@ -1,6 +1,6 @@
-# Sales
+# Campaigns
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
-  'folder': 'en/sales',
+  'folder': 'en/marketing/campaigns',
   'maxLevel': 3,
 } %}

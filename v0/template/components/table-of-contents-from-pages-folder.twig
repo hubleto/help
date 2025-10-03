@@ -1,0 +1,55 @@
+{% set toc = getTableOfContentsFromFolder(folder, maxLevel) %}
+
+{% macro renderTocDefault(env, folder, toc) %}
+  <ul>
+    {% for page, pageData in toc %}
+      <li>
+        <a href="{{ env.guideRootUrl }}/{{ page }}">{{ pageData.title }}</a>
+        {% if pageData.children|length > 0 %}
+          {{ _self.renderTocDefault(env, folder, pageData.children) }}
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endmacro %}
+
+{% macro renderTocList(env, folder, toc) %}
+  <div class="list">
+    {% for page, pageData in toc %}
+      <a
+        class="btn btn-transparent btn-list-item"
+        href="{{ env.guideRootUrl }}/{{ page }}"
+      >{{ pageData.title }}</a>
+      <div class="ml-2 list">
+        {% if pageData.children|length > 0 %}
+          {{ _self.renderTocList(env, folder, pageData.children) }}
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+{% endmacro %}
+
+
+{% macro renderTocCards(env, folder, toc) %}
+  {% for page, pageData in toc %}
+<div class="card">
+      <div class="card-header">
+        <a
+          class="btn btn-transparent btn-list-item"
+          href="{{ env.guideRootUrl }}/{{ page }}"
+        >{{ pageData.title }}</a>
+      </div>
+      <div class="card-body">
+        {% if pageData.children|length > 0 %}
+          {{ _self.renderTocList(env, folder, pageData.children) }}
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+{% endmacro %}
+
+<div class="table-of-contents">
+  {% if view == 'list' %} {{ _self.renderTocList(env, folder, toc) }}
+  {% elseif view == 'cards' %} {{ _self.renderTocCards(env, folder, toc) }}
+  {% else %} {{ _self.renderTocDefault(env, folder, toc) }} {% endif %}
+</div>

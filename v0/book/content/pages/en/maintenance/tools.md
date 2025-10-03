@@ -1,6 +1,6 @@
-# Sales
+# Tools
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
-  'folder': 'en/sales',
-  'maxLevel': 3,
+  'folder': 'en/maintenance/tools',
+  'maxLevel': 2,
 } %}

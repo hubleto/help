@@ -1,5 +1,6 @@
 # Finance
 
-{% include 'components/topics-list.twig' with {'topics': [
-  { 'title': 'Invoices', 'page': 'en/invoices' },
-]} %}
+{% include 'components/table-of-contents-from-pages-folder.twig' with {
+  'folder': 'en/finance',
+  'maxLevel': 3,
+} %}

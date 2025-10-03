@@ -1,6 +1,6 @@
-# Sales
+# Issues
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
-  'folder': 'en/sales',
-  'maxLevel': 3,
+  'folder': 'en/projects/issues',
+  'maxLevel': 2,
 } %}
