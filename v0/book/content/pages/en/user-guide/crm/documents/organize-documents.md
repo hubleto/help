@@ -1,5 +1,5 @@
 {# tocOrder = 3 #}
 
-# rganize documents
+# Organize documents
 
 {% include 'components/work-in-progress.twig' %}
