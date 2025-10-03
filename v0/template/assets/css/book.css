@@ -1752,8 +1752,9 @@
   .table-of-contents ul {
     list-style-type: none;
     padding: calc(var(--spacing) * 0);
+    padding-bottom: calc(var(--spacing) * 2);
   }
-  .table-of-contents ul li {
+  .table-of-contents ul li ul {
     margin-left: calc(var(--spacing) * 4);
   }
   .table-of-contents > ul > li > a {

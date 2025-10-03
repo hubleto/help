@@ -83,8 +83,8 @@
   .sidebar .expanded + * { @apply block; }
 
   .table-of-contents { @apply m-0 p-2 border border-primary/40; }
-  .table-of-contents ul { @apply list-none p-0; }
-  .table-of-contents ul li { @apply ml-4; }
+  .table-of-contents ul { @apply list-none p-0 pb-2; }
+  .table-of-contents ul li ul { @apply ml-4; }
   .table-of-contents > ul > li > a { @apply text-base; }
   .table-of-contents > ul > li > ul > li > a { @apply text-sm; }
   .table-of-contents > ul > li > ul > li > ul > li { @apply leading-tight; }
