@@ -1,4 +1,6 @@
-# 7 Maintenance
+{# tocOrder = 7 #}
+
+# Maintenance
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/maintenance',

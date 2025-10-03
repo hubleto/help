@@ -1,3 +1,5 @@
-# 3.3.3 Manage inventory
+{# tocOrder = 3 #}
+
+# Manage inventory
 
 {% include 'components/work-in-progress.twig' %}

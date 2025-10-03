@@ -21,5 +21,11 @@ tableOfContents:
       - page: en/getting-started/menu-navigation
   - page: en/user-guide
     icon: fas fa-book
-  - page: en/how-to
-    icon: fas fa-question
+    children:
+      - page: en/user-guide/crm
+      - page: en/user-guide/marketing
+      - page: en/user-guide/sales
+      - page: en/user-guide/projects
+      - page: en/user-guide/supply-chain
+      - page: en/user-guide/finance
+      - page: en/user-guide/maintenance

@@ -1,4 +1,6 @@
-# 4.2 Worksheets
+{# tocOrder = 2 #}
+
+# Worksheets
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/projects/worksheets',

@@ -4,7 +4,9 @@
   <ul>
     {% for item in toc %}
       <li>
-        <a href="{{ env.guideRootUrl }}/{{ item.page }}">{{ item.title }}</a>
+        <a href="{{ env.guideRootUrl }}/{{ item.page }}">
+          {{ item.title }}
+        </a>
         {% if item.children|length > 0 %}
           {{ _self.renderTocDefault(env, folder, item.children) }}
         {% endif %}

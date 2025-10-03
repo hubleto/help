@@ -1,1 +1,3 @@
-# 5.1.2 Manage stock
+{# tocOrder = 2 #}
+
+# Manage stock

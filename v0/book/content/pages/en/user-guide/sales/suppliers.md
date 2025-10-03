@@ -1,4 +1,6 @@
-# 3.1 Suppliers
+{# tocOrder = 1 #}
+
+# Suppliers
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/sales/suppliers',

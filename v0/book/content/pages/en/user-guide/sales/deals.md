@@ -1,4 +1,6 @@
-# 3.2 Deals
+{# tocOrder = 2 #}
+
+# Deals
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/sales/deals',

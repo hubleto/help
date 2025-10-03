@@ -105,8 +105,16 @@ class MyGuideVis extends \WaiBlue\GuideVis\Loader {
 
           $title = '';
           $children = [];
+          
+          $mdContent = $this->getPageContent($folder . '/' . str_replace('.md', '', $page));
 
-          $title = $this->getPageTitle($folder . '/' . str_replace('.md', '', $page));
+          preg_match('/^# (.*?)\\n/', $mdContent, $m1);
+          preg_match('/\n# (.*?)\\n/', $mdContent, $m2);
+          $title = $m1[1] ?? ($m2[1] ?? '');
+
+          preg_match('/\{\# tocOrder = (.+) \#\}/', $mdContent, $m);
+          $order = $m[1] ?? '';
+
           if ($level < $maxLevel - 1 && is_dir($f . '/' . $page)) {
             $children =
               $this->getTableOfContentsFromFolder(
@@ -118,9 +126,11 @@ class MyGuideVis extends \WaiBlue\GuideVis\Loader {
           }
 
           if (empty($title)) $title = $page;
+          if (empty($order)) $order = $page;
 
-          $toc[$title] = [
+          $toc[$order] = [
             'page' => $folder . '/' . $page,
+            'order' => $order,
             'title' => $title,
             'children' => $children,
           ];
