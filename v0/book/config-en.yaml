@@ -3,62 +3,68 @@ redirects:
   some-old-page:
     newPage: some-new-page
     code: 301
+router:
 tableOfContents:
+  - page: en/introduction
+    icon: fas fa-home
+    children:
+      - page: en/what-is-hubleto
+      - page: en/who-is-hubleto-for
+      - page: en/how-to-use-this-guide
   - page: en/getting-started
     icon: fas fa-home
     children:
-      - page: en/getting-started/account-and-setup
-      - page: en/getting-started/first-steps
-  - page: en/apps
-    icon: fas fa-folder-open
+      - page: en/registration-and-login
+      - page: en/homepage-overview
+      - page: en/menu-navigation
+  - page: en/crm
+    icon: fas fa-user-tie
     children:
-      - page: en/apps/contacts
-        children:
-          - page: en/apps/contacts/add-contact
-          - page: en/apps/contacts/edit-contact
-          - page: en/apps/contacts/delete-contact
-      - page: en/apps/customers
-        children:
-          - page: en/apps/customers/add-customer
-          - page: en/apps/customers/edit-customer
-          - page: en/apps/customers/delete-customer
-          - page: en/apps/customers/add-contact-to-customer
-      - page: en/apps/calendar
-        children:
-          - page: en/apps/calendar/add-activity
-          - page: en/apps/calendar/delete-activity
-          - page: en/apps/calendar/edit-activity
-          - page: en/apps/calendar/navigate-views
-      - page: en/apps/documents
-      - page: en/apps/pipeline
-      - page: en/apps/services
-      - page: en/apps/leads
-        children:
-          - page: en/apps/leads/adding-new-leads
-          - page: en/apps/leads/updating-lead-info
-          - page: en/apps/leads/lead-conversion
-      - page: en/apps/deals
-        children:
-            - page: en/apps/deals/adding-new-deals
-            - page: en/apps/deals/updating-deal-info
-            - page: en/apps/deals/deal-closure
-      - page: en/apps/reports
-  - page: en/more
-    icon: fa-plus 
+      - page: en/customers
+      - page: en/contacts
+      - page: en/calendar
+      - page: en/documents
+      - page: en/workflow
+      - page: en/mail
+      - page: en/dashboards
+  - page: en/marketing
+    icon: fas fa-goal
     children:
-      - page: en/more/help
-      - page: en/more/upgrade
-      - page: en/more/settings
-        children:
-          - page: en/more/settings/users
-          - page: en/more/settings/profiles
-          - page: en/more/settings/settings
-          - page: en/more/settings/tags
-          - page: en/more/settings/activity-types
-          - page: en/more/settings/countries
-          - page: en/more/settings/currencies
-          - page: en/more/settings/labels
-          - page: en/more/settings/lead-statuses
-          - page: en/more/settings/pipelines
-      
+      - page: en/campaigns
+      - page: en/leads
+  - page: en/sales
+    icon: fas fa-money
+    children:
+      - page: en/suppliers
+      - page: en/deals
+      - page: en/products
+      - page: en/orders
+  - page: en/projects
+    icon: fas fa-money
+    children:
+      - page: en/tasks
+      - page: en/worksheets
+      - page: en/projects
+      - page: en/issues
+  - page: en/supply-chain
+    icon: fas fa-home
+    children:
+      - page: en/warehouses
+      - page: en/inventory
+  - page: en/finance
+    icon: fas fa-home
+    children:
+      - page: en/invoices
+  - page: en/maintenance
+    icon: fas fa-home
+    children:
+      - page: en/notifications
+      - page: en/settings
+      - page: en/tools
+  - page: en/help
+    icon: fas fa-home
+    children:
+      - page: en/about
+      - page: en/help
+
 

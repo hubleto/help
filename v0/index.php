@@ -29,6 +29,16 @@ $templateConfig = [
 class MyGuideVis extends \WaiBlue\GuideVis\Loader {
   public array $pageContentsCache = [];
 
+  public function __construct(string $page, array $env, array $templateConfig) {
+    parent::__construct($page, $env, $templateConfig);
+    $language = substr($page, 0, 2);
+    if (is_file($this->env['bookRootFolder'] . '/config-' . $language . '.yaml')) {
+      $this->bookConfigFile = $this->env['bookRootFolder'] . '/config-' . $language . '.yaml';
+    } else {
+      $this->bookConfigFile = $this->env['bookRootFolder'] . '/config.yaml';
+    }
+  }
+
   public function init()
   {
     parent::init();
@@ -58,15 +68,15 @@ class MyGuideVis extends \WaiBlue\GuideVis\Loader {
   {
     $bookConfig = parent::loadBookConfig();
 
-    list($packages, $apps) = $this->loadPackagesAndAppsInfo();
-    $communityApps = [];
-    foreach ($apps as $app) {
-      if (isset($app['urlHelp']['en'])) {
-        $tmpItem = [ "page" => 'en/apps/' . $app['urlHelp']['en'] ];
-        $communityApps[] = $tmpItem;
-      }
-    }
-    $bookConfig["tableOfContents"][1]["children"][0]["children"] = $communityApps;
+    // list($packages, $apps) = $this->loadPackagesAndAppsInfo();
+    // $communityApps = [];
+    // foreach ($apps as $app) {
+    //   if (isset($app['urlHelp']['en'])) {
+    //     $tmpItem = [ "page" => 'en/apps/' . $app['urlHelp']['en'] ];
+    //     $communityApps[] = $tmpItem;
+    //   }
+    // }
+    // $bookConfig["tableOfContents"][1]["children"][0]["children"] = $communityApps;
 
     return $bookConfig;
   }

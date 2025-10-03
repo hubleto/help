@@ -1,0 +1,8 @@
+<div class="list mt-2">
+  {% for t in topics %}
+    <a href="{{ env.guideRootUrl }}/{{ t.page }}" class="btn btn-transparent btn-list-item">
+      <span class="icon"><i class="fas fa-arrow-right"></i></span>
+      <span class="text">{{ t.title }}</span>
+    </a>
+  {% endfor %}
+</div>

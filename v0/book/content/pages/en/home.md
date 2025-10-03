@@ -1,31 +1,69 @@
 # Welcome
 
-Modular open-source ERP and CRM that helps your business grow.
+Hubleto developer guide
 
-## What is Hubleto?
+<div class="alert alert-info">
+  Hubleto is modular open-source CRM/ERP platform combining other popular libraries like <b>ReactJS, TailwindCSS, Twig or Primereact</b>. Has many built-in features and repository of <b>free apps</b> ready for your project.<br/>
+</div>
 
-Hubleto is a platform to develop, deploy and use business applications of any kind. In most cases, it can be used as an opensource CRM or ERP solution.
-
-  * **CRM** (Customer Relationship Management) is all about keeping track of your customers, conversations, and sales processes. It helps you build better relationships with your customers and close more deals.
-  * **ERP** (Enterprise Resource Planning) does the same for your entire business. It connects everything from inventory and finance to employee management and project tracking. 
-
-Together, a CRM and ERP give you a complete overview of your business, allowing you to make smarter decisions and save time on the things that matter most.
-
-## Why Hubleto?
-
-Hubleto is not just another CRM/ERP platform. It’s open-source, meaning it’s built for flexibility and tailored to your needs. You can easily customize it to fit the way your business works—without the headache of complicated setups or expensive licenses.
-
-  * **Super easy to use:** You don’t need to be a tech genius to make Hubleto work for you. Its user-friendly interface lets you hit the ground running.
-  * **Totally flexible:** Whether you’re a small business or growing fast, Hubleto can scale with you. And since it’s open-source, you have the freedom to tweak and modify it however you need.
-  * **Loads of built-in features:** From managing customers to tracking sales, Hubleto comes packed with everything you need to make your business run smoothly.
-
-**Ready to take your business to the next level?**
-
-## Useful Links
-
-Here are some helpful resources to get you started with Hubleto:
-
-- [Hubleto GitHub Repository](https://github.com/hubleto/erp)
-- [Hubleto Developer Documentation](https://developer.hubleto.com/)
-- [Official Hubleto Website](https://www.hubleto.com/en/)
-
+<div class="grid gap-4 mt-8 md:grid-cols-2">
+  <div class="card">
+    <div class="card-header bg-yellow-50">Introduction</div>
+    <div class="card-body flex flex-col gap-2">
+      <a href="en/what-is-hubleto" class="btn btn-white block"><span class="text">What is Hubleto</span></a>
+      <a href="en/who-is-hubleto-for" class="btn btn-white block"><span class="text">Who is Hubleto for</span></a>
+      <a href="en/how-to-use-this-guide" class="btn btn-white block"><span class="text">How to use this guide</span></a>
+    </div>
+  </div>
+  <div class="card border-green-300">
+    <div class="card-header bg-green-50">Getting started</div>
+    <div class="card-body flex flex-col gap-2">
+      <a href="en/how-to-use-this-guide" class="btn btn-white block">
+        <span class="text">Registration and login</span>
+      </a>
+      <a href="en/homepage-overview" class="btn btn-white block">
+        <span class="text">Homepage overview</span>
+      </a>
+      <a href="en/menu-navigation" class="btn btn-white block">
+        <span class="text">Menu navigation</span>
+      </a>
+    </div>
+  </div>
+  <div class="card border-blue-300">
+    <div class="card-header bg-blue-50">CRM</div>
+    <div class="card-body flex flex-col gap-2">
+      <a href="en/customers" class="btn btn-white block">
+        <span class="text">Customers</span>
+      </a>
+      <a href="en/contacts" class="btn btn-white block">
+        <span class="text">Contacts</span>
+      </a>
+      <a href="en/calendar" class="btn btn-white block">
+        <span class="text">Calendar</span>
+      </a>
+      <a href="en/documents" class="btn btn-white block">
+        <span class="text">Documents</span>
+      </a>
+      <a href="en/workflow" class="btn btn-white block">
+        <span class="text">Workflow</span>
+      </a>
+      <a href="en/mail" class="btn btn-white block">
+        <span class="text">Mail</span>
+      </a>
+      <a href="en/dashboards" class="btn btn-white block">
+        <span class="text">Dashboards</span>
+      </a>
+    </div>
+  </div>
+  <div class="card border-stone-300">
+    <div class="card-header bg-stone-50">Marketing</div>
+    <div class="card-body flex flex-col gap-2">
+      <a href="en/campaigns" class="btn btn-white block">
+        <span class="text">Campaigns</span>
+      </a>
+      <a href="en/leads" class="btn btn-white block">
+        <span class="text">Leads</span>
+      </a>
+    </div>
+  </div>
+</div>
