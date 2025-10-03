@@ -21,26 +21,77 @@ tableOfContents:
     icon: fas fa-user-tie
     children:
       - page: en/customers
+        children:
+          - page: en/customers/add-customer
+          - page: en/customers/edit-and-manage-data
+          - page: en/customers/filtering-and-search
       - page: en/contacts
+        children:
+          - page: en/contacts/difference-between-customers-and-contacts
+          - page: en/contacts/add-and-manage-contacts
+          - page: en/contacts/tags-and-categorization
       - page: en/calendar
+        children:
+          - page: en/calendar/create-event
+          - page: en/calendar/link-events-to-contacts-or-customers
+          - page: en/calendar/view-calendar-by-days-weeks-months
       - page: en/documents
+        children:
+          - page: en/documents/upload-new-document
+          - page: en/documents/previews-and-downloads
+          - page: en/documents/organize-documents
       - page: en/workflow
+        children:
+          - page: en/workflow/what-is-workflow-pipeline
+          - page: en/workflow/create-workflow
+          - page: en/workflow/manage-tasks-in-workflow
       - page: en/mail
+        children:
+          - page: en/mail/link-your-email-account
+          - page: en/mail/send-emails-directly-from-hubleto
+          - page: en/mail/view-communication-history
       - page: en/dashboards
+        children:
+          - page: en/dashboards/how-to-add-dashboard-step-by-step
+          - page: en/dashboards/edit-panels
+          - page: en/dashboards/share-dashboard
   - page: en/marketing
-    icon: fas fa-goal
+    icon: fas fa-home
     children:
       - page: en/campaigns
+        children:
+          - page: en/campaigns/create-campaign
+          - page: en/campaigns/target-customers
+          - page: en/campaigns/track-results
       - page: en/leads
+        children:
+          - page: en/leads/add-lead
+          - page: en/leads/manage-leads-and-convert-them-to-customers
   - page: en/sales
-    icon: fas fa-money
+    icon: fas fa-home
     children:
       - page: en/suppliers
+        children:
+          - page: en/suppliers/add-supplier
+          - page: en/suppliers/manage-supplier-data
+          - page: en/suppliers/link-to-products
       - page: en/deals
+        children:
+          - page: en/suppliers/create-deal
+          - page: en/suppliers/deal-stages-pipeline
+          - page: en/suppliers/evaluate-success-rates
       - page: en/products
+        children:
+          - page: en/products/add-product
+          - page: en/products/price-lists-and-categories
+          - page: en/products/manage-inventory
       - page: en/orders
+        children:
+          - page: en/orders/create-order
+          - page: en/orders/link-to-customers-and-products
+          - page: en/orders/export-invoices
   - page: en/projects
-    icon: fas fa-money
+    icon: fas fa-home
     children:
       - page: en/tasks
       - page: en/worksheets
