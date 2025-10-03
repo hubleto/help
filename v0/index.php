@@ -103,7 +103,7 @@ class MyGuideVis extends \WaiBlue\GuideVis\Loader {
         if (substr($page, -3) == '.md') {
           $page = substr($page, 0, -3);
 
-          $title = $page;
+          $title = '';
           $children = [];
 
           $title = $this->getPageTitle($folder . '/' . str_replace('.md', '', $page));
@@ -117,7 +117,10 @@ class MyGuideVis extends \WaiBlue\GuideVis\Loader {
             ;
           }
 
-          $toc[$folder . '/' . $page] = [
+          if (empty($title)) $title = $page;
+
+          $toc[$title] = [
+            'page' => $folder . '/' . $page,
             'title' => $title,
             'children' => $children,
           ];
@@ -125,6 +128,8 @@ class MyGuideVis extends \WaiBlue\GuideVis\Loader {
         }
       }
     }
+
+    ksort($toc);
     
     return $toc;
   }

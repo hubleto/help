@@ -1,3 +1,3 @@
-# Send emails directly from Hubleto
+# 3.6.2 Send emails directly from Hubleto
 
 {% include 'components/work-in-progress.twig' %}

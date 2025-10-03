@@ -2,11 +2,11 @@
 
 {% macro renderTocDefault(env, folder, toc) %}
   <ul>
-    {% for page, pageData in toc %}
+    {% for item in toc %}
       <li>
-        <a href="{{ env.guideRootUrl }}/{{ page }}">{{ pageData.title }}</a>
-        {% if pageData.children|length > 0 %}
-          {{ _self.renderTocDefault(env, folder, pageData.children) }}
+        <a href="{{ env.guideRootUrl }}/{{ item.page }}">{{ item.title }}</a>
+        {% if item.children|length > 0 %}
+          {{ _self.renderTocDefault(env, folder, item.children) }}
         {% endif %}
       </li>
     {% endfor %}

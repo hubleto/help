@@ -1,3 +1,3 @@
-# Difference between a customer and a contact
+# 3.2.2 Difference between a customer and a contact
 
 {% include 'components/work-in-progress.twig' %}
