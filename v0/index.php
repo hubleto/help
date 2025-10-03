@@ -4,6 +4,9 @@ require('vendor/autoload.php');
 require('env.php');
 
 $page = $_GET['page'] ?? '';
+
+if ($page == '') header("Location: en");
+
 $templateConfig = [
   'notFoundPage' => [
     'pageTemplate' => 'not-found',

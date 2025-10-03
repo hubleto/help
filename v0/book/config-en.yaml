@@ -3,6 +3,8 @@ redirects:
   some-old-page:
     newPage: some-new-page
     code: 301
+  en:
+    newPage: en/home
 router:
 tableOfContents:
   - page: en/introduction
