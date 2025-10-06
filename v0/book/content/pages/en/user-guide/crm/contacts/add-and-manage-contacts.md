@@ -33,7 +33,7 @@ To delete a contact, click the red trash icon in the right column.
   },
 
   '2': {
-    'title': 'Click the orange <button class="btn btn-add"><span class="icon"><i class="fas fa-plus"></i></span><span class="text">Add Comntact</span></button> button',
+    'title': 'Click the orange <button class="btn btn-add"><span class="icon"><i class="fas fa-plus"></i></span><span class="text">Add Contact</span></button> button',
   },
 
   '3': {
