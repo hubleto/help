@@ -3,26 +3,29 @@
 # Add and manage contacts
 
 ## How to view contacts:
-In the left menu, go to CRM → Contacts.
+In the left menu, go to `CRM` → `Contacts`.
+
 
 **A clear list of all contacts will open, where you can see:**
 
-First/Last name – name and surname.
+`First/Last name` – name and surname.
 
-Customer – the customer this person is linked to.
+`Customer` – the customer this person is linked to.
 
-Valid – whether the contact is active.
+`Valid` – whether the contact is active.
 
-Emails – email addresses.
+`Emails` – email addresses.
 
-Phone Numbers – phone numbers.
+`Phone Numbers` – phone numbers.
 
-Tags – labels (e.g., CEO, IT manager, Support, Decision Maker).
+`Tags` – labels (e.g., CEO, IT manager, Support, Decision Maker).
 
 
 ## How to work with the list:
 Use search or filter (top bar) to quickly find a contact.
+
 Click a row to open the contact details.
+
 To delete a contact, click the red trash icon in the right column.
 
 
@@ -64,11 +67,11 @@ If a contact is no longer valid, don’t delete it – just set Valid = OFF → 
 
 
 ## Common mistakes
-Unassigned Customer: If you don’t select a customer, the contact will “float” and won’t be linked properly in reports.
+**Unassigned Customer:** If you don’t select a customer, the contact will “float” and won’t be linked properly in reports.
 
-Duplicate contacts: Always search by name or email before adding a new one.
+**Duplicate contacts:** Always search by name or email before adding a new one.
 
-Missing tags: Without tags, it’s easy to lose track in the database (especially if you have hundreds of contacts).
+**Missing tags:** Without tags, it’s easy to lose track in the database (especially if you have hundreds of contacts).
 
 
 ## Summary
@@ -79,3 +82,10 @@ A new contact is added via + Add contact and must include at least the name and 
 Tags (CEO, IT manager, Support…) are key for quick navigation.
 
 For outdated contacts, switch Valid OFF instead of deleting.
+
+## Table of contents
+
+{% include 'components/table-of-contents-from-pages-folder.twig' with {
+  'folder': 'en/user-guide/crm/customers',
+  'maxLevel': 2,
+} %}
