@@ -22,7 +22,7 @@ In this section, you manage all data about customers, contacts, documents, event
   * Maintain a central database of customers and contacts.
   * Track interactions and communication.
   * Have all documents and events linked to the right people or companies.
-  * Evaluate results using reports and dashboards.
+  * Evaluate results using reports and dashboard.
 
 ## Table of contents
 
