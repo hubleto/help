@@ -23,9 +23,39 @@ tableOfContents:
     icon: fas fa-book
     children:
       - page: en/user-guide/crm
+        children:
+          - page: en/user-guide/crm/customers
+          - page: en/user-guide/crm/contacts
+          - page: en/user-guide/crm/calendar
+          - page: en/user-guide/crm/documents
+          - page: en/user-guide/crm/workflow
+          - page: en/user-guide/crm/mail
+          - page: en/user-guide/crm/dashboards
       - page: en/user-guide/marketing
+        children:
+          - page: en/user-guide/marketing/campaigns
+          - page: en/user-guide/marketing/leads
       - page: en/user-guide/sales
+        children:
+          - page: en/user-guide/sales/suppliers
+          - page: en/user-guide/sales/deals
+          - page: en/user-guide/sales/products
+          - page: en/user-guide/sales/orders
       - page: en/user-guide/projects
+        children:
+          - page: en/user-guide/projects/tasks
+          - page: en/user-guide/projects/worksheets
+          - page: en/user-guide/projects/projects
+          - page: en/user-guide/projects/issues
       - page: en/user-guide/supply-chain
+        children:
+          - page: en/user-guide/supply-chain/warehouses
+          - page: en/user-guide/supply-chain/inventory
       - page: en/user-guide/finance
+        children:
+          - page: en/user-guide/finance/invoices
       - page: en/user-guide/maintenance
+        children:
+          - page: en/user-guide/maintenance/notifications
+          - page: en/user-guide/maintenance/settings
+          - page: en/user-guide/maintenance/tools

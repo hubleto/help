@@ -883,6 +883,9 @@
   .text-left {
     text-align: left;
   }
+  .text-right {
+    text-align: right;
+  }
   .font-serif {
     font-family: var(--font-serif);
   }
