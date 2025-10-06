@@ -1,6 +1,6 @@
 # Introduction
 
-Welcome to Hubleto!
+Welcome to Hubleto !
 
 Hubleto is a modern tool that helps you keep all your important information under control – from contacts and documents to dashboards and charts.
 
