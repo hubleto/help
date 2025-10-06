@@ -24,24 +24,30 @@ The weekly calendar will open (you can switch between: day / week / month / list
 
 ## How to add a new activity:
 
-Click the + New activity button or directly into an empty slot in the calendar.
+{% include 'components/step-by-step.twig' with {'steps': {
+  '1': {
+    'title': 'Go to `CRM` → `Customers`',
+  },
 
-Select the calendar the activity belongs to (e.g., Customers, Projects).
+  '2': {
+    'title': 'Click the transparent <button class="btn btn-add"><span class="icon"><i class="fas fa-plus"></i></span><span class="text">New activity</span></button> button',
+  },
 
-An event form will open where you fill in:
+  '3': {
+    'title': 'An event form will open where you fill in:',
+    'description': '
+  * **Subject** – activity title (e.g., “Meeting”).
+  * **Activity type** – type of activity (meeting, call, task).
+  * **Start / End** – start and end date/time.
+  * **Meeting minutes (link)** – link to notes or documents.
+  * **Completed** – toggle when the activity is finished.
+      ',
+  },
 
-Subject – activity title (e.g., “Meeting”).
-
-Activity type – type of activity (meeting, call, task).
-
-Start / End – start and end date/time.
-
-Meeting minutes (link) – link to notes or documents.
-
-Completed – toggle when the activity is finished.
-
-Click Add to save the event.
-
+  '4': {
+    'title': 'Click Add to save the event.'
+  }
+}} %}
 
 ## How to manage existing activities:
 Click on an activity in the calendar to open its details.
@@ -66,12 +72,17 @@ Unmarked “Completed”: If you finish an activity but don’t mark it, it will
 
 
 ## Summary
-The Calendar helps you plan meetings, tasks, and customer-related activities.
 
-Add a new activity via + New activity or by clicking into the calendar.
+| Topic                     | Summary                                                          |
+|---------------------------|------------------------------------------------------------------|
+| Add a new activity        | Go to CRM -> Calendar and click + Add activity.                  |
+| Required fields           | Subject, Activity type, Start / End, Meeting minutes, Completed. |
+| Managing Activities       | Every activity can be edited or deleted anytime.                 |
+| Smart Calendar Navigation | Calendar colors make navigation quick and easy.                  |
 
-Every activity can be edited or deleted anytime.
+## Table of contents
 
-Calendar colors make navigation quick and easy.
-
-{% include 'components/work-in-progress.twig' %}
+{% include 'components/table-of-contents-from-pages-folder.twig' with {
+  'folder': 'en/user-guide/crm/customers',
+  'maxLevel': 2,
+} %}

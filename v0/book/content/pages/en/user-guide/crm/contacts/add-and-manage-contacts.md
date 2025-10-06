@@ -75,13 +75,13 @@ If a contact is no longer valid, don’t delete it – just set Valid = OFF → 
 
 
 ## Summary
-Contacts are individuals linked to customers.
 
-A new contact is added via + Add contact and must include at least the name and customer.
-
-Tags (CEO, IT manager, Support…) are key for quick navigation.
-
-For outdated contacts, switch Valid OFF instead of deleting.
+| Topic                         | Summary                                                        |
+|-------------------------------|----------------------------------------------------------------|
+| Add a new contact             | In the left menu, go to CRM → Contacts.                        |
+| Contacts vs. Customers        | Contacts are individuals linked to customers.                  |
+| Quick Navigation with Tags    | Tags (CEO, IT manager, Support…) are key for quick navigation. |
+| Don’t Delete, Just Switch OFF | For outdated contacts, switch Valid OFF instead of deleting.   |
 
 ## Table of contents
 

@@ -61,3 +61,10 @@ Forgotten Active status: If a customer isn’t marked Active, they won’t appea
 | Required fields    | Name, Customer ID, Owner, Manager                  |
 | Tags and notes     | Use Tags and Notes for better organization.        |
 | Documents          | Documents can be linked through the Shared folder. |
+
+## Table of contents
+
+{% include 'components/table-of-contents-from-pages-folder.twig' with {
+  'folder': 'en/user-guide/crm/customers',
+  'maxLevel': 2,
+} %}
