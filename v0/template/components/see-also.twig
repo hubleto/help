@@ -1,0 +1,10 @@
+<div class="mt-4 block border border-gray-100 rounded shadow-sm">
+  <div class="text-primary p-2 bg-primary/10">See also</div>
+  <div class="p-2">
+    {% for t in topics %}
+      <a href="{{ env.guideRootUrl }}/{{ t.page }}" class="block">
+        {{ t.title }}
+      </a>
+    {% endfor %}
+  <div>
+</div>
