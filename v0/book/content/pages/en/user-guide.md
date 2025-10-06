@@ -2,5 +2,5 @@
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide',
-  'maxLevel': 2,
+  'maxLevel': 3,
 } %}
