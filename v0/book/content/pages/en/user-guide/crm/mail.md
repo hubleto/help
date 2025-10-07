@@ -8,6 +8,7 @@ This way, all customer communication is stored in one place, and you don’t nee
 
 
 **Section breakdown:**
+
 * **Internal emails** – internal management of emails (templates, scheduling, sending).
 
 * **External accounts** – managing and linking external email accounts (e.g., Gmail, Outlook).

@@ -77,13 +77,10 @@ Items can be moved via drag & drop between stages.
 
 
 ## Tips
-Use colors consistently – e.g., green = completed, red = failed.
-
-Probability % is great for sales pipelines – useful for forecasting.
-
-Tags allow you to quickly filter items across workflows.
-
-Regularly check if any items are “stuck” in a stage.
+*  Use colors consistently – e.g., green = completed, red = failed.
+*  Probability % is great for sales pipelines – useful for forecasting.
+*  Tags allow you to quickly filter items across workflows.
+*  Regularly check if any items are “stuck” in a stage.
 
 
 ## Common mistakes
