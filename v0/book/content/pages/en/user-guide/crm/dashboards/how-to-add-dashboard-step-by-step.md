@@ -39,15 +39,27 @@ The dashboard will open and display all panels (charts, lists, notifications).
 
 
 ## How to add a new panel:
-In the open dashboard, click + Add new panel (bottom).
+{% include 'components/step-by-step.twig' with {'steps': {
+  '1': {
+    'title': 'In the open dashboard -> click the orange <button class="btn btn-add"><span class="icon"><i class="fas fa-plus"></i><span class="text">Add new panel</span></span></button> button (bottom).',
+  },
 
-Select which board should appear in the panel (e.g., Leads, Deals, Orders…).
+  '2': {
+    'title': 'Select which board should appear in the panel (e.g., Leads, Deals, Orders…).',
+  },
 
-Enter a Title for the panel.
+  '3': {
+    'title': 'Enter a Title for the panel.',
+  },
 
-Set the Width – the arrow determines how much space the panel will take.
+    '3': {
+    'title': 'Set the Width – the arrow determines how much space the panel will take.',
+  },
 
-Click the orange Add button.
+  '4': {
+    'title': 'click the orange <button class="btn btn-add"><span class="icon"><i class="fas fa-plus"></i><span class="text">Add</span></span></button> button.',
+  }
+}} %}
 
 
 ## How to edit an existing panel:
