@@ -15,7 +15,7 @@ A table with campaign overviews will appear in the main window.
 ## How to add a new campaign:
 {% include 'components/step-by-step.twig' with {'steps': {
   '1': {
-    'title': 'Click on `Dashboards` section.',
+    'title': 'Click on `Campaigns` section.',
   },
 
   '2': {
