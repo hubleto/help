@@ -27,7 +27,7 @@
   nav li > ul { @apply p-1; }
   ul { @apply pt-2 pl-4 list-inside list-disc; }
   ol { @apply pl-2 list-inside list-decimal; }
-  code { @apply font-semibold bg-slate-50 border border-slate-400 rounded-b; padding: 0.1em 0.3em; font-size: 8.5pt; line-height: 1.15em; margin: 0 0.3em; }
+  code { @apply font-semibold bg-slate-50 border border-slate-400 rounded; padding: 0.1em 0.3em; line-height: 1.15em; margin: 0 0.3em; }
   code.language-php { @apply m-0 block; padding: 1em; }
   code.hljs { line-height: 1.15em; }
   code.hljs * { font-size: 8.5pt; }
@@ -95,5 +95,6 @@
   aside.on-this-page > div:nth-child(2) { @apply p-2; }
   aside.on-this-page > div:nth-child(2) .heading-level-1 { @apply pt-2 pb-2 text-sm font-normal; }
   aside.on-this-page > div:nth-child(2) .heading-level-2 a { @apply text-xs ml-2 p-0 text-gray-800; }
+  aside.on-this-page > div:nth-child(2) a { @apply block; }
 
 }
