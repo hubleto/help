@@ -63,7 +63,7 @@ The dashboard will open and display all panels (charts, lists, notifications).
 
 
 ## How to edit an existing panel:
-Click the gear icon in the panel header.
+Click the <span class="icon"><i class="fas fa-cog"></i> icon in the panel header.
 
 A settings window opens where you can rename or reconfigure the panel.
 
@@ -72,40 +72,27 @@ A settings window opens where you can rename or reconfigure the panel.
 Click the arrows → or ← in the panel header – this expands or shrinks the panel.
 
 
+## Tips
+*  Create separate dashboards for different teams (e.g., Sales dashboard, Project dashboard).
+*  Use a mix of charts and lists – visuals plus detailed overviews.
+*  Organize panels by priority – most important on top, less important below.
 
 
-
-Tips
-Create separate dashboards for different teams (e.g., Sales dashboard, Project dashboard).
-
-
-Use a mix of charts and lists – visuals plus detailed overviews.
-
-
-Organize panels by priority – most important on top, less important below.
-
-
-Common mistakes
+## Common mistakes
 Too many panels → the dashboard becomes cluttered.
 
-
 Duplicate information shown across multiple panels.
-
 
 Forgotten updates → if workflows or deal types change, update the panels too.
 
 
-Summary
-A Dashboard = a board with panels where you see all data in one place.
-
-
-You can add both custom dashboards and custom panels.
-
-
-Panels can be edited and resized.
-
-
-A well-configured dashboard gives you an instant overview of the company’s status, customers, and projects.
+## Summary
+| Topic                        | Summary                                                                                                     |
+|------------------------------|-------------------------------------------------------------------------------------------------------------|
+| What Is a Dashboard          | A Dashboard = a board with panels where you see all data in one place.                                      |
+| Adding Dashboards and Panels | You can add both custom dashboards and custom panels.                                                       |
+| Editing Panels               | Panels can be edited and resized.                                                                           |
+| Benefits of Dashboards       | A well-configured dashboard gives you an instant overview of the company’s status, customers, and projects. |
 
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
