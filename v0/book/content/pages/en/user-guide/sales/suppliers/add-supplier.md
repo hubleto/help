@@ -13,7 +13,7 @@ In the left menu, go to `Sales` → `Suppliers`.
   },
 
   '2': {
-    'title': 'Click the transparent and than the orange <button class="btn btn-add"><span class="icon"><i class="fas fa-plus"></i></span><span class="text">Add supplier</span></button> button',
+    'title': 'Click the orange <button class="btn btn-add"><span class="icon"><i class="fas fa-plus"></i></span><span class="text">Add supplier</span></button> button',
   },
 
   '3': {
