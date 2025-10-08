@@ -18,7 +18,7 @@ Our goal is to make Hubleto simple and stress-free for you. Each tutorial is des
 If this is your first time using Hubleto, we recommend starting with the [Getting Started](getting-started) chapter, where you’ll learn the basics of working with the app.
 
 {% include 'components/see-also.twig' with {'topics': [
-  { 'title': 'What is Hubleto', 'page': 'en/what-is-hubleto' },
-  { 'title': 'Who is Hubleto for', 'page': 'en/who-is-hubleto-for' },
-  { 'title': 'How to use this guide', 'page': 'en/how-to-use-this-guide' },
+  { 'title': 'What is Hubleto', 'page': 'en/introduction/what-is-hubleto' },
+  { 'title': 'Who is Hubleto for', 'page': 'en/introduction/who-is-hubleto-for' },
+  { 'title': 'How to use this guide', 'page': 'en/introduction/how-to-use-this-guide' },
 ]} %}
