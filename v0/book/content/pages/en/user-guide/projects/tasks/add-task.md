@@ -46,9 +46,12 @@ Missing developer or tester → the task remains incomplete.
 Incorrect deadline → may cause errors in reporting.
 
 ## Summary
-| Topic                       | Summary                                                                                                           |
-|-----------------------------|-------------------------------------------------------------------------------------------------------------------|
-| Tasks Overview              | Tasks are the cornerstone of project management – they let you assign, track, and evaluate work within a project. |
+| Topic                        | Summary                                                                                                           |
+|------------------------------|-------------------------------------------------------------------------------------------------------------------|
+| Tasks Overview               | Tasks are the cornerstone of project management – they let you assign, track, and evaluate work within a project. |
+| Creating and Assigning Tasks | You can create new tasks, assign them to users, set deadlines, and monitor progress through statuses.             |
+| Task Details                 | Each task supports detailed descriptions, file attachments, and related records (e.g., customers or projects).    |
+| Updating and Closing Tasks   | Regularly updating and closing finished tasks ensures smoother collaboration and better project visibility.       |
                                          
 
 
