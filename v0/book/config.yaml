@@ -15,7 +15,7 @@ tableOfContents:
     icon: fas fa-puzzle-piece
     children:
       - page: en/apps/community
-      - page: en/apps/premium
+      - page: en/apps/enterprise
   # - page: en/features
   #   icon: fas fa-percent
   #   children:

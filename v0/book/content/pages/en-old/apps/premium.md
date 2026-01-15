@@ -1,8 +1,8 @@
-# Premium apps
+# Enterprise apps
 
-Hubleto team develops premium apps as the paid and more complex version of community apps.
+Hubleto team develops enterprise apps as the paid and more complex version of community apps.
 
-Premium apps are not available yet.
+Enterprise apps are not available yet.
 
 <!-- <div class="grid grid-cols-2 gap-2">
   {% for app in apps %}
