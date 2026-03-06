@@ -4,7 +4,7 @@ To use Hubleto, you need to create an account or log in to an existing one.
 
 {% include 'components/step-by-step.twig' with {'steps': {
   '1': {
-    'title': 'Go to hubleto.com and click Log In.',
+    'title': 'Go to hubleto.eu and click Log In.',
   },
 
   '2': {

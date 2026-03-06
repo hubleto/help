@@ -1,3 +1,3 @@
 Repository for Hubleto user guide.
 
-See https://help.hubleto.com
+See https://help.hubleto.eu
