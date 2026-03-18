@@ -9,6 +9,11 @@
         <div class="step-description">{{ markdown(step.description)|raw }}</div>
       </div>
       {% if step.example %} <span class="step-example"><pre>{{ step.example|raw }}</pre></span> {% endif %}
+      {% if step.screenshotUrl %}
+        <span class="step-screenshot">
+          <img class="screenshot" src="{{ env.guideRootUrl }}/screenshots/{{ step.screenshotUrl|replace({'/': '--'}) }}.png" tabindex="1"/>
+        </span>
+      {% endif %}
     </div>
   {% endfor %}
 </div>

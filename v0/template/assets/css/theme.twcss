@@ -90,6 +90,9 @@
   .table-of-contents > ul > li > ul > li > ul > li { @apply leading-tight; }
   .table-of-contents > ul > li > ul > li > ul > li > a { @apply text-xs; }
 
+  img.screenshot { @apply max-w-64; }
+  img.screenshot:focus { @apply fixed max-w-120 shadow-lg; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+
   aside.on-this-page { @apply fixed top-0 right-0 h-full w-60 break-all bg-white z-20 p-4 hidden shadow-lg lg:block; }
   aside.on-this-page > div:nth-child(1) { @apply text-sm p-2.5 flex items-center font-semibold; }
   aside.on-this-page > div:nth-child(2) { @apply p-2; }

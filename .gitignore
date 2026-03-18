@@ -6,3 +6,4 @@ v0/package-lock.json
 v0/env.php
 v0/composer-dev.lock
 v0/composer-dev.json
+node_modules

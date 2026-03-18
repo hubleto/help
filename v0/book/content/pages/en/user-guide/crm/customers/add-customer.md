@@ -7,10 +7,12 @@ You can add a new customer in the Customers section by clicking `+ Add Customer`
 {% include 'components/step-by-step.twig' with {'steps': {
   '1': {
     'title': 'Go to `CRM` → `Customers`',
+    'screenshotUrl': 'customers',
   },
 
   '2': {
     'title': 'Click the orange <button class="btn btn-add"><span class="icon"><i class="fas fa-plus"></i></span><span class="text">Add Customer</span></button> button',
+    'screenshotUrl': 'customers/add',
   },
 
   '3': {
