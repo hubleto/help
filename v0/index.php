@@ -78,6 +78,16 @@ class MyGuideVis extends \WaiBlue\GuideVis\Loader {
   {
     $bookConfig = parent::loadBookConfig();
 
+    // $toc = [];
+    // $this->walkTableOfContents(function($tocPage) use ($bookConfig) {
+    //   // var_dump($tocPage);
+    //   if (!isset($tocPage["children"]) || !is_array($tocPage["children"])) {
+    //     $tocPage["children"] = $this->getTableOfContentsFromFolder($tocPage["page"], 1);
+    //   }
+    // }, $bookConfig["tableOfContents"]);
+    // // exit;
+    // var_dump($bookConfig["tableOfContents"]);
+
     // list($packages, $apps) = $this->loadPackagesAndAppsInfo();
     // $communityApps = [];
     // foreach ($apps as $app) {

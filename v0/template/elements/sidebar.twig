@@ -2,7 +2,7 @@
   {% set itemCounter = 0 %}
   {% for item in items %}
     <li id="{{ itemIdPrefix }}_{{ itemCounter }}" class="level-{{ level }}">
-      {% if level < 2 and item.children is iterable %}
+      {% if level < 3 and item.children is iterable %}
         <a href="{{ env.guideRootUrl }}/{{ item.page ?? '' }}"
           class="
             btn
@@ -13,6 +13,7 @@
             {% if level == 1 %} level-1 {% endif %}
             {% if level == 2 %} level-2 {% endif %}
             {% if level == 3 %} level-3 {% endif %}
+            {% if level == 4 %} level-4 {% endif %}
           "
         >
           {% if level == 0 %} <span class="icon"><i class="{{ item.icon }}"></i></span> {% endif %}

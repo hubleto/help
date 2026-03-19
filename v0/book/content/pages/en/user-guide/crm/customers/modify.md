@@ -1,8 +1,6 @@
-{# tocOrder = 1 #}
+{# tocOrder = 3 #}
 
-# Add a customer
-
-You can add a new customer in the Customers section by clicking `+ Add Customer`. A form will open where you enter the basic information and assign responsible persons.
+# Modify customer
 
 {% include 'components/step-by-step.twig' with {'steps': {
   '1': {
@@ -11,31 +9,16 @@ You can add a new customer in the Customers section by clicking `+ Add Customer`
   },
 
   '2': {
-    'title': 'Click the orange <button class="btn btn-add"><span class="icon"><i class="fas fa-plus"></i></span><span class="text">Add Customer</span></button> button',
-    'screenshotUrl': 'customers/add',
+    'title': 'Find the customer and open it',
+    'screenshotUrl': 'customers/1',
   },
 
   '3': {
-    'title': 'Fill in customer\'s data.',
-    'description': '
-**A form will open where you fill in:**
-  * **Name** (required) – customer name (company or individual).
-  * **Customer ID** (required) – unique customer number.
-  * **Street Line 1 / Street Line 2** – address.
-  * **City, Region, Country, Postal Code** – location.
-  * **Shared folder** – link to a shared folder with documents.
-  * **Notes** – internal notes.
-  * **VAT ID / Tax ID** – identification numbers (if available).
-  * **Date Created** – record creation date (pre-filled with today’s date).
-  * **Active** – toggle to mark if the customer is active.
-  * **Tags** – labels (VIP, Partner, Public, …).
-  * **Owner** (required) – the person responsible for the record.
-  * **Manager** (required) – the customer’s manager.
-    ',
+    'title': 'Modify customer\'s information',
   },
 
   '4': {
-    'title': 'Click Save'
+    'title': 'Click <button class="btn btn-add"><span class="icon"><i class="fas fa-save"></i></span><span class="text">Save</span></button>'
   }
 }} %}
 

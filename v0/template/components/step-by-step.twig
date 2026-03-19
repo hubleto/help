@@ -11,7 +11,23 @@
       {% if step.example %} <span class="step-example"><pre>{{ step.example|raw }}</pre></span> {% endif %}
       {% if step.screenshotUrl %}
         <span class="step-screenshot">
-          <img class="screenshot" src="{{ env.guideRootUrl }}/screenshots/{{ step.screenshotUrl|replace({'/': '--'}) }}.png" tabindex="1"/>
+          <div>
+            <img
+              class="screenshot"
+              src="{{ env.guideRootUrl }}/screenshots/{{ step.screenshotUrl|replace({'/': '--'}) }}.png"
+              tabindex="1"
+              alt="{{ step.title }}"
+            />
+            <img
+              class="screenshot"
+              src="{{ env.guideRootUrl }}/screenshots/{{ step.screenshotUrl|replace({'/': '--'}) }}-m.png"
+              tabindex="1"
+              alt="{{ step.title }} - mobile version"
+            />
+          </div>
+          <div>
+            <a href="https://demo.hubleto.eu/{{ step.screenshotUrl }}" target="_blank">Show in demo</a>
+          </div>
         </span>
       {% endif %}
     </div>

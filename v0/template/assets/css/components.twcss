@@ -150,6 +150,10 @@
   .step-by-step .step-content .step-title { @apply font-semibold pt-2 pb-4; }
   .step-by-step .step-content .step-description { @apply text-sm pb-2 }
   .step-by-step .step-example { @apply flex-1 overflow-x-auto overflow-y-hidden; }
+  .step-by-step .step-screenshot { @apply flex flex-col gap-1; }
+  .step-by-step .step-screenshot > div { @apply flex gap-1; }
+  .step-by-step .step-screenshot img.screenshot { @apply max-h-32 max-w-32; }
+  .step-by-step .step-screenshot img.screenshot:focus { @apply fixed max-w-[75%] max-h-[75%] shadow-lg; top: 50%; left: 50%; transform: translate(-50%, -50%); }
 
   .adios-lookup[class*='-container'] { width: 100%; }
   .adios-lookup *[class*='-indicator'] { padding: 0px !important; }
