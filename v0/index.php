@@ -34,7 +34,7 @@ class MyGuideVis extends \WaiBlue\GuideVis\Loader {
 
   public function __construct(string $page, array $env, array $templateConfig) {
     parent::__construct($page, $env, $templateConfig);
-    $language = substr($page, 0, 2);
+    $language = preg_match('/^[a-z]{2}\//', $page) ? substr($page, 0, 2) : 'en';
     if (is_file($this->env['bookRootFolder'] . '/config-' . $language . '.yaml')) {
       $this->bookConfigFile = $this->env['bookRootFolder'] . '/config-' . $language . '.yaml';
     } else {
