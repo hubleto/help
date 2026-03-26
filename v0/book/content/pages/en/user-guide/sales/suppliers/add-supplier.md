@@ -64,6 +64,7 @@ Duplicate records – always search before adding a new supplier.
 | Managing Suppliers   | Open, update, or delete suppliers anytime.                                         |
 | Filters and Sorting  | Use filters and sorting to keep your supplier list efficient.                      |
 
+## How to
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/sales/suppliers',

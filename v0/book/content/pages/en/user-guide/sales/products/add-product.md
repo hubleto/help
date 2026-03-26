@@ -71,6 +71,8 @@ Unclear invoicing policy – may cause unexpected invoices.
 | Product Details   | Define price, VAT, product type, invoicing rules, and upload an image.            |
 | Using Products    | Products are used in quotations, orders, invoices, and inventory tracking.        |
 
+## How to
+
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/sales/products',
   'maxLevel': 2,

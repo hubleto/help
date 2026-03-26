@@ -106,7 +106,7 @@ Forgotten link settings: If adding a document as a link, make sure the sharing p
 | Managing Documents and Folders | Every document or folder can be opened, moved, or deleted at any time.                                                |
 | Naming and Folder Conventions  | Clear naming conventions and dedicated folders (e.g., for templates) keep the storage organized and easy to navigate. |
 
-## Table of contents
+## How to
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/crm/customers',

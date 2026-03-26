@@ -74,6 +74,8 @@ Not closing finished orders – can clutter the system and mislead reporting.
 | Managing Order Products     | Manage order products, generate quotations, and link with projects.          |
 | Closing and Updating Orders | Properly closing and updating orders keeps sales data accurate and reliable. |
 
+## How to
+
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/sales/orders',
   'maxLevel': 2,

@@ -47,6 +47,8 @@ Unassigned issues may get lost without being linked to a project.
 | Effective Reporting | Clear reporting ensures faster resolution and better collaboration between users and developers. |
 | Updating Issues     | Keeping issues updated helps maintain transparency and workflow efficiency across the team.      |
 
+## How to
+
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/projects/issues',
   'maxLevel': 2,

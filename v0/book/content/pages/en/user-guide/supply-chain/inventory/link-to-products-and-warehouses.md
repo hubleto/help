@@ -65,6 +65,7 @@ Incorrect dates (e.g., expiration in the past) → they save but create inaccura
 | Managing Inventory Levels   | You can update inventory levels, check stock movements, and link items to orders or projects.      |
 | Benefits of Regular Updates | Regular inventory updates ensure accuracy, prevent shortages, and improve supply chain efficiency. |
 
+## How to
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/supply-chain/inventory',

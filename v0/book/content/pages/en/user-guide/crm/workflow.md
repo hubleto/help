@@ -15,6 +15,7 @@ Project → Preparation → Implementation → Testing → Delivered.
 
 Thanks to workflows, you always have a clear overview of the status of all activities and can better manage both the team and results.
 
+## How to
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/crm/workflow',

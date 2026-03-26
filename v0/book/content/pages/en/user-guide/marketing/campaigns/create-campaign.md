@@ -81,6 +81,7 @@ Unapproved campaign (Approved = NO) → sending may be blocked.
 | Filtering Campaigns       | Campaigns can be filtered by status (Open / Closed / All).                        |
 | Tracking Campaign Results | Results are tracked through linked leads and workflow stages.                     |
 
+## How to
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/marketing/campaigns',

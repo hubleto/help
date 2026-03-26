@@ -6,6 +6,7 @@
  
  Here you can manage users, apps, themes, currencies, languages, and workflows.
 
+## How to
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/maintenance/settings',

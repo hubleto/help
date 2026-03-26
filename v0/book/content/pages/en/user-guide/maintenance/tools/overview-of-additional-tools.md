@@ -25,6 +25,7 @@ Wrong Typescript syntax → the form may fail to load correctly.
 | For Advanced Users | These tools are especially useful for administrators or developers who need deeper system control.                   |
 | Responsible Use    | Using Tools responsibly helps maintain flexibility while keeping Hubleto stable and optimized for everyday use.      |
 
+## How to
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/maintenance/tools',

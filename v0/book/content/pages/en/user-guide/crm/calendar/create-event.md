@@ -80,7 +80,7 @@ Unmarked “Completed”: If you finish an activity but don’t mark it, it will
 | Managing Activities       | Every activity can be edited or deleted anytime.                 |
 | Smart Calendar Navigation | Calendar colors make navigation quick and easy.                  |
 
-## Table of contents
+## How to
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/crm/customers',

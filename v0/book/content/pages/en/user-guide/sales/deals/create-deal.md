@@ -68,6 +68,8 @@ Forgotten status update – deals stay in "Unknown" and skew the pipeline.
 | Updating Deals     | Update results to keep the pipeline accurate.                                         |
 | Linked Information | Attach related documents, products, and tasks for a complete overview.                |
 
+## How to
+
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/sales/deals',
   'maxLevel': 2,

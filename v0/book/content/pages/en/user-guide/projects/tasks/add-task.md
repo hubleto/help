@@ -53,7 +53,7 @@ Incorrect deadline → may cause errors in reporting.
 | Task Details                 | Each task supports detailed descriptions, file attachments, and related records (e.g., customers or projects).    |
 | Updating and Closing Tasks   | Regularly updating and closing finished tasks ensures smoother collaboration and better project visibility.       |
                                          
-
+## How to
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/projects/tasks',

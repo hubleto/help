@@ -6,7 +6,7 @@ The Customers section is used to keep records of all your customers – whether 
  
 In one clear list, you can see basic details, activity status, record owner, manager, and assigned tags.
 
-## Table of contents
+## How to
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/crm/customers',

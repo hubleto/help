@@ -61,6 +61,7 @@ Wrong recipient → the message won’t reach the right person.
 | Notification Details      | Each message includes a subject, recipient list, and message body for quick internal communication.       |
 | Benefits of Notifications | Using notifications regularly keeps users informed about important updates, tasks, and system activities. |
 
+## How to
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/maintenance/notifications',

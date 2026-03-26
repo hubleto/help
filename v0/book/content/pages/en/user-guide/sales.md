@@ -15,7 +15,7 @@ All modules work on the same principle – table view, filtering (via the funnel
 
 A gear icon is also available for CSV export/import and column visibility settings.
 
-## Table of contents
+## How to
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/sales',

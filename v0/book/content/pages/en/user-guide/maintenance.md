@@ -12,7 +12,7 @@ Here you’ll find:
   * **Settings** → account, system, and global configurations
   * **Tools** → a set of utilities for administration and maintenance  
 
-## Table of contents
+## How to
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/maintenance',

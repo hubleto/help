@@ -7,6 +7,7 @@ Each dashboard is made up of panels, which display different indicators – for 
 
 With dashboards, all critical information is in one place, so you don’t have to search across different modules.
 
+## How to
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/crm/dashboards',

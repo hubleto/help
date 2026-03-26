@@ -84,6 +84,7 @@ Not using History → loss of visibility into activities and changes.
 | Lead Details                | Lead details include contacts, documents, tasks, deal links, calendar, and history. |
 | Benefits of Lead Management | Regular lead management improves sales results and builds on campaign outcomes.     |
 
+## How to
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/marketing/leads',

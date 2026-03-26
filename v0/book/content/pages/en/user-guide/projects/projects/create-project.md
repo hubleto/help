@@ -63,6 +63,7 @@ No budget → prevents tracking of financial metrics.
 | Linked Elements   | You can link tasks, worksheets, and documents directly to the project.                 |
 | Updating Projects | Regular updates keep project status accurate and transparent across the team.          |
 
+## How to
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/projects/projects',

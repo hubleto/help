@@ -24,7 +24,7 @@ In this section, you manage all data about customers, contacts, documents, event
   * Have all documents and events linked to the right people or companies.
   * Evaluate results using reports and dashboards.
 
-## Table of contents
+## How to
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/crm',

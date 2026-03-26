@@ -6,6 +6,8 @@ In the Warehouses section, you manage your warehouses, set capacities, addresses
 
 You can also divide a warehouse into specific locations (rooms, aisles, shelves).
 
+## How to
+
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/supply-chain/warehouses',
   'maxLevel': 2,

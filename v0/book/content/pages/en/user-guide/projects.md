@@ -13,7 +13,7 @@ Here you’ll find:
 
 As in other parts of Hubleto, you can also use the **funnel icon** (filter) and **gear icon** (column settings) to customize your view.
 
-## Table of contents
+## How to
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/projects',

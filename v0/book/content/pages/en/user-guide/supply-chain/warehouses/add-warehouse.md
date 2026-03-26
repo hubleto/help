@@ -95,6 +95,8 @@ Not updating Current occupancy if inventory checks are done incorrectly.
 | Organizing Warehouses     | You can add contact information, photos, and define internal locations for better organization.                         |
 | Maintaining Accurate Data | Keeping warehouse data accurate ensures smoother logistics, clear capacity tracking, and reliable inventory operations. |
 
+## How to
+
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/supply-chain/warehouses',
   'maxLevel': 2,

@@ -103,6 +103,7 @@ Unlinked external account → you won’t see any messages in Get emails.
 | Connecting External Accounts | External accounts are connected in Manage accounts by entering IMAP/SMTP details. |
 | Centralized Communication    | All communication stays centralized and linked with other CRM data.               |
 
+## How to
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/crm/mail',

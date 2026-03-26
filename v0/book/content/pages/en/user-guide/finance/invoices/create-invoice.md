@@ -51,6 +51,7 @@ Missing attachments → complicates finding the invoice later.
 | Generating and Sharing Invoices | You can easily generate, download, or share invoices directly from the system.                          |
 | Organizing Invoices             | Keeping invoices organized ensures accurate accounting, timely payments, and clear financial reporting. |
 
+## How to
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/finance/invoices',

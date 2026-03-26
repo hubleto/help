@@ -13,6 +13,8 @@ This way, all customer communication is stored in one place, and you don’t nee
 
 * **External accounts** – managing and linking external email accounts (e.g., Gmail, Outlook).
 
+## How To
+
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/crm/mail',
   'maxLevel': 2,

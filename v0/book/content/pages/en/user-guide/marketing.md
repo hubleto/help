@@ -11,7 +11,7 @@ Here you’ll find:
 
 Just like in CRM, you have access to a simple table view, the ability to filter, add new items, and click through to details.
 
-## Table of contents
+## How to
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/marketing',

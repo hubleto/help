@@ -6,6 +6,7 @@ Projects allow you to manage entire initiatives – from budget planning and tas
 
 Each project has a main developer and an account manager.
 
+## How to
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/projects/projects',

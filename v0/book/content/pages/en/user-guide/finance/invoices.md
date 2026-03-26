@@ -6,6 +6,7 @@
  
  You can filter them by customer, date, amount, or status.
 
+## How to
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/finance/invoices',

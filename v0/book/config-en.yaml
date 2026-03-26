@@ -37,6 +37,7 @@ tableOfContents:
           - page: en/user-guide/crm/documents
           - page: en/user-guide/crm/workflow
           - page: en/user-guide/crm/mail
+          - page: en/user-guide/crm/tasks
           - page: en/user-guide/crm/dashboards
       - page: en/user-guide/marketing
         children:

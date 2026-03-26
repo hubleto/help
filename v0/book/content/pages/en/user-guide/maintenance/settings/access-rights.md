@@ -28,6 +28,7 @@ Incorrect permissions → users may not see data, or see too much.
 | Customization Options      | Each setting helps tailor the platform to your company’s needs — from interface design to user permissions. |
 | Proper Configuration       | Proper configuration ensures a secure, consistent, and efficient experience for all Hubleto users.          |
 
+## How to
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/maintenance/settings',

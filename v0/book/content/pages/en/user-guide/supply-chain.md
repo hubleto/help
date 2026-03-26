@@ -9,7 +9,7 @@ Here you’ll find:
   * **Warehouses** → manage warehouses and their capacities.
   * **Inventory** → overview and adjustments of stock in warehouses.  
 
-## Table of contents
+## How to
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/supply-chain',

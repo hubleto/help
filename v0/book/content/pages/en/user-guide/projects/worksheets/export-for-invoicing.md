@@ -52,6 +52,7 @@ If Worked hours are not entered, the activity is recorded but won’t be include
 | Linking Worksheets                 | Worksheets can be linked directly to tasks, projects, or customers, keeping all related data organized in one place.   |
 | Reviewing and Approving Worksheets | Reviewing and approving worksheets regularly helps maintain accuracy in reporting and invoicing.                       |
 
+## How to
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/projects/worksheets',

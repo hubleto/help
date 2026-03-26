@@ -6,6 +6,8 @@
  
  Thanks to color-coded calendars, you always have a clear overview of what’s happening in different parts of your business.
 
+## How to
+
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/crm/calendar',
   'maxLevel': 2,

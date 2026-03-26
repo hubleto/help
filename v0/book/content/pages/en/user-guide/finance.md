@@ -10,7 +10,7 @@ Here you’ll find:
 
 This module gives you an overview of issued, paid, and unpaid invoices and allows you to attach additional documents to them.
 
-## Table of contents
+## How to
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/finance',
