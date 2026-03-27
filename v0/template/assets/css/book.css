@@ -309,6 +309,9 @@
   .m-0 {
     margin: calc(var(--spacing) * 0);
   }
+  .m-8 {
+    margin: calc(var(--spacing) * 8);
+  }
   .m-auto {
     margin: auto;
   }
@@ -350,9 +353,6 @@
   }
   .block {
     display: block;
-  }
-  .contents {
-    display: contents;
   }
   .flex {
     display: flex;
@@ -422,6 +422,9 @@
   }
   .max-w-3xl {
     max-width: var(--container-3xl);
+  }
+  .max-w-\[60\%\] {
+    max-width: 60%;
   }
   .max-w-\[75\%\] {
     max-width: 75%;
@@ -3005,6 +3008,17 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+  .main-page-screenshot {
+    margin: calc(var(--spacing) * 8);
+    width: 100%;
+  }
+  .main-page-screenshot img.screenshot {
+    display: block;
+    max-width: 60%;
+  }
+  .main-page-screenshot div {
+    color: var(--color-gray-600);
   }
   .adios-lookup[class*='-container'] {
     width: 100%;

@@ -155,6 +155,10 @@
   .step-by-step .step-screenshot img.screenshot { @apply max-h-32 max-w-32; }
   .step-by-step .step-screenshot img.screenshot:focus { @apply fixed max-w-[75%] max-h-[75%] shadow-lg; top: 50%; left: 50%; transform: translate(-50%, -50%); }
 
+  .main-page-screenshot { @apply m-8 w-full; }
+  .main-page-screenshot img.screenshot { @apply max-w-[60%] block; }
+  .main-page-screenshot div { @apply text-gray-600; }
+
   .adios-lookup[class*='-container'] { width: 100%; }
   .adios-lookup *[class*='-indicator'] { padding: 0px !important; }
   .adios-lookup *[class*='-control'] { @apply !w-full rounded-sm; min-height: auto !important; }
