@@ -25,13 +25,6 @@ tableOfContents:
       - page: en/user-guide/crm
         children:
           - page: en/user-guide/crm/customers
-            children:
-              - page: en/user-guide/crm/customers/browse
-              - page: en/user-guide/crm/customers/create
-              - page: en/user-guide/crm/customers/modify
-              - page: en/user-guide/crm/customers/import
-              - page: en/user-guide/crm/customers/search
-              - page: en/user-guide/crm/customers/manage-contacts
           - page: en/user-guide/crm/contacts
           - page: en/user-guide/crm/calendar
           - page: en/user-guide/crm/documents

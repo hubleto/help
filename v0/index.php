@@ -42,6 +42,12 @@ class MyGuideVis extends \WaiBlue\GuideVis\Loader {
     }
   }
 
+  /**
+   * [Description for init]
+   *
+   * @return [type]
+   * 
+   */
   public function init()
   {
     parent::init();
@@ -74,33 +80,16 @@ class MyGuideVis extends \WaiBlue\GuideVis\Loader {
     }));
   }
 
-  public function loadBookConfig(): array
-  {
-    $bookConfig = parent::loadBookConfig();
-
-    // $toc = [];
-    // $this->walkTableOfContents(function($tocPage) use ($bookConfig) {
-    //   // var_dump($tocPage);
-    //   if (!isset($tocPage["children"]) || !is_array($tocPage["children"])) {
-    //     $tocPage["children"] = $this->getTableOfContentsFromFolder($tocPage["page"], 1);
-    //   }
-    // }, $bookConfig["tableOfContents"]);
-    // // exit;
-    // var_dump($bookConfig["tableOfContents"]);
-
-    // list($packages, $apps) = $this->loadPackagesAndAppsInfo();
-    // $communityApps = [];
-    // foreach ($apps as $app) {
-    //   if (isset($app['urlHelp']['en'])) {
-    //     $tmpItem = [ "page" => 'en/apps/' . $app['urlHelp']['en'] ];
-    //     $communityApps[] = $tmpItem;
-    //   }
-    // }
-    // $bookConfig["tableOfContents"][1]["children"][0]["children"] = $communityApps;
-
-    return $bookConfig;
-  }
-
+  /**
+   * [Description for getTableOfContentsFromFolder]
+   *
+   * @param string $folder
+   * @param int $maxLevel
+   * @param int $level
+   * 
+   * @return array
+   * 
+   */
   public function getTableOfContentsFromFolder(string $folder, int $maxLevel = 2, $level = 0): array
   {
     $toc = [];
@@ -154,13 +143,39 @@ class MyGuideVis extends \WaiBlue\GuideVis\Loader {
     return $toc;
   }
 
+  /**
+   * [Description for getPageContent]
+   *
+   * @param string $page
+   * 
+   * @return string
+   * 
+   */
   public function getPageContent(string $page): string
   {
     $content = parent::getPageContent($page);
     $content = preg_replace('/\!\[(.*)?\]\(images/', '![$1](/hubleto/public/help/v0/book/content/assets/images', $content);
+
+    $content = preg_replace_callback('/\[#btn (.*?) #\]/', function ($m) {
+      $args = @json_decode($m[1], true);
+      $class = $args['class'] ?? '';
+      $title = $args['title'] ?? '';
+      $icon = $args['icon'] ?? '';
+      $icon = empty($args['icon']) ? '' : '<span class="icon"><i class="' . $args['icon'] . '"></i></span>';
+      return '<button class="btn ' . $class . '">' . $icon . '<span class="text">' . $title . '</span></button>';
+    }, $content);
+
     return $content;
   }
 
+  /**
+   * [Description for getPageVars]
+   *
+   * @param array $pageData
+   * 
+   * @return array
+   * 
+   */
   public function getPageVars(array $pageData = []): array
   {
     $pageVars = parent::getPageVars($pageData);
@@ -174,6 +189,12 @@ class MyGuideVis extends \WaiBlue\GuideVis\Loader {
     return $pageVars;
   }
 
+  /**
+   * [Description for loadPackagesAndAppsInfo]
+   *
+   * @return array
+   * 
+   */
   public function loadPackagesAndAppsInfo(): array
   {
     $packagesAndApps = \Symfony\Component\Yaml\Yaml::parse(file_get_contents(__DIR__ . '/book/packages-and-apps.yaml')) ?? [];
@@ -182,12 +203,28 @@ class MyGuideVis extends \WaiBlue\GuideVis\Loader {
     return [$packages, $apps];
   }
 
+  /**
+   * [Description for getAppInfo]
+   *
+   * @param string $app
+   * 
+   * @return array
+   * 
+   */
   public function getAppInfo(string $app): array
   {
     list($packages, $apps) = $this->loadPackagesAndAppsInfo();
     return $apps[$app] ?? [];
   }
 
+  /**
+   * [Description for getOnThisPage]
+   *
+   * @param string $mdContent
+   * 
+   * @return array
+   * 
+   */
   public function getOnThisPage(string $mdContent): array
   {
     $onThisPage = parent::getOnThisPage($mdContent);
@@ -197,6 +234,10 @@ class MyGuideVis extends \WaiBlue\GuideVis\Loader {
     return $onThisPage;
   }
 }
+
+
+
+///////////////////////////
 
 try {
   $renderer = new MyGuideVis($page, $env, $templateConfig);

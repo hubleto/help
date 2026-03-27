@@ -94,7 +94,7 @@ Forgotten updates → if workflows or deal types change, update the panels too.
 | Editing Panels               | Panels can be edited and resized.                                                                           |
 | Benefits of Dashboards       | A well-configured dashboard gives you an instant overview of the company’s status, customers, and projects. |
 
-## How to
+### See also
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/crm/dashboards',

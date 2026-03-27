@@ -100,7 +100,7 @@ Not updating items: If the team doesn’t move items in real time, workflows los
 | Workflow View         | Workflows are displayed as kanban boards in practice.                           |
 | Benefits of Workflows | Well-structured workflows improve team management, visibility, and planning.    |
 
-## How to
+### See also
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/crm/workflow',

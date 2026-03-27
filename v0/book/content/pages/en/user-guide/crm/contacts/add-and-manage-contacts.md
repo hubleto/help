@@ -83,7 +83,7 @@ If a contact is no longer valid, don’t delete it – just set Valid = OFF → 
 | Quick Navigation with Tags    | Tags (CEO, IT manager, Support…) are key for quick navigation. |
 | Don’t Delete, Just Switch OFF | For outdated contacts, switch Valid OFF instead of deleting.   |
 
-## How to
+### See also
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/crm/customers',

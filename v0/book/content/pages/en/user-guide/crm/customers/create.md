@@ -9,7 +9,7 @@
   },
 
   '2': {
-    'title': 'Click <button class="btn btn-add"><span class="icon"><i class="fas fa-plus"></i></span><span class="text">Add Customer</span></button>',
+    'title': 'Click [#btn {"class": "btn-add", "title": "Add cocustomerntact", "icon": "fas fa-plus"} #]',
     'screenshotUrl': 'customers/add',
   },
 
@@ -33,7 +33,7 @@
   },
 
   '4': {
-    'title': 'Click <button class="btn btn-add"><span class="icon"><i class="fas fa-save"></i></span><span class="text">Add</span></button>'
+    'title': 'Click [#btn {"class": "btn-add", "title": "Add", "icon": "fas fa-plus"} #]'
   }
 }} %}
 
@@ -62,7 +62,7 @@ Forgotten Active status: If a customer isn’t marked Active, they won’t appea
 | Tags and notes     | Use Tags and Notes for better organization.        |
 | Documents          | Documents can be linked through the Shared folder. |
 
-## How to
+### See also
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
   'folder': 'en/user-guide/crm/customers',

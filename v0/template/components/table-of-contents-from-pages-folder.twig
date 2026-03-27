@@ -1,18 +1,16 @@
 {% set toc = getTableOfContentsFromFolder(folder, maxLevel) %}
 
 {% macro renderTocDefault(env, folder, toc) %}
-  <ul>
-    {% for item in toc %}
-      <li>
-        <a href="{{ env.guideRootUrl }}/{{ item.page }}">
-          {{ item.title }}
-        </a>
-        {% if item.children|length > 0 %}
-          {{ _self.renderTocDefault(env, folder, item.children) }}
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ul>
+  {% for item in toc %}
+    <div>
+      <a href="{{ env.guideRootUrl }}/{{ item.page }}">
+        {{ item.title }}
+      </a>
+      {% if item.children|length > 0 %}
+        {{ _self.renderTocDefault(env, folder, item.children) }}
+      {% endif %}
+    </div>
+  {% endfor %}
 {% endmacro %}
 
 {% macro renderTocList(env, folder, toc) %}
@@ -34,7 +32,7 @@
 
 {% macro renderTocCards(env, folder, toc) %}
   {% for page, pageData in toc %}
-<div class="card">
+    <div class="card">
       <div class="card-header">
         <a
           class="btn btn-transparent btn-list-item"
