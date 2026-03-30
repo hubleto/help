@@ -32,6 +32,15 @@ Hubleto developer guide
   </div>
 
   <div class="card border-blue-300">
+    <div class="card-header bg-blue-50"><a href="features-overview">Features overview</a></div>
+    <div class="card-body flex flex-col gap-2">
+      <a href="features-overview/ai-assistant" class="btn btn-white block">
+        <span class="text">AI Assistant</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="card border-blue-300">
     <div class="card-header bg-blue-50"><a href="user-guide/crm">CRM</a></div>
     <div class="card-body flex flex-col gap-2">
       <a href="user-guide/crm/customers" class="btn btn-white block">
