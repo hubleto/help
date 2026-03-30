@@ -31,6 +31,7 @@ $templateConfig = [
 
 class MyGuideVis extends \WaiBlue\GuideVis\Loader {
   public array $pageContentsCache = [];
+  public string $searchPage = 'search';
 
   public function __construct(string $page, array $env, array $templateConfig) {
     parent::__construct($page, $env, $templateConfig);
@@ -78,6 +79,10 @@ class MyGuideVis extends \WaiBlue\GuideVis\Loader {
       $topbar .= "</div>";
       return $topbar;
     }));
+
+    if ($this->page === $this->searchPage && isset($_GET['q'])) {
+      $this->pageContentMd = '';
+    }
   }
 
   /**
@@ -190,7 +195,7 @@ class MyGuideVis extends \WaiBlue\GuideVis\Loader {
   {
     $pageContentFile = $this->env['bookRootFolder'] . '/content/pages/' . $page . '.md';
     if (!is_file($pageContentFile)) {
-      if ($page === '__search__') return '';
+      if ($page === $this->searchPage) return '';
       $slug = basename($page);
       $title = ucwords(str_replace('-', ' ', $slug));
       return "# {$title}\n\n{% include 'components/work-in-progress.twig' %}\n";
@@ -290,6 +295,7 @@ class MyGuideVis extends \WaiBlue\GuideVis\Loader {
 
 try {
   $renderer = new MyGuideVis($page, $env, $templateConfig);
+  $renderer->searchPage = 'search';
   $renderer->init();
   echo $renderer->render();
 } catch (\Exception $e) {
