@@ -108,6 +108,8 @@
   .sidebar .is-disabled { @apply text-gray-400 cursor-not-allowed opacity-70; }
   .sidebar .is-disabled:hover { @apply bg-transparent text-gray-400 no-underline; }
   .sidebar .is-disabled .text::before { content: "WIP"; @apply text-[9px] font-semibold bg-amber-100 text-amber-600 mr-2 px-1.5 py-0.5 rounded-full border border-amber-300; white-space: nowrap !important; }
+  .sidebar .is-missing { @apply text-gray-300 cursor-default pointer-events-none; }
+  .sidebar .is-missing:hover { @apply bg-transparent no-underline; }
 
   .table-of-contents { @apply m-0 p-2 border border-primary/40; }
   .table-of-contents ul { @apply list-none p-0 pb-2; }
@@ -116,6 +118,11 @@
   .table-of-contents > ul > li > ul > li > a { @apply text-sm; }
   .table-of-contents > ul > li > ul > li > ul > li { @apply leading-tight; }
   .table-of-contents > ul > li > ul > li > ul > li > a { @apply text-xs; }
+
+  .lang-switcher { @apply flex gap-1 mb-2; }
+  .lang-btn { @apply text-xs font-semibold px-2 py-0.5 rounded border border-gray-200 text-gray-500 no-underline; }
+  .lang-btn:hover { @apply bg-gray-100 no-underline; }
+  .lang-btn.active { @apply bg-primary text-white border-primary; }
 
   aside.on-this-page { @apply fixed top-0 right-0 h-full w-60 break-all bg-white z-20 p-2 hidden lg:block; }
   aside.on-this-page .btn { @apply text-xs; }

@@ -44,19 +44,19 @@
       {% endif %}
     </div>
   </div>
-  {% if pageConfig.tocData.prev or pageConfig.tocData.next %}
-    <div class="content flex justify-between">
-      <div class="flex-1 text-left">
-        {% if pageConfig.tocData.prev %}
-          <a href="{{ env.guideRootUrl }}/{{ pageConfig.tocData.prev }}">&laquo; Previous page</a><br/>
-          <small>{{ pageConfig.tocData.prevPageData.title }}</small>
-        {% endif %}
-      </div>
-      <div class="flex-1 text-right">
-        {% if pageConfig.tocData.next %}
-          <a href="{{ env.guideRootUrl }}/{{ pageConfig.tocData.next }}">Next page &raquo;</a><br/>
-          <small>{{ pageConfig.tocData.nextPageData.title }}</small>
-        {% endif %}
+  {% if pageConfig.tocData.prevPageData or pageConfig.tocData.nextPageData %}
+    <div class="wrapper">
+      <div class="content flex justify-between pt-4 border-t border-gray-100">
+        <div>
+          {% if pageConfig.tocData.prevPageData %}
+            <a href="{{ env.guideRootUrl }}/{{ pageConfig.tocData.prevPageData.page }}">&laquo; Previous page</a>
+          {% endif %}
+        </div>
+        <div>
+          {% if pageConfig.tocData.nextPageData %}
+            <a href="{{ env.guideRootUrl }}/{{ pageConfig.tocData.nextPageData.page }}">Next page &raquo;</a>
+          {% endif %}
+        </div>
       </div>
     </div>
   {% endif %}

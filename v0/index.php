@@ -143,6 +143,41 @@ class MyGuideVis extends \WaiBlue\GuideVis\Loader {
     return $toc;
   }
 
+  public function loadPageConfig(): array
+  {
+    $config = parent::loadPageConfig();
+
+    $toc = [];
+    $prevPage = [];
+    $setNextPage = false;
+    $this->walkTableOfContents(function($page) use (&$toc, &$prevPage, &$setNextPage) {
+      if ($page['page'] == $this->page) {
+        $toc = $page;
+        $toc['prevPageData'] = $prevPage;
+        $setNextPage = true;
+      } else if ($setNextPage) {
+        $toc['nextPageData'] = $page;
+        $setNextPage = false;
+      } else {
+        $prevPage = $page;
+      }
+    });
+
+    if (!empty($toc)) $config['tocData'] = $toc;
+
+    return $config;
+  }
+
+  public function pageExists(string $page): bool
+  {
+    if (parent::pageExists($page)) return true;
+    $found = false;
+    $this->walkTableOfContents(function($item) use ($page, &$found) {
+      if ($item['page'] === $page) $found = true;
+    });
+    return $found;
+  }
+
   /**
    * [Description for getPageContent]
    *
@@ -153,6 +188,13 @@ class MyGuideVis extends \WaiBlue\GuideVis\Loader {
    */
   public function getPageContent(string $page): string
   {
+    $pageContentFile = $this->env['bookRootFolder'] . '/content/pages/' . $page . '.md';
+    if (!is_file($pageContentFile)) {
+      if ($page === '__search__') return '';
+      $slug = basename($page);
+      $title = ucwords(str_replace('-', ' ', $slug));
+      return "# {$title}\n\n{% include 'components/work-in-progress.twig' %}\n";
+    }
     $content = parent::getPageContent($page);
     $content = preg_replace('/\!\[(.*)?\]\(images/', '![$1](/hubleto/public/help/v0/book/content/assets/images', $content);
 
@@ -184,6 +226,13 @@ class MyGuideVis extends \WaiBlue\GuideVis\Loader {
     list($packages, $apps) = $this->loadPackagesAndAppsInfo();
     $pageVars["packages"] = $packages;
     $pageVars["apps"] = $apps;
+
+    $pagesFolder = $this->env['bookRootFolder'] . '/content/pages/';
+    $pageExistsMap = [];
+    $this->walkTableOfContents(function($item) use (&$pageExistsMap, $pagesFolder) {
+      $pageExistsMap[$item['page']] = is_file($pagesFolder . $item['page'] . '.md');
+    });
+    $pageVars['pageExistsMap'] = $pageExistsMap;
 
     $pageVars['guide'] = $this;
     return $pageVars;
