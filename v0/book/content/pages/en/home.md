@@ -37,6 +37,15 @@ Hubleto developer guide
       <a href="features-overview/ai-assistant" class="btn btn-white block">
         <span class="text">AI Assistant</span>
       </a>
+      <a href="features-overview/global-search" class="btn btn-white block">
+        <span class="text">Global Search</span>
+      </a>
+      <a href="features-overview/app-layout-data-grids" class="btn btn-white block">
+        <span class="text">App Layout & Data Grids</span>
+      </a>
+      <a href="features-overview/record-form-layout" class="btn btn-white block">
+        <span class="text">Record Form Layout</span>
+      </a>
     </div>
   </div>
 

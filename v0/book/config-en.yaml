@@ -23,6 +23,9 @@ tableOfContents:
     icon: fas fa-star
     children:
       - page: en/features-overview/ai-assistant
+      - page: en/features-overview/global-search
+      - page: en/features-overview/app-layout-data-grids
+      - page: en/features-overview/record-form-layout
   - page: en/user-guide
     icon: fas fa-book
     children:
