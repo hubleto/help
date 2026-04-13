@@ -31,10 +31,11 @@ $templateConfig = [
 
 class MyGuideVis extends \WaiBlue\GuideVis\Loader {
   public array $pageContentsCache = [];
+  public string $searchPage = 'search';
 
   public function __construct(string $page, array $env, array $templateConfig) {
     parent::__construct($page, $env, $templateConfig);
-    $language = substr($page, 0, 2);
+    $language = preg_match('/^[a-z]{2}\//', $page) ? substr($page, 0, 2) : 'en';
     if (is_file($this->env['bookRootFolder'] . '/config-' . $language . '.yaml')) {
       $this->bookConfigFile = $this->env['bookRootFolder'] . '/config-' . $language . '.yaml';
     } else {
@@ -78,6 +79,10 @@ class MyGuideVis extends \WaiBlue\GuideVis\Loader {
       $topbar .= "</div>";
       return $topbar;
     }));
+
+    if ($this->page === $this->searchPage && isset($_GET['q'])) {
+      $this->pageContentMd = '';
+    }
   }
 
   /**
@@ -143,6 +148,41 @@ class MyGuideVis extends \WaiBlue\GuideVis\Loader {
     return $toc;
   }
 
+  public function loadPageConfig(): array
+  {
+    $config = parent::loadPageConfig();
+
+    $toc = [];
+    $prevPage = [];
+    $setNextPage = false;
+    $this->walkTableOfContents(function($page) use (&$toc, &$prevPage, &$setNextPage) {
+      if ($page['page'] == $this->page) {
+        $toc = $page;
+        $toc['prevPageData'] = $prevPage;
+        $setNextPage = true;
+      } else if ($setNextPage) {
+        $toc['nextPageData'] = $page;
+        $setNextPage = false;
+      } else {
+        $prevPage = $page;
+      }
+    });
+
+    if (!empty($toc)) $config['tocData'] = $toc;
+
+    return $config;
+  }
+
+  public function pageExists(string $page): bool
+  {
+    if (parent::pageExists($page)) return true;
+    $found = false;
+    $this->walkTableOfContents(function($item) use ($page, &$found) {
+      if ($item['page'] === $page) $found = true;
+    });
+    return $found;
+  }
+
   /**
    * [Description for getPageContent]
    *
@@ -153,6 +193,13 @@ class MyGuideVis extends \WaiBlue\GuideVis\Loader {
    */
   public function getPageContent(string $page): string
   {
+    $pageContentFile = $this->env['bookRootFolder'] . '/content/pages/' . $page . '.md';
+    if (!is_file($pageContentFile)) {
+      if ($page === $this->searchPage) return '';
+      $slug = basename($page);
+      $title = ucwords(str_replace('-', ' ', $slug));
+      return "# {$title}\n\n{% include 'components/work-in-progress.twig' %}\n";
+    }
     $content = parent::getPageContent($page);
     $content = preg_replace('/\!\[(.*)?\]\(images/', '![$1](/hubleto/public/help/v0/book/content/assets/images', $content);
 
@@ -184,6 +231,13 @@ class MyGuideVis extends \WaiBlue\GuideVis\Loader {
     list($packages, $apps) = $this->loadPackagesAndAppsInfo();
     $pageVars["packages"] = $packages;
     $pageVars["apps"] = $apps;
+
+    $pagesFolder = $this->env['bookRootFolder'] . '/content/pages/';
+    $pageExistsMap = [];
+    $this->walkTableOfContents(function($item) use (&$pageExistsMap, $pagesFolder) {
+      $pageExistsMap[$item['page']] = is_file($pagesFolder . $item['page'] . '.md');
+    });
+    $pageVars['pageExistsMap'] = $pageExistsMap;
 
     $pageVars['guide'] = $this;
     return $pageVars;
@@ -241,6 +295,7 @@ class MyGuideVis extends \WaiBlue\GuideVis\Loader {
 
 try {
   $renderer = new MyGuideVis($page, $env, $templateConfig);
+  $renderer->searchPage = 'search';
   $renderer->init();
   echo $renderer->render();
 } catch (\Exception $e) {

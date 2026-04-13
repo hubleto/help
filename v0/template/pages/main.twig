@@ -8,22 +8,55 @@
   {{ elements.header|raw }}
   {{ elements.sidebar|raw }}
   <!-- Content -->
-  <div class="content">
-    {{ content|raw }}
+  <div class="wrapper">
+    <div class="content">
+      {{ content|raw }}
+      {% if data.searchResults is defined %}
+        {% if data.query %}
+          <div class="mb-6">
+            <p class="text-gray-500 text-sm">Search results for: <strong class="text-gray-800">{{ data.query }}</strong></p>
+            <p class="text-gray-400 text-xs mt-1">{{ data.searchResults|length }} result(s) found</p>
+          </div>
+
+          {% if data.searchResults|length > 0 %}
+            <ul class="space-y-4">
+              {% for result in data.searchResults %}
+                <li class="border border-gray-200 rounded-lg p-4 hover:border-blue-300 hover:shadow-sm transition-all">
+                  <a href="{{ result.url }}" class="text-blue-600 hover:underline font-semibold text-base">{{ result.titleDisplay|raw }}</a>
+                  <span class="text-xs text-gray-400 ml-2">({{ result.count }} matches)</span>
+                  {% if result.snippets|length > 0 %}
+                    <div class="mt-2 space-y-1">
+                      {% for snippet in result.snippets %}
+                        <p class="text-sm text-gray-600 border-l-2 border-gray-200 pl-3">{{ snippet|raw }}</p>
+                      {% endfor %}
+                    </div>
+                  {% endif %}
+                </li>
+              {% endfor %}
+            </ul>
+          {% else %}
+            <div class="text-center py-12">
+              <p class="text-gray-400 text-lg">No results found for <strong>{{ data.query }}</strong></p>
+              <p class="text-gray-300 text-sm mt-2">Try different keywords</p>
+            </div>
+          {% endif %}
+        {% endif %}
+      {% endif %}
+    </div>
   </div>
-  {% if pageConfig.tocData.prev or pageConfig.tocData.next %}
-    <div class="content flex justify-between">
-      <div class="flex-1 text-left">
-        {% if pageConfig.tocData.prev %}
-          <a href="{{ env.guideRootUrl }}/{{ pageConfig.tocData.prev }}">&laquo; Previous page</a><br/>
-          <small>{{ pageConfig.tocData.prevPageData.title }}</small>
-        {% endif %}
-      </div>
-      <div class="flex-1 text-right">
-        {% if pageConfig.tocData.next %}
-          <a href="{{ env.guideRootUrl }}/{{ pageConfig.tocData.next }}">Next page &raquo;</a><br/>
-          <small>{{ pageConfig.tocData.nextPageData.title }}</small>
-        {% endif %}
+  {% if pageConfig.tocData.prevPageData or pageConfig.tocData.nextPageData %}
+    <div class="wrapper">
+      <div class="content flex justify-between pt-4 border-t border-gray-100">
+        <div>
+          {% if pageConfig.tocData.prevPageData %}
+            <a href="{{ env.guideRootUrl }}/{{ pageConfig.tocData.prevPageData.page }}">&laquo; Previous page</a>
+          {% endif %}
+        </div>
+        <div>
+          {% if pageConfig.tocData.nextPageData %}
+            <a href="{{ env.guideRootUrl }}/{{ pageConfig.tocData.nextPageData.page }}">Next page &raquo;</a>
+          {% endif %}
+        </div>
       </div>
     </div>
   {% endif %}
@@ -32,5 +65,83 @@
   {{ elements.footer|raw }}
 
   <script src="{{ guideRootUrl }}/node_modules/preline/dist/preline.js"></script>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const header = document.querySelector('.header');
+      const headerHeight = header ? header.offsetHeight : 0;
+
+      const headings = document.querySelectorAll('.content h1, .content h2, .content h3, .content h4');
+      headings.forEach(h => {
+        if (!h.id) {
+          h.id = h.textContent.trim();
+        }
+
+        if (!h.querySelector('.heading-text')) {
+          const span = document.createElement('span');
+          span.className = 'heading-text';
+          span.style.position = 'relative';
+          span.style.display = 'inline-block';
+          while (h.firstChild) {
+            span.appendChild(h.firstChild);
+          }
+          h.appendChild(span);
+        }
+      });
+
+      const scrollToHeading = (target) => {
+        if (!target) return;
+
+        document.querySelectorAll('.highlight-pill').forEach(pill => pill.remove());
+
+        const span = target.querySelector('.heading-text');
+        if (!span) return;
+
+        const top = target.getBoundingClientRect().top + window.scrollY - headerHeight - 8;
+        window.scrollTo({ top, behavior: 'smooth' });
+
+        const overlay = document.createElement('span');
+        overlay.className = 'highlight-pill';
+        overlay.style.position = 'absolute';
+        overlay.style.left = '-0.2em';
+        overlay.style.right = '-0.2em';
+        overlay.style.bottom = '0.1em';
+        overlay.style.height = '0.8em';
+        overlay.style.backgroundColor = '#FEF3C7';
+        overlay.style.borderRadius = '0.4em';
+        overlay.style.zIndex = '-1';
+        overlay.style.transition = 'opacity 0.5s';
+
+        span.appendChild(overlay);
+
+        setTimeout(() => {
+          overlay.style.opacity = '0';
+          setTimeout(() => {
+            if (overlay.parentNode) overlay.parentNode.removeChild(overlay);
+          }, 500);
+        }, 2000);
+      };
+
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', (e) => {
+          const hash = decodeURIComponent(anchor.getAttribute('href').substring(1));
+          const target = document.getElementById(hash);
+          if (!target) return;
+          e.preventDefault();
+          scrollToHeading(target);
+          history.pushState(null, '', `#${encodeURIComponent(hash)}`);
+        });
+      });
+
+      if (window.location.hash) {
+        const hash = decodeURIComponent(window.location.hash.substring(1));
+        const target = document.getElementById(hash);
+        if (target) {
+          setTimeout(() => scrollToHeading(target), 50);
+        }
+      }
+    });
+  </script>
+
 </body>
 </html>
