@@ -4,6 +4,11 @@ Whenever you click to open a record in Hubleto (e.g., a Customer, a Campaign, or
 
 This guide explains the layout and the hidden features you can find inside a record form.
 
+{% include 'components/screenshot.twig' with {
+  'screenshotUrl': 'customers/1',
+  'caption': 'Example of a record form layout'
+} %}
+
 ## Top Action Bar
 At the very top of every form, you'll find the main action bar:
 * **Save:** On the left, you'll see a prominent button to **Save** your changes (shortcut: `Ctrl+S`). If you have unsaved changes, this button will turn orange to indicate action is needed.
