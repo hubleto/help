@@ -2,6 +2,11 @@
 
 The Hubleto **Global Search** bar, located at the top left of your screen next to the logo, is more than just a simple search field. It acts as a powerful command palette that helps you navigate and find data instantly across all your enabled apps.
 
+{% include 'components/screenshot.twig' with {
+  'screenshotUrl': 'customers',
+  'caption': 'Global Search is available in the top bar of every app'
+} %}
+
 ## Key Features
 
 You can activate the Global Search at any time by pressing **`Ctrl+K`** on your keyboard, or by simply clicking on the search input field.

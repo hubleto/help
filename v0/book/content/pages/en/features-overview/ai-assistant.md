@@ -2,6 +2,11 @@
 
 Hubleto's built-in **AI Assistant**, also known as **Hubi**, is an intelligent companion that supercharges your workflow. Operating directly within your CRM and ERP ecosystem, Hubi helps you interact with your data more effectively than ever before.
 
+{% include 'components/screenshot.twig' with {
+  'screenshotUrl': 'settings/ai-assistant',
+  'caption': 'AI Assistant settings page'
+} %}
+
 ## Meet Hubi
 
 **Hubi** is designed to understand the context of your work. Whether you are a regular user navigating business features or a developer building extensions, Hubi adapts its knowledge to help you achieve your goals.
