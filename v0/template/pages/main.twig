@@ -5,7 +5,36 @@
   {{ elements.htmlHead|raw }}
 </head>
 <body>
-  {{ elements.header|raw }}
+  <div class="top-bar">
+    <button type="button" class="top-bar-burger" onclick="toggleMenu()" aria-label="Toggle menu">
+      <i class="fas fa-bars"></i>
+    </button>
+    <a href="https://www.hubleto.eu" target="_blank" class="top-bar-link top-bar-hubleto">www.hubleto.eu</a>
+    <a href="https://www.reddit.com/r/hubleto/" target="_blank" class="top-bar-link">
+      <i class="fab fa-reddit"></i>
+      <span>Reddit</span>
+    </a>
+    <a href="https://developer.hubleto.eu" target="_blank" class="top-bar-link top-bar-desktop">
+      <i class="fas fa-code"></i>
+      <span>Developer's guide</span>
+    </a>
+    <a href="https://stackoverflow.com/questions/tagged/hubleto" target="_blank" class="top-bar-link top-bar-desktop">
+      <i class="fab fa-stack-overflow"></i>
+      <span>Stack Overflow</span>
+    </a>
+    <a href="https://www.linkedin.com/company/hubleto" target="_blank" class="top-bar-link top-bar-desktop">
+      <i class="fab fa-linkedin"></i>
+      <span>LinkedIn</span>
+    </a>
+    <a href="https://community.hubleto.eu" target="_blank" class="top-bar-link top-bar-desktop">
+      <i class="fas fa-users"></i>
+      <span>Community</span>
+    </a>
+    <a href="https://github.com/hubleto/erp/issues" target="_blank" class="top-bar-link top-bar-desktop">
+      <i class="fab fa-github"></i>
+      <span>Report an issue</span>
+    </a>
+  </div>
   {{ elements.sidebar|raw }}
   <!-- Content -->
   <div class="wrapper">
@@ -43,9 +72,7 @@
         {% endif %}
       {% endif %}
     </div>
-  </div>
-  {% if pageConfig.tocData.prevPageData or pageConfig.tocData.nextPageData %}
-    <div class="wrapper">
+    {% if pageConfig.tocData.prevPageData or pageConfig.tocData.nextPageData %}
       <div class="content flex justify-between pt-4 border-t border-gray-100">
         <div>
           {% if pageConfig.tocData.prevPageData %}
@@ -58,11 +85,10 @@
           {% endif %}
         </div>
       </div>
-    </div>
-  {% endif %}
+    {% endif %}
+  </div>
 
   {{ elements.onThisPage|raw }}
-  {{ elements.footer|raw }}
 
   <script src="{{ guideRootUrl }}/node_modules/preline/dist/preline.js"></script>
 
