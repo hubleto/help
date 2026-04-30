@@ -8,7 +8,7 @@ The documentation is organized so that you can access information in several way
 
 **Navigation tree**
 
-Use the sidebar on the left side of the page to browse topics by category. The navigation tree groups related pages together, so you can move from general topics to more specific user-guide articles.
+Use the sidebar on the left side of the page to browse topics by category. The navigation tree groups related pages together, so you can move from general topics to more specific app articles.
 
 **On this page**
 
@@ -42,4 +42,4 @@ Some pages contain repeated sections that provide additional context or practica
 
 If this is your first time using Hubleto, start with the **Getting Started** section in the left sidebar. It covers the essential first steps, basic navigation, and initial setup topics that help you begin using the platform quickly.
 
-After that, continue with the **User Guide** section to learn how to work with individual modules such as CRM, Sales, Projects, Finance, and Maintenance.
+After that, continue with the **Apps** section to learn how to work with individual modules such as CRM, Sales, Projects, Finance, and Maintenance.
