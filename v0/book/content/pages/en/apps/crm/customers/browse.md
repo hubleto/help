@@ -1,0 +1,17 @@
+{# tocOrder = 1 #}
+
+# Browse customers
+
+{% include 'components/step-by-step.twig' with {'steps': {
+  '1': {
+    'title': 'Go to `CRM` → `Customers`',
+    'screenshotUrl': 'customers',
+  }
+}} %}
+
+### See also
+
+{% include 'components/table-of-contents-from-pages-folder.twig' with {
+  'folder': 'en/apps/crm/customers',
+  'maxLevel': 2,
+} %}
