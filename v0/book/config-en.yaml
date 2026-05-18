@@ -26,44 +26,44 @@ tableOfContents:
       - page: en/features-overview/global-search
       - page: en/features-overview/app-layout-data-grids
       - page: en/features-overview/record-form-layout
-  - page: en/user-guide
+  - page: en/apps
     icon: fas fa-book
     children:
-      - page: en/user-guide/crm
+      - page: en/apps/crm
         children:
-          - page: en/user-guide/crm/customers
-          - page: en/user-guide/crm/contacts
-          - page: en/user-guide/crm/calendar
-          - page: en/user-guide/crm/documents
-          - page: en/user-guide/crm/workflow
-          - page: en/user-guide/crm/mail
-          - page: en/user-guide/crm/tasks
-          - page: en/user-guide/crm/dashboards
-      - page: en/user-guide/marketing
+          - page: en/apps/crm/customers
+          - page: en/apps/crm/contacts
+          - page: en/apps/crm/calendar
+          - page: en/apps/crm/documents
+          - page: en/apps/crm/workflow
+          - page: en/apps/crm/mail
+          - page: en/apps/crm/tasks
+          - page: en/apps/crm/dashboards
+      - page: en/apps/marketing
         children:
-          - page: en/user-guide/marketing/campaigns
-          - page: en/user-guide/marketing/leads
-      - page: en/user-guide/sales
+          - page: en/apps/marketing/campaigns
+          - page: en/apps/marketing/leads
+      - page: en/apps/sales
         children:
-          - page: en/user-guide/sales/suppliers
-          - page: en/user-guide/sales/deals
-          - page: en/user-guide/sales/products
-          - page: en/user-guide/sales/orders
-      - page: en/user-guide/projects
+          - page: en/apps/sales/suppliers
+          - page: en/apps/sales/deals
+          - page: en/apps/sales/products
+          - page: en/apps/sales/orders
+      - page: en/apps/projects
         children:
-          - page: en/user-guide/projects/tasks
-          - page: en/user-guide/projects/worksheets
-          - page: en/user-guide/projects/projects
-          - page: en/user-guide/projects/issues
-      - page: en/user-guide/supply-chain
+          - page: en/apps/projects/tasks
+          - page: en/apps/projects/worksheets
+          - page: en/apps/projects/projects
+          - page: en/apps/projects/issues
+      - page: en/apps/supply-chain
         children:
-          - page: en/user-guide/supply-chain/warehouses
-          - page: en/user-guide/supply-chain/inventory
-      - page: en/user-guide/finance
+          - page: en/apps/supply-chain/warehouses
+          - page: en/apps/supply-chain/inventory
+      - page: en/apps/finance
         children:
-          - page: en/user-guide/finance/invoices
-      - page: en/user-guide/maintenance
+          - page: en/apps/finance/invoices
+      - page: en/apps/maintenance
         children:
-          - page: en/user-guide/maintenance/notifications
-          - page: en/user-guide/maintenance/settings
-          - page: en/user-guide/maintenance/tools
+          - page: en/apps/maintenance/notifications
+          - page: en/apps/maintenance/settings
+          - page: en/apps/maintenance/tools
