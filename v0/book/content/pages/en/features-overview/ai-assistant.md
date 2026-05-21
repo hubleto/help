@@ -7,6 +7,7 @@ Hubleto's built-in **AI Assistant**, also known as **Hubi**, is an intelligent c
   'caption': 'AI Assistant settings page'
 } %}
 
+
 ## Meet Hubi
 
 **Hubi** is designed to understand the context of your work. Whether you are a regular user navigating business features or a developer building extensions, Hubi adapts its knowledge to help you achieve your goals.
