@@ -7,6 +7,7 @@ The Hubleto **Global Search** bar, located at the top left of your screen next t
   'caption': 'Global Search is available in the top bar of every app'
 } %}
 
+
 ## Key Features
 
 You can activate the Global Search at any time by pressing **`Ctrl+K`** on your keyboard, or by simply clicking on the search input field.

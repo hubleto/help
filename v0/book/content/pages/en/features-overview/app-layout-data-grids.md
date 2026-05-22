@@ -9,6 +9,7 @@ This guide explores the layout, powerful search capabilities, and the hidden fea
   'caption': 'Example of an app layout with a data grid'
 } %}
 
+
 ## Top Action Bar
 At the top of the interface, you'll find the primary tools for managing the app's records.
 
