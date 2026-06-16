@@ -19,7 +19,7 @@ Hubleto developer guide
   <div class="card border-green-300">
     <div class="card-header bg-green-50"><a href="getting-started">Getting started</a></div>
     <div class="card-body flex flex-col gap-2">
-      <a href="getting-started/how-to-use-this-guide" class="btn btn-white block">
+      <a href="getting-started/registration-and-login" class="btn btn-white block">
         <span class="text">Registration and login</span>
       </a>
       <a href="getting-started/homepage-overview" class="btn btn-white block">
