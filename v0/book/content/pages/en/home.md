@@ -8,24 +8,24 @@ Hubleto developer guide
 
 <div class="grid gap-4 mt-8 md:grid-cols-2">
   <div class="card border-yellow-300">
-    <div class="card-header bg-yellow-50">Introduction</div>
+    <div class="card-header bg-yellow-50"><a href="introduction">Introduction</a></div>
     <div class="card-body flex flex-col gap-2">
-      <a href="what-is-hubleto" class="btn btn-white block"><span class="text">What is Hubleto</span></a>
-      <a href="who-is-hubleto-for" class="btn btn-white block"><span class="text">Who is Hubleto for</span></a>
-      <a href="how-to-use-this-guide" class="btn btn-white block"><span class="text">How to use this guide</span></a>
+      <a href="introduction/what-is-hubleto" class="btn btn-white block"><span class="text">What is Hubleto</span></a>
+      <a href="introduction/who-is-hubleto-for" class="btn btn-white block"><span class="text">Who is Hubleto for</span></a>
+      <a href="introduction/how-to-use-this-guide" class="btn btn-white block"><span class="text">How to use this guide</span></a>
     </div>
   </div>
 
   <div class="card border-green-300">
-    <div class="card-header bg-green-50">Getting started</div>
+    <div class="card-header bg-green-50"><a href="getting-started">Getting started</a></div>
     <div class="card-body flex flex-col gap-2">
-      <a href="how-to-use-this-guide" class="btn btn-white block">
+      <a href="getting-started/how-to-use-this-guide" class="btn btn-white block">
         <span class="text">Registration and login</span>
       </a>
-      <a href="homepage-overview" class="btn btn-white block">
+      <a href="getting-started/homepage-overview" class="btn btn-white block">
         <span class="text">Homepage overview</span>
       </a>
-      <a href="menu-navigation" class="btn btn-white block">
+      <a href="getting-started/menu-navigation" class="btn btn-white block">
         <span class="text">Menu navigation</span>
       </a>
     </div>
