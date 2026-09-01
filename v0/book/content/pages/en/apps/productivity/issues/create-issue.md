@@ -2,13 +2,13 @@
 
 # Create an issue
 
-Click `Projects` → `Issues`.
+Click `Productivity` → `Issues`.
  → A table of all reported issues will appear.
 
 ## Add issues
 {% include 'components/step-by-step.twig' with {'steps': {
   '1': {
-    'title': 'Go to `Projects` → `Issues`.',
+    'title': 'Go to `Productivity` → `Issues`.',
   },
 
   '2': {
@@ -50,6 +50,6 @@ Unassigned issues may get lost without being linked to a project.
 ## How to
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
-  'folder': 'en/apps/projects/issues',
+  'folder': 'en/apps/productivity/issues',
   'maxLevel': 2,
 } %}

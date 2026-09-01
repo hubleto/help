@@ -3,7 +3,7 @@
 # Step-by-Step
 
 ## How to view Inventory:
-In the left menu, click `Supply chain` → `Inventory`.
+In the left menu, click `Warehouses` → `Inventory`.
 
 
 **The table displays the following key data:**
@@ -17,7 +17,7 @@ In the left menu, click `Supply chain` → `Inventory`.
 ## How to add a new Inventory item:
 {% include 'components/step-by-step.twig' with {'steps': {
   '1': {
-    'title': 'Go to `Supply chain` → `Inventory`.',
+    'title': 'Go to `Warehouses` → `Inventory`.',
   },
 
   '2': {
@@ -68,6 +68,6 @@ Incorrect dates (e.g., expiration in the past) → they save but create inaccura
 ## How to
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
-  'folder': 'en/apps/supply-chain/inventory',
+  'folder': 'en/apps/warehouses/inventory',
   'maxLevel': 2,
 } %}

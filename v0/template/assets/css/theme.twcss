@@ -158,6 +158,7 @@
   }
   aside.on-this-page > div:nth-child(2) .heading-level-1 a { @apply text-sm text-gray-700; }
   aside.on-this-page > div:nth-child(2) .heading-level-2 a { @apply text-xs text-gray-500 ml-2; }
+  aside.on-this-page > div:nth-child(2) .heading-level-3 a { @apply text-xs text-gray-400 ml-4 py-1; }
 
   /* Top bar */
   :root { --top-bar-height: 2.25rem; }

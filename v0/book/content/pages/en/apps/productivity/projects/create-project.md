@@ -1,13 +1,13 @@
 {# tocOrder = 1 #}
 
 # Create a project
-Click `Projects` → `Projects`.
+Click `Productivity` → `Projects`.
  → A list of projects will appear.
 
 ## Add projects
 {% include 'components/step-by-step.twig' with {'steps': {
   '1': {
-    'title': 'Go to `Projects` → `Projects`.',
+    'title': 'Go to `Productivity` → `Projects`.',
   },
 
   '2': {
@@ -66,6 +66,6 @@ No budget → prevents tracking of financial metrics.
 ## How to
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
-  'folder': 'en/apps/projects/projects',
+  'folder': 'en/apps/productivity/projects',
   'maxLevel': 2,
 } %}

@@ -2,8 +2,31 @@
   {% if onThisPage|length > 0 %}
     <div><div>On this page</div></div>
     <div>
+      {% set childPages = guide.getTableOfContentsFromFolder(page, 2) %}
+      {% set seeAlsoPages = guide.getSeeAlsoPages() %}
       {% for h2, h3list in onThisPage %}
-        <a href="#{{ h2 }}"><span class="text">{{ h2 }}</span></a>
+        <div class="heading-level-1">
+          <a href="#{{ h2 }}"><span class="text">{{ h2 }}</span></a>
+        </div>
+        {% for h3 in h3list %}
+          <div class="heading-level-2">
+            <a href="#{{ h3 }}"><span class="text">{{ h3 }}</span></a>
+          </div>
+          {% if h3|lower|trim == 'see also' %}
+            {% for relatedPage in seeAlsoPages %}
+              <div class="heading-level-3">
+                <a href="{{ guideRootUrl }}/{{ relatedPage.page }}"><span class="text">{{ relatedPage.title }}</span></a>
+              </div>
+            {% endfor %}
+          {% endif %}
+        {% endfor %}
+        {% if h2|lower|trim == 'how to' %}
+          {% for childPage in childPages %}
+            <div class="heading-level-2">
+              <a href="{{ guideRootUrl }}/{{ childPage.page }}"><span class="text">{{ childPage.title }}</span></a>
+            </div>
+          {% endfor %}
+        {% endif %}
       {% endfor %}
     </div>
   {% endif %}

@@ -13,7 +13,7 @@ The default homepage is the main starting point for working in Hubleto. It gives
 
 The homepage usually contains several important areas:
 
-* **Left sidebar** - a list of available Hubleto apps grouped by area, such as CRM, Marketing, Sales, Projects, Finance, or Maintenance.
+* **Left sidebar** - a list of available Hubleto apps grouped by area, such as CRM, Marketing, Sales, Productivity, Warehouses, Finance, Communication, Maintenance, or Help.
 * **Top bar** - quick access to the global search, the app launcher, language switch, notifications, settings, and your user menu.
 * **Welcome section** - a personal area with your name and account information.
 * **Dashboard** - a customizable set of panels showing useful summaries and quick overviews from different parts of Hubleto.

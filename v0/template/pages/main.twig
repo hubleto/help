@@ -39,7 +39,12 @@
   <!-- Content -->
   <div class="wrapper">
     <div class="content">
-      {{ content|raw }}
+      {% if pageConfig.tocData.icon is defined and pageConfig.tocData.icon %}
+        {% set pageHeadingIcon = '<i class="' ~ pageConfig.tocData.icon ~ '" aria-hidden="true" style="font-size: 0.8em; margin-right: 0.35em"></i>' %}
+        {{ content|replace({'<h1>': '<h1>' ~ pageHeadingIcon})|raw }}
+      {% else %}
+        {{ content|raw }}
+      {% endif %}
       {% if data.searchResults is defined %}
         {% if data.query %}
           <div class="mb-6">

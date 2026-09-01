@@ -31,7 +31,7 @@ When a new project is created, Hubleto assigns the default workflow from the `pr
 
 {% include 'components/step-by-step.twig' with {'steps': {
   '1': {
-    'title': 'Open `Projects` > `Projects`.',
+    'title': 'Open `Productivity` > `Projects`.',
     'description': 'Use the project table to find the project you want to update.',
   },
   '2': {
@@ -140,6 +140,6 @@ Keep phase names short and action-oriented so the workflow selector remains easy
 ## How to
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
-  'folder': 'en/apps/projects/projects',
+  'folder': 'en/apps/productivity/projects',
   'maxLevel': 2,
 } %}

@@ -2,6 +2,21 @@
 
 # CRM
 
+{% include 'components/app-group-card.twig' with {
+  'borderColor': '#93c5fd',
+  'headerColor': '#eff6ff',
+  'links': [
+    {'page': 'en/apps/crm/customers', 'title': 'Customers'},
+    {'page': 'en/apps/crm/contacts', 'title': 'Contacts'},
+    {'page': 'en/apps/crm/calendar', 'title': 'Calendar'},
+    {'page': 'en/apps/crm/documents', 'title': 'Documents'},
+    {'page': 'en/apps/crm/workflow', 'title': 'Workflow'},
+    {'page': 'en/apps/crm/mail', 'title': 'Mail'},
+    {'page': 'en/apps/crm/tasks', 'title': 'Tasks'},
+    {'page': 'en/apps/crm/dashboards', 'title': 'Dashboards'},
+  ],
+} %}
+
 CRM (Customer Relationship Management) is the heart of Hubleto.
 
 In this section, you manage all data about customers, contacts, documents, events, and overall communication. It’s the place where all your relationships and business interactions come together.
@@ -24,9 +39,3 @@ In this section, you manage all data about customers, contacts, documents, event
   * Have all documents and events linked to the right people or companies.
   * Evaluate results using reports and dashboards.
 
-## How to
-
-{% include 'components/table-of-contents-from-pages-folder.twig' with {
-  'folder': 'en/apps/crm',
-  'maxLevel': 2,
-} %}

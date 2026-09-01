@@ -2,6 +2,14 @@
 
 # Finance
 
+{% include 'components/app-group-card.twig' with {
+  'borderColor': '#86efac',
+  'headerColor': '#f0fdf4',
+  'links': [
+    {'page': 'en/apps/finance/invoices', 'title': 'Invoices'},
+  ],
+} %}
+
 The Finance section is used to manage invoices and financial documents.
 
 Here you’ll find:
@@ -10,9 +18,3 @@ Here you’ll find:
 
 This module gives you an overview of issued, paid, and unpaid invoices and allows you to attach additional documents to them.
 
-## How to
-
-{% include 'components/table-of-contents-from-pages-folder.twig' with {
-  'folder': 'en/apps/finance',
-  'maxLevel': 2,
-} %}

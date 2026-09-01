@@ -272,6 +272,37 @@ class MyGuideVis extends \WaiBlue\GuideVis\Loader {
   }
 
   /**
+   * Keep search snippets focused on text visible to the reader.
+   */
+  public function stripMarkdown(string $line): string
+  {
+    $line = trim($line);
+
+    if (preg_match(
+      '/[\'\"](?:title|description|caption|text)[\'\"]\s*:\s*(?<quote>[\'\"])(?<value>(?:\\\\.|(?!\k<quote>).)*)\k<quote>/i',
+      $line,
+      $visibleValue
+    )) {
+      $line = str_replace(
+        ["\\'", '\\"'],
+        ["'", '"'],
+        $visibleValue['value']
+      );
+    } elseif (
+      preg_match('/^(?:\{%|%\}|\{\{|\}\}|\{#|#\})/', $line)
+      || preg_match('/^[\'\"](?:folder|maxLevel|page|screenshotUrl|icon|class)[\'\"]\s*:/i', $line)
+      || preg_match('/^[\'\"]?\d+[\'\"]?\s*:\s*\{?\s*,?$/', $line)
+      || preg_match('/^[\[\]{}(),;]+\s*(?:%\})?$/', $line)
+    ) {
+      return '';
+    }
+
+    $line = parent::stripMarkdown($line);
+
+    return preg_replace('/^(?:[-+*]|\d+[.)])\s+/', '', $line);
+  }
+
+  /**
    * [Description for getOnThisPage]
    *
    * @param string $mdContent
@@ -286,6 +317,35 @@ class MyGuideVis extends \WaiBlue\GuideVis\Loader {
       if (empty($key)) unset($onThisPage[$key]);
     }
     return $onThisPage;
+  }
+
+  /**
+   * Get the related pages rendered below a "See also" heading.
+   */
+  public function getSeeAlsoPages(): array
+  {
+    if (!preg_match(
+      '/^###\h+See also\h*\R(.*?)(?=^#{1,3}\h+|\z)/ims',
+      $this->pageContentMd,
+      $section
+    )) {
+      return [];
+    }
+
+    if (!preg_match(
+      '/[\'\"]folder[\'\"]\s*:\s*[\'\"]([^\'\"]+)[\'\"]/',
+      $section[1],
+      $folder
+    )) {
+      return [];
+    }
+
+    $maxLevel = 2;
+    if (preg_match('/[\'\"]maxLevel[\'\"]\s*:\s*(\d+)/', $section[1], $level)) {
+      $maxLevel = max(1, (int) $level[1]);
+    }
+
+    return $this->getTableOfContentsFromFolder($folder[1], $maxLevel);
   }
 }
 

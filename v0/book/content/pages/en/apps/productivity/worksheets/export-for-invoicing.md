@@ -2,7 +2,7 @@
 
 # Step-by-Step
 
-Click `Projects` → `Worksheets`.
+Click `Productivity` → `Worksheets`.
  → A daily activity chart will appear.
 
 
@@ -11,7 +11,7 @@ Click `Projects` → `Worksheets`.
 ## Add activity
 {% include 'components/step-by-step.twig' with {'steps': {
   '1': {
-    'title': 'Go to `Projects` → `Worksheets`.',
+    'title': 'Go to `Productivity` → `Worksheets`.',
   },
 
   '2': {
@@ -55,6 +55,6 @@ If Worked hours are not entered, the activity is recorded but won’t be include
 ## How to
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
-  'folder': 'en/apps/projects/worksheets',
+  'folder': 'en/apps/productivity/worksheets',
   'maxLevel': 2,
 } %}

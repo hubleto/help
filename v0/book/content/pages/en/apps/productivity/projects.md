@@ -9,6 +9,6 @@ Each project has a main developer and an account manager.
 ## How to
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
-  'folder': 'en/apps/projects/projects',
+  'folder': 'en/apps/productivity/projects',
   'maxLevel': 2,
 } %}

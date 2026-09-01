@@ -8,7 +8,7 @@ Once a task is created, one of the most important next steps is keeping its dead
 
 {% include 'components/step-by-step.twig' with {'steps': {
   '1': {
-    'title': 'Go to `Projects` -> `Tasks`.',
+    'title': 'Go to `Productivity` -> `Tasks`.',
   },
 
   '2': {
@@ -93,6 +93,6 @@ Ignoring recorded work: when worksheet data exists but is not reviewed, progress
 ### See also
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
-  'folder': 'en/apps/projects/tasks',
+  'folder': 'en/apps/productivity/tasks',
   'maxLevel': 2,
 } %}

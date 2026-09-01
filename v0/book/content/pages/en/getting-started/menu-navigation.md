@@ -70,7 +70,7 @@ Some controls are hidden on smaller screens or appear only when the correspondin
 
 The left sidebar is the main menu for your enabled Hubleto apps.
 
-Apps are usually grouped by business area, such as CRM, Marketing, Sales, Projects, Supply Chain, Finance, or Maintenance. Select a group or app name to open it in the central workspace. The active group and app are visually highlighted so you can see where you are.
+Apps are usually grouped by business area, such as CRM, Marketing, Sales, Productivity, Warehouses, Finance, Communication, Maintenance, or Help. Select a group or app name to open it in the central workspace. The active group and app are visually highlighted so you can see where you are.
 
 The sidebar contains only apps enabled for your workspace and available to your user account. If an expected app is missing, check your user profile and permissions or contact your administrator.
 

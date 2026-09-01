@@ -2,12 +2,12 @@
 
 # Add a task
 
-Click `Projects` → `Tasks`.
+Click `Productivity` → `Tasks`.
  → A table with the list of tasks will appear.
 
 {% include 'components/step-by-step.twig' with {'steps': {
   '1': {
-    'title': 'Go to `Projects` → `Tasks`.',
+    'title': 'Go to `Productivity` → `Tasks`.',
   },
 
   '2': {
@@ -56,6 +56,6 @@ Incorrect deadline → may cause errors in reporting.
 ## How to
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
-  'folder': 'en/apps/projects/tasks',
+  'folder': 'en/apps/productivity/tasks',
   'maxLevel': 2,
 } %}

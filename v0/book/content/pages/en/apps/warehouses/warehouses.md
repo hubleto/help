@@ -9,6 +9,6 @@ You can also divide a warehouse into specific locations (rooms, aisles, shelves)
 ## How to
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
-  'folder': 'en/apps/supply-chain/warehouses',
+  'folder': 'en/apps/warehouses/warehouses',
   'maxLevel': 2,
 } %}

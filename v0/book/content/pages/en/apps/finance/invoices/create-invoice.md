@@ -7,7 +7,7 @@ In the left menu, click `Finance` → `Invoices`.
 ## How to add invoices
 {% include 'components/step-by-step.twig' with {'steps': {
   '1': {
-    'title': 'Go to `Supply chain` → `Inventory`.',
+    'title': 'Go to `Warehouses` → `Inventory`.',
   },
 
   '2': {

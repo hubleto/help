@@ -8,7 +8,7 @@ Worksheets are especially useful for teams that need a clear overview of work pe
 
 ## Where to find worksheets
 
-In the left menu, go to `Projects` → `Worksheets`.
+In the left menu, go to `Productivity` → `Worksheets`.
 
 The default Worksheets view shows registered work activities. Each activity can include information such as the worker, related task, activity type, worked hours, day of work, description, approval status, and whether the work is chargeable.
 
@@ -80,6 +80,6 @@ Not reviewing approval status regularly may cause unfinished or unverified entri
 For instructions on creating a new worksheet entry, see the step-by-step guide in this section.
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
-  'folder': 'en/apps/projects/worksheets',
+  'folder': 'en/apps/productivity/worksheets',
   'maxLevel': 2,
 } %}

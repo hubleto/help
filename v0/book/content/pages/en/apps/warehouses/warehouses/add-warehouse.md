@@ -2,7 +2,7 @@
 
 # Add a warehouse
 
-In the left menu, click `Supply chain` → `Warehouses`.
+In the left menu, click `Warehouses` → `Warehouses`.
 
 Click on a warehouse to view its detail.
 
@@ -20,7 +20,7 @@ Click on a warehouse to view its detail.
 ## How to add a new warehouse
  {% include 'components/step-by-step.twig' with {'steps': {
   '1': {
-    'title': 'Go to `Supply chain` → `Warehouses`.',
+    'title': 'Go to `Warehouses` → `Warehouses`.',
   },
 
   '2': {
@@ -98,6 +98,6 @@ Not updating Current occupancy if inventory checks are done incorrectly.
 ## How to
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
-  'folder': 'en/apps/supply-chain/warehouses',
+  'folder': 'en/apps/warehouses/warehouses',
   'maxLevel': 2,
 } %}

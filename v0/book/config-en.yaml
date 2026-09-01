@@ -32,38 +32,72 @@ tableOfContents:
       - page: en/apps/crm
         children:
           - page: en/apps/crm/customers
+            icon: fas fa-address-card
           - page: en/apps/crm/contacts
+            icon: fas fa-user
           - page: en/apps/crm/calendar
+            icon: fas fa-calendar-days
           - page: en/apps/crm/documents
+            icon: fa-regular fa-file
           - page: en/apps/crm/workflow
+            icon: fas fa-timeline
           - page: en/apps/crm/mail
+            icon: fas fa-envelope
           - page: en/apps/crm/tasks
+            icon: fas fa-list-check
           - page: en/apps/crm/dashboards
+            icon: fas fa-table
       - page: en/apps/marketing
         children:
           - page: en/apps/marketing/campaigns
+            icon: fas fa-users-viewfinder
           - page: en/apps/marketing/leads
+            icon: fas fa-people-arrows
       - page: en/apps/sales
         children:
           - page: en/apps/sales/suppliers
+            icon: fas fa-truck-fast
           - page: en/apps/sales/deals
+            icon: fas fa-handshake
           - page: en/apps/sales/products
+            icon: fas fa-cart-shopping
           - page: en/apps/sales/orders
-      - page: en/apps/projects
+            icon: fas fa-money-check-dollar
+      - page: en/apps/productivity
         children:
-          - page: en/apps/projects/tasks
-          - page: en/apps/projects/worksheets
-          - page: en/apps/projects/projects
-          - page: en/apps/projects/issues
-      - page: en/apps/supply-chain
+          - page: en/apps/productivity/tasks
+            icon: fas fa-list-check
+          - page: en/apps/productivity/worksheets
+            icon: fas fa-user-clock
+          - page: en/apps/productivity/projects
+            icon: fas fa-diagram-project
+          - page: en/apps/productivity/issues
+            icon: fas fa-comment
+      - page: en/apps/warehouses
         children:
-          - page: en/apps/supply-chain/warehouses
-          - page: en/apps/supply-chain/inventory
+          - page: en/apps/warehouses/warehouses
+            icon: fas fa-warehouse
+          - page: en/apps/warehouses/inventory
+            icon: fas fa-boxes-stacked
       - page: en/apps/finance
         children:
           - page: en/apps/finance/invoices
+            icon: fas fa-file-invoice
+      - page: en/apps/communication
+        children:
+          - page: en/apps/communication/discussions
+            icon: fas fa-list-check
       - page: en/apps/maintenance
         children:
           - page: en/apps/maintenance/notifications
+            icon: fas fa-bell
           - page: en/apps/maintenance/settings
+            icon: fas fa-sliders
           - page: en/apps/maintenance/tools
+            icon: fas fa-screwdriver-wrench
+      - page: en/apps/help
+        children:
+          - page: en/apps/help/help
+            icon: fas fa-life-ring
+          - page: en/apps/help/about
+            icon: fas fa-circle-question

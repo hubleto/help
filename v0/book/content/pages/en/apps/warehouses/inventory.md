@@ -10,6 +10,6 @@
 ## How to
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
-  'folder': 'en/apps/supply-chain/inventory',
+  'folder': 'en/apps/warehouses/inventory',
   'maxLevel': 2,
 } %}

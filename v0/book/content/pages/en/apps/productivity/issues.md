@@ -6,6 +6,6 @@
 ## How to
 
 {% include 'components/table-of-contents-from-pages-folder.twig' with {
-  'folder': 'en/apps/projects/issues',
+  'folder': 'en/apps/productivity/issues',
   'maxLevel': 2,
 } %}

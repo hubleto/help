@@ -42,4 +42,4 @@ Some pages contain repeated sections that provide additional context or practica
 
 If this is your first time using Hubleto, start with the **Getting Started** section in the left sidebar. It covers the essential first steps, basic navigation, and initial setup topics that help you begin using the platform quickly.
 
-After that, continue with the **Apps** section to learn how to work with individual modules such as CRM, Sales, Projects, Finance, and Maintenance.
+After that, continue with the **Apps** section to learn how to work with individual modules such as CRM, Sales, Productivity, Warehouses, Finance, and Maintenance.

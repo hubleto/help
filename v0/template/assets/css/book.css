@@ -2075,6 +2075,13 @@
     line-height: var(--tw-leading, var(--text-xs--line-height));
     color: var(--color-gray-500);
   }
+  aside.on-this-page > div:nth-child(2) .heading-level-3 a {
+    margin-left: calc(var(--spacing) * 4);
+    padding-block: calc(var(--spacing) * 1);
+    font-size: var(--text-xs);
+    line-height: var(--tw-leading, var(--text-xs--line-height));
+    color: var(--color-gray-400);
+  }
   :root {
     --top-bar-height: 2.25rem;
   }

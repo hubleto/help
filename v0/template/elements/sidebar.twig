@@ -24,7 +24,7 @@
           {% if isWip %} tabindex="-1" aria-disabled="true" title="Work in progress" {% endif %}
           {% if isMissing %} tabindex="-1" aria-disabled="true" {% endif %}
         >
-          {% if level == 0 %} <span class="icon"><i class="{{ item.icon }}"></i></span> {% endif %}
+          {% if item.icon is defined and item.icon %} <span class="icon"><i class="{{ item.icon }}" aria-hidden="true"></i></span> {% endif %}
           <span class="text grow {% if level == 0 %} font-bold {% endif %}">{{ pageTitle }}</span>
           <span class="toggle-arrow {% if activePage starts with item.page %}is-open{% endif %}" onclick="event.preventDefault(); event.stopPropagation(); toggleTree(this.parentElement);">
             <i class="fas fa-chevron-right"></i>
@@ -61,7 +61,7 @@
           {% if isWip %} tabindex="-1" aria-disabled="true" title="Work in progress" {% endif %}
           {% if isMissing %} tabindex="-1" aria-disabled="true" {% endif %}
         >
-          {% if level == 0 %} <span class="icon"><i class="{{ item.icon }}"></i></span> {% endif %}
+          {% if item.icon is defined and item.icon %} <span class="icon"><i class="{{ item.icon }}" aria-hidden="true"></i></span> {% endif %}
           <span class="text {% if level == 0 %} font-bold {% endif %}">{{ pageTitle }}</span>
         </a>
       {% endif %}
