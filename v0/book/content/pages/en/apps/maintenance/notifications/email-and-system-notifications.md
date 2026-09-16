@@ -1,65 +1,33 @@
 {# tocOrder = 2 #}
 
-# Step-by-Step
+# Review notifications step by step
 
-In the left menu, click `Maintenance` → `Notifications`.
+The Notifications page is an inbox for alerts created by Hubleto and its installed applications. The current interface does not offer a **Send message** button for composing a notification to another user or team. To exchange messages directly with colleagues, use an app intended for conversation, such as Discussions, when it is available in your installation.
 
-Add a new notification by clicking the orange + Send message button.
-Fill in the fields:
-To – recipient
-From – sender
-Subject – subject of the message
-Body – message text
-Priority – priority of the message
-Category – message category
-Sent – date and time of sending
-Click Add to save and send the message.
+## Open and review an alert
 
 {% include 'components/step-by-step.twig' with {'steps': {
   '1': {
-    'title': 'Go to `Maintenance` → `Notifications`.',
+    'title': 'Open `Notifications` from the left sidebar or select the notification bell.',
+    'description': 'The Notifications page displays the inbox for alerts addressed to your account.',
   },
-
   '2': {
-    'title': 'Click the <button class="btn btn-add"><span class="icon"><i class="fas fa-plus"></i></span><span class="text">Send message</span></button> button',
+    'title': 'Find the notification that needs your attention.',
+    'description': 'Unread notifications are highlighted in the list. You can use search to locate an earlier subject or update.',
   },
-
   '3': {
-    'title': 'Fill in the basic fields:',
-    'description': '
-  *  **To** – recipient
-  *  **From** – sender
-  *  **Subject** – subject of the message
-  *  **Body** - message text
-  *  **Priority** - priority of the message
-  * **Category** - message category
-  * **Sent** - date and time of sending
-    ',
+    'title': 'Read the subject and message body.',
+    'description': 'The notification can also show its sender, category, priority, and sent date. If a related URL is provided, use it to open the relevant page or record.',
   },
-
   '4': {
-    'title': 'Click the <button class="btn btn-add"><span class="icon"><i class="fas fa-plus"></i></span><span class="text">Add</span></button> button'
-  }
+    'title': 'Update the read status.',
+    'description': 'Select **Mark as read** once you have reviewed the alert. Select **Mark as unread** if you need to keep it visible for follow-up.',
+  },
 }} %}
 
+## What to expect
 
-## Tips
-*  Use the Color field to highlight messages visually.
-*  Use Tags for easier filtering of notifications.
-
-
-## Common mistakes
-Missing subject or body → the message may be unclear.
-
-Wrong recipient → the message won’t reach the right person.
-
-## Summary
-| Topic                     | Summary                                                                                                   |
-|---------------------------|-----------------------------------------------------------------------------------------------------------|
-| Notifications Overview    | The Notifications module helps you manage system messages and user alerts in one place.                   |
-| Creating Notifications    | You can send new notifications to specific users or teams directly from the interface.                    |
-| Notification Details      | Each message includes a subject, recipient list, and message body for quick internal communication.       |
-| Benefits of Notifications | Using notifications regularly keeps users informed about important updates, tasks, and system activities. |
+The content of an alert depends on the application or process that created it. Some alerts point to a related Hubleto record, while others provide the information directly in the body. Marking a notification as read does not delete it; you can return to it from the Notifications page later.
 
 ## How to
 
