@@ -1,0 +1,35 @@
+{# see WaiBlue\GuideVis\Loader->getPageVars() for the list of available variables #}
+
+<div class="step-by-step">
+  {% for stepCnt, step in steps %}
+    <div class="step">
+      <div class="step-counter">{{ stepCnt }}</div>
+      <div class="step-content">
+        <div class="step-title">{{ markdown(step.title)|raw }}</div>
+        <div class="step-description">{{ markdown(step.description)|raw }}</div>
+      </div>
+      {% if step.example %} <span class="step-example"><pre>{{ step.example|raw }}</pre></span> {% endif %}
+      {% if step.screenshotUrl %}
+        <span class="step-screenshot">
+          <div>
+            <img
+              class="screenshot"
+              src="{{ env.guideRootUrl }}/screenshots/{{ step.screenshotUrl|replace({'/': '--'}) }}.png"
+              tabindex="1"
+              alt="{{ step.title }}"
+            />
+            <img
+              class="screenshot"
+              src="{{ env.guideRootUrl }}/screenshots/{{ step.screenshotUrl|replace({'/': '--'}) }}-m.png"
+              tabindex="1"
+              alt="{{ step.title }} - mobile version"
+            />
+          </div>
+          <div>
+            <a href="https://demo.hubleto.eu/{{ step.screenshotUrl }}" target="_blank">Show in demo</a>
+          </div>
+        </span>
+      {% endif %}
+    </div>
+  {% endfor %}
+</div>

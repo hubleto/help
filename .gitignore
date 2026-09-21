@@ -1,9 +1,8 @@
 .vscode
-v0/vendor
-v0/composer.lock
-v0/node_modules
-v0/package-lock.json
-v0/env.php
-v0/composer-dev.lock
-v0/composer-dev.json
+v*/vendor
+v*/node_modules
+v*/package-lock.json
+v*/env.php
+v*/composer-dev.lock
+v*/composer-dev.json
 node_modules
