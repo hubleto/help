@@ -1,0 +1,9 @@
+<div class="grid grid-cols-2 gap-2 mt-4">
+  {% for app in apps %}
+    {% if type == '' or type == app.type %}
+      <a class="btn btn-large btn-transparent" href="{{ env.guideRootUrl }}/en/apps/{{ app.urlHelp.en }}" >
+        <span class="text"> {{ app.name.en }} </span>
+      </a>
+    {% endif %}
+  {% endfor %}
+</div>
