@@ -2,10 +2,15 @@
 
 # Campaigns
 
- The Campaigns section is used to create, manage, and track marketing campaigns. 
- 
- 
- Each campaign includes information about the target group, objectives, email templates, and related activities. You can add recipients, assign tasks, launch emailing, and track resulting leads.
+The Campaigns section is a central workspace for preparing, running, and reviewing email marketing campaigns. It brings campaign settings, recipients, scheduled emails, and engagement data together in one place.
+
+## Key capabilities
+
+* **Campaign setup:** Define the campaign title, target audience, goal, owner, manager, workflow stage, status, and tags.
+* **Email planning:** Connect emails to a campaign and schedule them for specific days in a multi-step sequence.
+* **Recipient management:** Add or import recipients, connect them to contacts, and maintain recipient-specific variables, statuses, and notes.
+* **Scheduled delivery:** Prepare campaign emails for eligible recipients according to the configured campaign schedule.
+* **Engagement overview:** Review tracked link clicks, recipient summaries, and potential leads identified from click activity.
 
 ## How to
 

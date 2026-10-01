@@ -2,9 +2,16 @@
 
 # Leads
 
-The Leads section is used to manage potential customers that come from campaigns, websites, referrals, or other sources. 
+The Leads section helps you record, organize, and qualify potential business opportunities from the first contact until they are closed or converted into deals.
 
-For each lead, you can track its details, workflow stage, score, assigned manager, and the option to convert it into a deal.
+## Key capabilities
+
+* **Lead details:** Store contact information, customer and contact links, source channel, notes, expected value, currency, and expected closing date.
+* **Workflow tracking:** Follow each lead through configurable workflow steps and keep upcoming activities visible.
+* **Lead scoring:** Assign a score that helps the team compare and prioritize opportunities.
+* **Ownership:** Assign an owner, manager, and team, or share the lead with additional users.
+* **Related work:** Connect activities, tasks, documents, tags, and history entries to the lead.
+* **Deal conversion:** Create a linked deal from a qualified lead and copy its main customer, contact, value, ownership, source, and closing-date information.
 
 ## How to
 
