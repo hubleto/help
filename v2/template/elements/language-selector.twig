@@ -1,0 +1,29 @@
+{% set languageCodes = {'en': 'English', 'sk': 'Slovenčina'} %}
+{% set pageParts = page|split('/') %}
+{% set currentLanguage = pageParts[0] in languageCodes|keys ? pageParts[0] : 'en' %}
+{% set relativePage = pageParts|slice(1)|join('/') %}
+
+<details class="language-switcher">
+  <summary class="language-switcher-trigger" aria-label="{{ currentLanguage == 'sk' ? 'Zmeniť jazyk' : 'Change language' }}">
+    <span>{{ currentLanguage|upper }}</span>
+    <img src="{{ templateRootUrl }}/assets/images/flags/{{ currentLanguage }}.jpg" alt="">
+    <i class="fas fa-chevron-down" aria-hidden="true"></i>
+  </summary>
+  <div class="language-switcher-menu" role="menu">
+    {% for code, label in languageCodes %}
+      {% set candidatePage = code ~ '/' ~ relativePage %}
+      {% set languagePage = relativePage and guide.pageExists(candidatePage) ? candidatePage : code ~ '/home' %}
+      <a
+        href="{{ guideRootUrl }}/{{ languagePage }}"
+        lang="{{ code }}"
+        hreflang="{{ code }}"
+        role="menuitem"
+        {% if currentLanguage == code %}class="is-active" aria-current="page"{% endif %}
+      >
+        <img src="{{ templateRootUrl }}/assets/images/flags/{{ code }}.jpg" alt="">
+        <span>{{ label }}</span>
+        {% if currentLanguage == code %}<i class="fas fa-check" aria-hidden="true"></i>{% endif %}
+      </a>
+    {% endfor %}
+  </div>
+</details>

@@ -4,6 +4,8 @@ redirects:
     newPage: some-new-page
     code: 301
 tableOfContents:
+  - page: sk/home
+    icon: fas fa-home
   - page: sk/getting-started
     icon: fas fa-home
     children:
@@ -12,6 +14,16 @@ tableOfContents:
   - page: sk/apps
     icon: fas fa-folder-open
     children:
+      - page: sk/apps/marketing
+        children:
+          - page: sk/apps/marketing/campaigns
+            icon: fas fa-users-viewfinder
+          - page: sk/apps/marketing/leads
+            icon: fas fa-people-arrows
+      - page: sk/apps/sales
+        children:
+          - page: sk/apps/sales/products
+            icon: fas fa-cart-shopping
       - page: sk/apps/contacts
         children:
           - page: sk/apps/contacts/add-contact
