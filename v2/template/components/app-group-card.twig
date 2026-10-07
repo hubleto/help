@@ -1,5 +1,6 @@
 <div class="card mb-6" style="border-color: {{ borderColor|default('#fdba74') }}; margin-top: 1.5rem">
-  <div class="card-header" style="background-color: {{ headerColor|default('#fff7ed') }}">{{ title|default('Apps in this section') }}</div>
+  {% set defaultTitle = page|slice(0, 3) == 'sk/' ? 'Aplikácie v tejto sekcii' : 'Apps in this section' %}
+  <div class="card-header" style="background-color: {{ headerColor|default('#fff7ed') }}">{{ title|default(defaultTitle) }}</div>
   <div class="card-body grid gap-2 md:grid-cols-2">
     {% for link in links %}
       <a href="{{ env.guideRootUrl }}/{{ link.page }}" class="btn btn-white block">
