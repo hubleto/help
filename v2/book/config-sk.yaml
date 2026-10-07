@@ -3,17 +3,50 @@ redirects:
   some-old-page:
     newPage: some-new-page
     code: 301
+  sk:
+    newPage: sk/home
+router:
 tableOfContents:
-  - page: sk/home
+  - page: sk/introduction
     icon: fas fa-home
+    children:
+      - page: sk/introduction/what-is-hubleto
+      - page: sk/introduction/who-is-hubleto-for
+      - page: sk/introduction/how-to-use-this-guide
   - page: sk/getting-started
-    icon: fas fa-home
+    icon: fas fa-play
     children:
-      - page: sk/getting-started/account-and-setup
-      - page: sk/getting-started/first-steps
+      - page: sk/getting-started/registration-and-login
+      - page: sk/getting-started/homepage-overview
+      - page: sk/getting-started/menu-navigation
+  - page: sk/features-overview
+    icon: fas fa-star
+    children:
+      - page: sk/features-overview/ai-assistant
+      - page: sk/features-overview/global-search
+      - page: sk/features-overview/app-layout-data-grids
+      - page: sk/features-overview/record-form-layout
   - page: sk/apps
-    icon: fas fa-folder-open
+    icon: fas fa-book
     children:
+      - page: sk/apps/crm
+        children:
+          - page: sk/apps/crm/customers
+            icon: fas fa-address-card
+          - page: sk/apps/crm/contacts
+            icon: fas fa-user
+          - page: sk/apps/crm/calendar
+            icon: fas fa-calendar-days
+          - page: sk/apps/crm/documents
+            icon: fa-regular fa-file
+          - page: sk/apps/crm/workflow
+            icon: fas fa-timeline
+          - page: sk/apps/crm/mail
+            icon: fas fa-envelope
+          - page: sk/apps/crm/tasks
+            icon: fas fa-list-check
+          - page: sk/apps/crm/dashboards
+            icon: fas fa-table
       - page: sk/apps/marketing
         children:
           - page: sk/apps/marketing/campaigns
@@ -22,54 +55,49 @@ tableOfContents:
             icon: fas fa-people-arrows
       - page: sk/apps/sales
         children:
+          - page: sk/apps/sales/suppliers
+            icon: fas fa-truck-fast
+          - page: sk/apps/sales/deals
+            icon: fas fa-handshake
           - page: sk/apps/sales/products
             icon: fas fa-cart-shopping
-      - page: sk/apps/contacts
+          - page: sk/apps/sales/orders
+            icon: fas fa-money-check-dollar
+      - page: sk/apps/productivity
         children:
-          - page: sk/apps/contacts/add-contact
-          - page: sk/apps/contacts/edit-contact
-          - page: sk/apps/contacts/delete-contact
-      - page: sk/apps/customers
+          - page: sk/apps/productivity/tasks
+            icon: fas fa-list-check
+          - page: sk/apps/productivity/worksheets
+            icon: fas fa-user-clock
+          - page: sk/apps/productivity/projects
+            icon: fas fa-diagram-project
+          - page: sk/apps/productivity/issues
+            icon: fas fa-comment
+      - page: sk/apps/warehouses
         children:
-          - page: sk/apps/customers/add-customer
-          - page: sk/apps/customers/edit-customer
-          - page: sk/apps/customers/delete-customer
-          - page: sk/apps/customers/add-contact-to-customer
-      - page: sk/apps/calendar
+          - page: sk/apps/warehouses/warehouses
+            icon: fas fa-warehouse
+          - page: sk/apps/warehouses/inventory
+            icon: fas fa-boxes-stacked
+      - page: sk/apps/finance
         children:
-          - page: sk/apps/calendar/add-activity
-          - page: sk/apps/calendar/delete-activity
-          - page: sk/apps/calendar/edit-activity
-          - page: sk/apps/calendar/navigate-views
-      - page: sk/apps/documents
-      - page: sk/apps/pipeline
-      - page: sk/apps/services
-      - page: sk/apps/leads
+          - page: sk/apps/finance/invoices
+            icon: fas fa-file-invoice
+      - page: sk/apps/communication
         children:
-          - page: sk/apps/leads/adding-new-leads
-          - page: sk/apps/leads/updating-lead-info
-          - page: sk/apps/leads/lead-conversion
-      - page: sk/apps/deals
+          - page: sk/apps/communication/discussions
+            icon: fas fa-list-check
+      - page: sk/apps/maintenance
         children:
-            - page: sk/apps/deals/adding-new-deals
-            - page: sk/apps/deals/updating-deal-info
-            - page: sk/apps/deals/deal-closure
-      - page: sk/apps/reports
-  - page: sk/more
-    icon: fa-plus 
-    children:
-      - page: sk/more/help
-      - page: sk/more/upgrade
-      - page: sk/more/settings
+          - page: sk/apps/maintenance/notifications
+            icon: fas fa-bell
+          - page: sk/apps/maintenance/settings
+            icon: fas fa-sliders
+          - page: sk/apps/maintenance/tools
+            icon: fas fa-screwdriver-wrench
+      - page: sk/apps/help
         children:
-          - page: sk/more/settings/users
-          - page: sk/more/settings/profiles
-          - page: sk/more/settings/settings
-          - page: sk/more/settings/tags
-          - page: sk/more/settings/activity-types
-          - page: sk/more/settings/countries
-          - page: sk/more/settings/currencies
-          - page: sk/more/settings/labels
-          - page: sk/more/settings/lead-statuses
-          - page: sk/more/settings/pipelines
-      
+          - page: sk/apps/help/help
+            icon: fas fa-life-ring
+          - page: sk/apps/help/about
+            icon: fas fa-circle-question

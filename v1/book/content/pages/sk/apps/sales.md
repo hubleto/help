@@ -6,6 +6,7 @@ Predajná časť prepája katalóg produktov a služieb s ďalšími predajnými
   'borderColor': '#c4b5fd',
   'headerColor': '#f5f3ff',
   'links': [
+    {'page': 'sk/apps/sales/suppliers', 'title': 'Dodávatelia'},
     {'page': 'sk/apps/sales/products', 'title': 'Produkty'},
   ],
 } %}
